@@ -1,10 +1,138 @@
-.main .demo {
-  color: blue; }
-.main .logo {
-  color: green; }
-
 .results-page {
   background-size: cover;
   background: url("../img/results-bg.jpg") 0 0 repeat-x #f5f5f5; }
+
+.logo-wrapper {
+  position: relative;
+  width: 270px;
+  height: 190px;
+  float: left;
+  z-index: 1; }
+  .logo-wrapper .logo {
+    position: absolute;
+    top: 0;
+    left: -60px; }
+
+.top-menu {
+  float: left;
+  width: calc(100% - 270px);
+  padding-top: 20px; }
+  .top-menu .main-menu {
+    margin-bottom: 15px; }
+  .top-menu > ul {
+    font-size: 0;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: row;
+    padding: 0; }
+    .top-menu > ul > li {
+      position: relative;
+      display: inline;
+      list-style: none;
+      flex-grow: 1;
+      text-align: center; }
+      .top-menu > ul > li a {
+        display: block;
+        padding: 12px 5px;
+        font-size: 12px;
+        line-height: 14px;
+        background: #7ec619;
+        text-transform: uppercase;
+        color: #fff;
+        border-right: 1px solid #65b31d; }
+      .top-menu > ul > li:first-child a {
+        padding-left: 30px; }
+      .top-menu > ul > li:last-child a {
+        border: none; }
+      .top-menu > ul > li.active a {
+        background: #ed1c24; }
+      .top-menu > ul > li.active:hover a {
+        background: #de1219; }
+      .top-menu > ul > li:hover a {
+        text-decoration: none;
+        background: #6ead16; }
+      .top-menu > ul > li:hover > ul {
+        display: block; }
+      .top-menu > ul > li > ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 0;
+        border-top: 1px solid #4d981d; }
+        .top-menu > ul > li > ul li {
+          width: 100%; }
+          .top-menu > ul > li > ul li a {
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid #4d981d;
+            padding-left: 15px;
+            padding-right: 15px; }
+          .top-menu > ul > li > ul li:hover a {
+            background: #4d971d; }
+
+.breadcrumbs {
+  padding: 0 20px;
+  float: left; }
+  .breadcrumbs ul {
+    list-style: none; }
+    .breadcrumbs ul li {
+      display: inline-block;
+      padding-right: 10px; }
+      .breadcrumbs ul li a {
+        font-size: 10px;
+        color: #fff;
+        padding-right: 10px; }
+      .breadcrumbs ul li:after {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f105";
+        vertical-align: middle;
+        color: #fff;
+        font-size: 10px; }
+      .breadcrumbs ul li:last-child:after {
+        content: ' '; }
+
+.user-menu {
+  float: right; }
+  .user-menu ul {
+    list-style: none;
+    font-size: 0; }
+    .user-menu ul li {
+      display: inline-block;
+      margin-right: 10px; }
+      .user-menu ul li:before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 12px;
+        border-radius: 15px 0 0 15px;
+        background: #fff;
+        vertical-align: middle; }
+      .user-menu ul li:after {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 12px;
+        border-radius: 0 15px 15px 0;
+        background: #fff;
+        vertical-align: middle; }
+      .user-menu ul li:last-child {
+        margin-right: 0; }
+      .user-menu ul li a {
+        display: inline-block;
+        background: #fff;
+        color: #222;
+        font-size: 12px;
+        line-height: 25px;
+        vertical-align: middle;
+        text-decoration: none; }
+        .user-menu ul li a:hover {
+          color: #3c3c3c; }
+          .user-menu ul li a:hover i {
+            color: #88aa2a; }
+      .user-menu ul li i {
+        color: #a6ce39;
+        padding-right: 5px;
+        vertical-align: middle; }
 
 /*# sourceMappingURL=toptravel.css.map */
