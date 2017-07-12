@@ -135,4 +135,68 @@
         padding-right: 5px;
         vertical-align: middle; }
 
+.results-filter {
+  margin-bottom: 30px; }
+  .results-filter h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400; }
+  .results-filter .wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    padding: 15px; }
+    .results-filter .wrapper .col {
+      width: 20%;
+      float: left;
+      padding: 0 15px; }
+      .results-filter .wrapper .col label {
+        color: #6f777a;
+        font-weight: 400;
+        display: block; }
+      .results-filter .wrapper .col .setting > label {
+        width: 100%;
+        display: inline-block;
+        color: #6f777a;
+        border-bottom: 1px solid #c1c1c1;
+        padding-bottom: 5px; }
+      .results-filter .wrapper .col .setting label {
+        display: inline-block; }
+  .results-filter .btn-reset {
+    background: #ed1c24;
+    color: #fff;
+    width: 16%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 2px; }
+    .results-filter .btn-reset:hover {
+      background: #de1219; }
+
+.block-image {
+  display: block;
+  border-radius: 2px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.special-offers {
+  margin-bottom: 40px; }
+  .special-offers .item {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 5px; }
+    .special-offers .item .picture {
+      float: left;
+      height: 170px;
+      width: 250px; }
+    .special-offers .item .info {
+      float: left;
+      padding: 10px; }
+      .special-offers .item .info h3 {
+        margin-top: 0; }
+    .special-offers .item .hotel-info .block {
+      float: left; }
+    .special-offers .item .price-block {
+      float: right; }
+
 /*# sourceMappingURL=toptravel.css.map */
