@@ -17,7 +17,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <section class="container-fluid results-page">
+        <section class="results-page">
             <div class="container">
                 <header>
                     <div class="logo-wrapper">
@@ -193,12 +193,14 @@
                 </div>
                 <div class="special-offers">
                     <div class="item">
-                        <div class="block-image picture" style="background-image:url('img/item.jpg')">
-                            <span class="label top-offer">TOP sezono pasiulymas</span>
-                        </div>
+                        <a href="#" class="block-image picture" style="background-image:url('img/item.jpg')">
+                            <span class="top-offer">
+                                <span class="label">TOP sezono pasiulymas</span>
+                            </span>
+                        </a>
                         <div class="info">
                             <h3>
-                                <span>Side Crown Palace</span>
+                                <a href="#" class="va-middle">Side Crown Palace</a>
                                 <span class="rate-stars">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -209,8 +211,14 @@
                             </h3>
                             <div class="destination">
                                 <span class="country">Alanija, Turkija</span>
-                                <span class="sun">+31&deg;</span>
-                                <span class="water">+24&deg;</span>
+                                <span class="sun">
+                                    <i class="icon fa fa-sun-o"></i>
+                                    <span>+31&deg;</span>
+                                </span>
+                                <span class="water">
+                                    <i class="icon fa fa-tint"></i>
+                                    <span>+24&deg;</span>
+                                </span>
                             </div>
                             <div class="hotel-info">
                                 <div class="block">
@@ -231,19 +239,21 @@
                         <div class="price-block">
                             <div class="tripad">
                                 <span>Labai geras, 8</span>
-                                <i class="icon"></i>
+                                <div class="tripad-logo-local logo-s pull-right">
+                                    <img class="sprite-tripad-logo" src="img/x.gif">
+                                </div>
                             </div>
                             <div class="prices">
-                                <div>
-                                    <div class="old-price strike">500</div>
+                                <div class="block">
+                                    <div class="old-price strike">&euro; 500</div>
                                     <div class="label label-discount">-15%</div>
                                 </div>
-                                <div>
+                                <div class="block">
                                     <div class="price">&euro; 400</div>
                                     <div class="person">Price per person</div>
                                 </div>
-                                <div>
-                                    <a href="#">
+                                <div class="block">
+                                    <a class="btn btn-select btn-block" href="#">
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div>
@@ -252,8 +262,9 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
-
-                <footer>
+            </div>
+            <footer>
+                <div class="container">
                     <div class="row">
                         <div class="col-xs-3">
                             <h4>Svarbi informacija</h4>
@@ -296,8 +307,8 @@
                             FB page
                         </div>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </section>
 
         <script
