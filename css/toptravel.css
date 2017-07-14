@@ -1400,6 +1400,97 @@
     border-radius: 2px; }
     .results-filter .btn-reset:hover {
       background: #de1219; }
+  .results-filter .rate .filter .stars {
+    height: 150px;
+    position: relative;
+    margin: 20px 0 0; }
+    .results-filter .rate .filter .stars .rate-star {
+      font: normal normal normal 18px/1 FontAwesome;
+      color: #fff;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      float: left;
+      position: absolute;
+      bottom: 0;
+      width: 15%; }
+      .results-filter .rate .filter .stars .rate-star:before {
+        content: "\f005"; }
+      .results-filter .rate .filter .stars .rate-star:nth-child(1) {
+        height: 40%;
+        left: 5%; }
+      .results-filter .rate .filter .stars .rate-star:nth-child(2) {
+        height: 55%;
+        left: 25%; }
+      .results-filter .rate .filter .stars .rate-star:nth-child(3) {
+        height: 70%;
+        left: 45%; }
+      .results-filter .rate .filter .stars .rate-star:nth-child(4) {
+        height: 85%;
+        left: 65%; }
+      .results-filter .rate .filter .stars .rate-star:nth-child(5) {
+        height: 100%;
+        left: 85%; }
+      .results-filter .rate .filter .stars .rate-star .tower {
+        height: calc(100% - 30px);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        background: #fff;
+        margin: 5px 2px 0;
+        border-radius: 2px; }
+      .results-filter .rate .filter .stars .rate-star:hover, .results-filter .rate .filter .stars .rate-star.active {
+        color: #7ec619; }
+        .results-filter .rate .filter .stars .rate-star:hover .tower, .results-filter .rate .filter .stars .rate-star.active .tower {
+          background: #7ec619; }
+  .results-filter .catering .filter .pie {
+    position: relative;
+    margin: 20px 10px; }
+    .results-filter .catering .filter .pie .piece {
+      width: 84px;
+      height: 84px;
+      float: left;
+      position: relative; }
+      .results-filter .catering .filter .pie .piece span {
+        z-index: 1;
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .results-filter .catering .filter .pie .piece:hover, .results-filter .catering .filter .pie .piece.active {
+        cursor: pointer; }
+        .results-filter .catering .filter .pie .piece:hover:before, .results-filter .catering .filter .pie .piece.active:before {
+          background: url("../images/toptravel/pie-hover.png") 0 0 no-repeat; }
+      .results-filter .catering .filter .pie .piece:before {
+        content: ' ';
+        position: absolute;
+        width: 84px;
+        height: 84px;
+        background: url("../images/toptravel/pie.png") 0 0 no-repeat;
+        background-size: 100% 100%; }
+      .results-filter .catering .filter .pie .piece:nth-child(1):before {
+        transform: rotate(-90deg); }
+      .results-filter .catering .filter .pie .piece:nth-child(2):before {
+        transform: rotate(0deg); }
+      .results-filter .catering .filter .pie .piece:nth-child(3):before {
+        transform: rotate(180deg); }
+      .results-filter .catering .filter .pie .piece:nth-child(4):before {
+        transform: rotate(90deg); }
+      .results-filter .catering .filter .pie .piece:nth-child(5) {
+        position: absolute;
+        width: 63px;
+        height: 63px;
+        top: 52px;
+        left: 53px;
+        background: #fff;
+        border-radius: 50%; }
+        .results-filter .catering .filter .pie .piece:nth-child(5) span {
+          display: inline-block;
+          width: 100%;
+          line-height: 63px;
+          text-align: center;
+          top: 0;
+          left: 0; }
+        .results-filter .catering .filter .pie .piece:nth-child(5):hover, .results-filter .catering .filter .pie .piece:nth-child(5).active {
+          background: #7ec619; }
+        .results-filter .catering .filter .pie .piece:nth-child(5):before {
+          background: none; }
 
 .block-image {
   display: block;
@@ -1577,11 +1668,36 @@
 footer {
   background: #fff;
   padding: 30px 0; }
+  footer .input-group .btn-primary {
+    background-color: #1485cb;
+    border: 1px solid #1485cb;
+    color: #fff; }
+  footer ul.with-icons {
+    margin-top: 20px; }
+    footer ul.with-icons li:before {
+      content: "\f00c";
+      font: normal normal normal 14px/1 FontAwesome;
+      color: #1485cb; }
+    footer ul.with-icons a {
+      padding-left: 5px; }
   footer ul li a {
     font-size: 13px;
     color: #7b7b7b; }
     footer ul li a:hover {
       text-decoration: none;
       color: #1485cb; }
+  footer .footer-img {
+    margin-top: 30px; }
+  footer .quick-links {
+    margin: 30px 0; }
+    footer .quick-links a {
+      display: inline-block;
+      text-transform: uppercase;
+      color: #1485cb;
+      margin-right: 15px;
+      font-size: 13px; }
+  footer .copyright {
+    font-size: 12px;
+    color: #7b7b7b; }
 
 /*# sourceMappingURL=toptravel.css.map */
