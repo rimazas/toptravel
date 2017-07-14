@@ -1,0 +1,602 @@
+@import "main_scss/buttons";
+@import "mixin";
+
+@-webkit-keyframes loader-small {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    width: 15px;
+    height: 15px;
+    opacity: 0.1;
+    -webkit-transform: translateY(-21px);
+  }
+}
+@-moz-keyframes loader-small {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    -moz-transform: translateY(0);
+  }
+  100% {
+    width: 15px;
+    height: 15px;
+    opacity: 0.1;
+    -moz-transform: translateY(-21px);
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    opacity: 0.1;
+    -webkit-transform: translateY(-21px);
+  }
+}
+@-moz-keyframes loader {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    -moz-transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    opacity: 0.1;
+    -moz-transform: translateY(-21px);
+  }
+}
+// WebKit
+@-webkit-keyframes progress-bar-stripes {
+  from    { background-position: 0 0; }
+  to      { background-position: 40px 0; }
+}
+// Spec and IE10+
+@keyframes progress-bar-stripes {
+  from    { background-position: 0 0; }
+  to      { background-position: 40px 0; }
+}
+
+//progress
+.progress{
+  height: 18px;
+}
+.progress.active .progress-bar {
+  -webkit-animation: progress-bar-stripes .9s linear infinite;
+  animation: progress-bar-stripes 1s linear infinite;
+  &.green {
+    background-color: $green-color;
+  }
+  &.travel {
+    background-color: $travels-primary-color;
+  }
+}
+
+.filter-preloader {
+  display: block;
+  margin: 0 auto;
+  height:60px;
+  width:60px;
+  -webkit-animation: rotation 1s infinite linear;
+  -moz-animation: rotation 1s infinite linear;
+  -o-animation: rotation 1s infinite linear;
+  animation: rotation 1s infinite linear;
+  border-left: 8px solid rgba(0,0,0,.20);
+  border-right: 8px solid rgba(0,0,0,.20);
+  border-bottom: 8px solid rgba(0,0,0,.20);
+  border-top: 8px solid rgba(33,128,192,1);
+  border-radius:100%;
+}
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+@-webkit-keyframes rotation {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+  from {-moz-transform: rotate(0deg);}
+  to {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+  from {-o-transform: rotate(0deg);}
+  to {-o-transform: rotate(359deg);}
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  &.in {
+    background-color: #000;
+    opacity: .5!important;
+  }
+}
+.modal-open {
+  overflow: hidden;
+  .modal {
+    overflow-x: hidden!important;
+    overflow-y: auto!important;
+  }
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+//  &.in {
+//    opacity: 1;
+//  }
+//  &.in {
+//      opacity: .8;
+//      background-color: #000;
+//      filter: alpha(opacity=50);
+//  }
+}
+.mask-layer {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  z-index: 9;
+  background-color: #FFF;
+  filter: alpha(opacity=0);
+}
+.tripadvisors-color {
+  color: $tripadvisors-color;
+}
+
+/**************************************
+          Fancybox
+***************************************/
+.fancybox-overlay.fancybox-overlay-fixed {
+  overflow-y: auto!important;
+  background: rgba(#000,0.5);
+}
+.fancybox-wrap.move-to-top {
+  top: 100px!important;
+}
+.fancybox-wrap.move-to-bottom {
+  top: auto!important;
+  bottom: 200px!important;
+}
+.fancybox-skin, .map-container {
+  font-family: $tripcloud-font-family;
+  background-color: #fff;
+  .base { font-size: 16px;}
+  .primary-color { color: $blue-color;}
+  .grey { color: $grey-color; }
+  .heading {
+    margin: -20px -20px 15px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid $panel-grey-border-color;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-top-left-radius: $border-radius-medium;
+    border-top-right-radius: $border-radius-medium;
+    .title {
+      line-height: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    &.hotels {
+      margin: -15px -10px 10px;
+      position: relative;
+      .fancy-close {
+        position: absolute;
+        top: 9px;
+        right: 15px;
+      }
+    }
+    &.travels, .travel-sys {
+      margin: -15px -10px 10px;
+      .fancy-close {
+        top: 7px;
+      }
+    }
+    .tooltip {
+      .tooltip-arrow {
+        border-left-color: #000;
+      }
+      .tooltip-inner {
+        color: #FFF;
+        background-color: #000;
+      }
+    }
+  }
+  .content {
+    font-size: $font-size-medium;
+    color: $grey-color;
+    line-height: 18px;
+  }
+  .jspVerticalBar {
+    width: 15px!important;
+    background: transparent;
+    margin-right: -8px;
+  }
+  .jspHorizontalBar {
+    height: 6px;
+    background: transparent;
+  }
+  .jspTrack {
+    background-color: #dadada;
+    border-radius: $border-radius-base;
+    width: 5px;
+  }
+  .jspDrag {
+    background: #888888;
+    border-radius: $border-radius-base;
+    &.jspHover, &.jspActive {
+      background: $blue-color;
+      width: 9px;
+      left: -2px;
+    }
+  }
+  .mt-10 {  margin-top: 10px; }
+  .mt-0 {  margin-top: 0; }
+
+  .fancy-close {
+    padding: 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    -webkit-appearance: none;
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    line-height: 1;
+    color: #888;
+    text-shadow: 0 1px 0 #FFF;
+    opacity: 1;
+    outline: none;
+    float: right;
+    font-weight: bold;
+    text-align: right;
+    .fa {
+      margin-left: 8px;
+    }
+    &:hover {
+        color: $primary-color;
+    }
+  }
+  .fancybox-btn {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 10px;
+    &:hover {
+      background-color: #fff;
+      .fa {
+        color: $blue-color;
+      }
+    }
+  }
+  p {
+    font-size: 16px;
+    color: #666;
+    line-height: 25px;
+    margin-bottom: 0px;
+    margin-top: 0;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .map-container {
+    width: 100%;
+    height: 100%;
+  }
+  .map-content {
+    width: 100%;
+    height: 100%;
+    .hotel-image {
+      float: left;
+      width: 130px;
+      height: 120px;
+      margin: 5px 15px 5px 0;
+      border-radius: $border-radius-base;
+      background-size: cover;
+      background-position: 50% 0;
+      background-repeat: no-repeat;
+    }
+    .hotel-info {
+      float: left;
+      width: 250px;
+      padding: 0 0 10px 0;
+      .hotel-name {
+        margin-bottom: 5px;
+        margin-top: 0;
+        height: 45px;
+        line-height: 20px;
+        overflow: hidden;
+        font-weight: 400;
+        color: #666;
+        font-size: 18px;
+        a {
+          color: $link-color;
+          font-size: 18px;
+          text-decoration: none;
+          font-weight: 400;
+        }
+      }
+      .hotel-address {
+        line-height: 18px;
+        font-size: 16px;
+        color: $grey-color;
+        margin-bottom: 0;
+        margin-top: 15px;
+      }
+      .rate {
+        margin-bottom: 5px;
+      }
+    }
+    .price {
+      padding: 0 0 10px 0;
+      float: right;
+      width: 125px;
+      height: 100%;
+      .rating {
+        text-align: right;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .btn {
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+    .rate-stars {
+      display: inline-block;
+    }
+    &#info-box {
+      .wrapper {
+        margin-top: 15px;
+        margin-left: 20px;
+        max-width: 265px;
+      }
+      .text {
+        padding: 10px 0 0;
+        p {
+          font-size: 13px;
+          line-height: 18px;
+          margin: 0;
+          color: #666;
+        }
+      }
+      .images {
+        position: relative;
+        img {
+          border-radius: 2px;
+        }
+        a.btn {
+          position: absolute;
+          bottom: 0px;
+          left: 50%;
+          width: 120px;
+          text-align: center;
+          margin-left: -60px;
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          padding: 0 10px;
+          line-height: 36px;
+          font-size: 16px;
+          font-weight: 600;
+          border-radius: 2px 2px 0 0;
+        }
+      }
+      .hotel-name {
+        display: inline;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+      .hotel-address {
+        margin-bottom: 5px !important;
+      }
+      .rate-stars {
+        padding-left: 5px;
+        display: inline-block;
+      }
+      .rate-block {
+        font-size: 14px;
+      }
+      .thumb-rate {
+        margin-left: 10px;
+      }
+      .trip-rates {
+        float: left;
+        margin-top: 2px;
+      }
+      .tripad-logo-local {
+        margin-top: 0!important;
+      }
+      .rate-total {
+        color: #8D979C;
+        font-size: 13px;
+        padding-left: 5px;
+      }
+    }
+  }
+  .rate-stars {
+    i.star {
+      font-size: $font-size-medium;
+      color: #dbdbdb;
+    }
+    .star:not(.fa-star-o) {
+      font-size: $font-size-medium;
+      color: $stars-color;
+    }
+    .thumb {
+      display: inline-block;
+      background-color: $success-color;
+      border-radius: $border-radius-base;
+      padding: 0 5px 3px;
+      margin-left: 5px;
+      line-height: 22px;
+      width: 15px;
+      height: 16px;
+      .fa {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+    a:hover.thumb{
+      background-color: darken($success-color,3%);
+    }
+  }
+  .hotel-info-block {
+    .rate-stars .thumb {
+      padding: 0 2px 0px;
+      margin-left: 5px;
+      line-height: 16px;
+    }
+  }
+  @include hotelMap;
+  @include tripadRating;
+  @include tripadLogo;
+}
+.scroll-pane {
+  outline: none;
+}
+.table-rules {
+  width:100%;
+  border: 1px solid #E5E5E5;
+  margin-bottom: 25px;
+  td {
+    padding: 15px;
+    p {
+      line-height: 20px;
+      margin-top: 8px;
+    }
+  }
+  td.thead {
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #333;
+    background: #ECECEC;
+    border: 1px solid #E5E5E5;
+  }
+}
+#ui-datepicker-div {
+  min-height: 320px;
+  z-index: 100;
+  &.font-arial {
+    font-family: "Arial", "sans-serif";
+  }
+  &.font-proximanova {
+    font-family:'Proximanova';
+  }
+  &.font-open-sans {
+    font-family:'Open Sans';
+  }
+  &.font-helvetica {
+    font-family:"helvetica";
+  }
+  &.font-tahoma {
+    font-family:"Tahoma";
+  }
+  &.font-serif {
+    font-family:"serif";
+  }
+}
+
+.big-drop .select2-results{
+  max-height: 1000px !important;
+}
+.scroll-pane {
+  .jspVerticalBar {
+    width: 8px;
+  }
+  .jspTrack {
+    background: #EFEFEF;
+  }
+  .jspDrag {
+    background: #DDD;
+    &.jspHover {
+      background-color: #CCC;
+    }
+  }
+}
+
+.select2-drop {
+  &.travels {
+    .select2-results {
+      .select2-highlighted {
+        background: #636262;
+      }
+    }
+  }
+  &.select2-lowest-price {
+    background-color: #fff!important;
+  }
+}
+
+.ekko-lightbox {
+  &.fade.in {
+    opacity: 1;
+  }
+  .modal-header .close {
+    margin-top: -2px;
+  }
+  button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+  }
+  .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  .ekko-lightbox-nav-overlay a {
+    font-size: 70px;
+    text-decoration: none;
+    &.fa-angle-left {
+      left: 0;
+      float: left;
+      padding-left: 15px;
+      text-align: left;
+    }
+    &.fa-angle-right {
+      right: 0;
+      float: right;
+      padding-right: 15px;
+      text-align: right;
+    }
+  }
+}

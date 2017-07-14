@@ -1,0 +1,413 @@
+.ui-datepicker {
+  font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+  width: 275px;
+  padding: 1px;
+  padding-top: 0;
+  background: #fff;
+  border: 1px solid $light-border-color;
+  border-radius: $border-radius-base;
+//  z-index: 100!important;
+  position: relative;
+  &.flights-dp-wrapper {
+    td a, td span {
+      font-weight:600!important;
+    }
+  }
+
+  @include box-shadow(5px 5px 10px rgba(0,0,0,.2));
+  .arrow,
+  .arrow:after
+  {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  &.top{
+    margin-top: -40px;
+    .arrow{
+      border-width: $popover-arrow-outer-width;
+      left: 50px;
+      margin-left: -$popover-arrow-outer-width;
+      border-bottom-width: 0;
+      border-top-color: $popover-arrow-outer-color;
+      bottom: -$popover-arrow-outer-width;
+    }
+    .arrow:after{
+      border-width: $popover-arrow-width;
+      content: " ";
+      bottom: 1px;
+      margin-left: -$popover-arrow-width;
+      border-bottom-width: 0;
+      border-top-color: #fff;
+    }
+  }
+  &.bottom{
+    margin-top: 10px;
+    .arrow{
+      border-width: $popover-arrow-outer-width;
+      left: 50px;
+      margin-left: -$popover-arrow-outer-width;
+      border-top-width: 0;
+      border-bottom-color: $popover-arrow-outer-color;
+      top: -$popover-arrow-outer-width;
+    }
+    .arrow:after{
+      border-width: $popover-arrow-width;
+      content: " ";
+      top: 1px;
+      margin-left: -$popover-arrow-width;
+      border-top-width: 0;
+      border-color: transparent transparent $light-bg-color transparent;
+    }
+  }
+  table{
+    font-size: $font-size-medium;
+  }
+  .ui-datepicker-header{
+    background: $light-bg-color;
+    color: $dark-color;
+    font-size: $font-size-base;
+    line-height: 100%;
+    border: none;
+    padding:15px 20px;
+    .ui-datepicker-title{
+      line-height: 100%;
+      margin: 0 30px;
+      .ui-datepicker-month {
+        margin-right: 0;
+      }
+      .ui-datepicker-year {
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
+  th{
+    background: #fcfcfc;
+    border-top: 1px solid $light-border-color;
+    border-bottom: 1px solid $light-border-color;
+    color: $grey-color;
+    font-weight: normal;
+    padding: 6px 3px 5px;
+  }
+  tr > th:first-child{
+    padding-left: 10px;
+  }
+  tr > th:last-child{
+    padding-right: 10px;
+  }
+  tr > td:first-child a,
+  tr > td:first-child span,
+  {
+    margin-left: 5px;
+  }
+  tr > td:last-child a,
+  tr > td:last-child span{
+    margin-right: 5px;
+  }
+  tr:first-child > td a,
+  tr:first-child > td span
+  {
+    margin-top: 10px;
+  }
+
+  th.ui-datepicker-week-end{
+    color: $coral-color;
+  }
+  td{
+    text-align: center;
+    padding: 0;
+    width: 36px;
+  }
+  td a,
+  td span {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 100%;
+    color: $dark-color;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  td.low-cost a{
+    color: $blue-color;
+  }
+  td.available-day a{
+    color: #F8CC0E;
+    background-color: #FFF6CD;
+  }
+  td.ui-state-disabled span{
+    color: lighten($grey-color, 25%);
+  }
+  td a.important,
+  {
+    color: $green-color;
+  }
+  &.flights-dp-wrapper {
+    td.ui-state-inrange a{
+      background: #d9edf7;//lighten($blue-color, 35%);
+    }
+    td.ui-state-start-range a,
+    td.ui-state-end-range a
+    {
+      background: $blue-color;
+      color: #fff;
+    }
+    td a:hover{
+      background: $blue-color;
+      color: #fff;
+    }
+  }
+  &.hotels-dp-wrapper {
+    td.ui-state-inrange a {
+      background: #eaf2d3;//lighten($success-color, 35%);
+    }
+    td.ui-state-start-range a,
+    td.ui-state-end-range a,
+    td.ui-state-disabled.ui-state-start-range span
+    {
+      background: $success-color !important;
+      color: #fff;
+    }
+    td a:hover {
+      background: $success-color;
+      color: #fff;
+    }
+  }
+  &.travels-dp-wrapper {
+    td {
+      &.ui-state-disabled {
+        span {
+          color: #ddd;
+        }
+      }
+      &.available-day {
+        a {
+          color: #383838;
+          background-color: #ffe4ad;
+        }
+      }
+      a, span {
+        margin: 0px 2px 2px 0px;
+        width: 34px;
+        color: #252525;
+        font-weight: 400;
+        border-radius: 3px;
+      }
+    }
+    td.ui-datepicker-current-day {
+      a {
+        background: $travels-primary-color;
+        color: #fff;
+      }
+    }
+    td.ui-state-inrange a {
+      background: $travels-primary-color;
+    }
+    td.ui-state-start-range a,
+    td.ui-state-end-range a,
+    td.ui-state-disabled.ui-state-start-range span
+    {
+      background:  $travels-primary-color!important;
+      color: #fff;
+    }
+    td a:hover {
+      background: $grey-color;
+      color: #fff;
+    }
+  }
+  .ui-datepicker-next,
+  .ui-datepicker-prev
+  {
+    cursor: pointer;
+    top: 0;
+    height: 100%;
+    text-decoration: none;
+    color: $grey-color;
+    &.ui-state-disabled {
+      display:none;
+    }
+  }
+  .ui-datepicker-next{
+    right: 10px;
+  }
+  .ui-datepicker-prev{
+    left: 10px;
+  }
+
+  .ui-datepicker-next:after,
+  .ui-datepicker-prev:after
+  {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 0;
+    font-size: 25px;
+    line-height: 100%;
+    width: 100%;
+    text-align: center;
+
+  }
+  .ui-datepicker-next:after{
+    content: "\f105";
+  }
+  .ui-datepicker-prev:after{
+    content: "\f104";
+  }
+  .ui-datepicker-next:hover:not(.ui-state-disabled),
+  .ui-datepicker-prev:hover:not(.ui-state-disabled){
+    color: $dark-color;
+  }
+  .legend{
+    margin: 0 20px 10px;
+    color: #33b5e5;//$grey-color;
+    font-size: $font-size-medium;
+    padding-top: 10px;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+    i{
+      color: #33b5e5;
+      padding-right: $s-gap;
+    }
+    &.travel-dates {
+      color: #F8CC0E;
+      i{
+        color: #F8CC0E;
+      }
+    }
+  }
+  &.ui-datepicker-multi-2 {
+    min-width: 541px;
+  }
+  &.ui-datepicker-multi .ui-datepicker-group table {
+    width: 100%;
+  }
+  .ui-datepicker-row-break {
+    border-top: 1px solid #e7e7e7;
+  }
+  .ui-icon {
+    background-image: none;
+  }
+  .temp {
+    margin-top: 10px;
+    height: 16px;
+    .sun {
+      color: $travels-primary-color;
+    }
+    .water {
+      color: #208CD7;
+      margin-left: 10px;
+    }
+    .glyphicons, .fa {
+      margin-right: 5px;
+    }
+  }
+}
+.ui-datepicker.style-2{
+  .ui-datepicker-next,
+  .ui-datepicker-prev
+  {
+    border: 1px solid $light-border-color;
+    border-radius: $border-radius-base;
+    bottom: 8px; top: 7px;
+    height: auto;
+    background: #fff;
+    width: 38px;
+  }
+  .ui-datepicker-next:after{
+    margin-left: 1px;
+  }
+  .ui-datepicker-prev:after{
+    margin-left: -1px;
+  }
+  .ui-datepicker-next:hover:not(.ui-state-disabled),
+  .ui-datepicker-prev:hover:not(.ui-state-disabled){
+    background: $light-bg-color;
+  }
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 45%;
+  height: 34px;
+  font-size: $font-size-medium;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #fff;
+  color: $dark-color;
+  line-height: 1.42857;
+  padding: 8px 8px 6px 8px;
+  outline: none;
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+//  -webkit-appearance: none;
+}
+.ui-datepicker select.ui-datepicker-month {
+  margin-right: 10px;
+}
+.ui-datepicker span.ui-datepicker-month {
+  font-weight: 600;
+}
+.ui-datepicker.birthday .ui-datepicker-header {
+  padding: 10px 20px 11px;
+}
+
+.jq-datepicker.form-control[readonly],
+.tripcloud-dp.form-control[readonly]
+{
+  background-color: #fff;
+}
+.tripcloud-dp.form-control[readonly]
+{
+  background-color: transparent !important;
+}
+span:not(.tripcloud-dp-disabled) {
+  input {
+    &.form-control[disabled],
+    &.form-control[readonly]
+    {
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+.tripcloud-dp-disabled {
+  i {
+    color: #ddd!important;
+    z-index: 2;
+  }
+  input,
+  fieldset[disabled],
+  .form-control {
+    color: #ddd!important;
+    &::-webkit-input-placeholder { /* WebKit browsers */
+      color:    #ddd!important;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:    #ddd!important;
+      opacity:  1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:    #ddd!important;
+      opacity:  1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:    #ddd!important;
+    }
+    border-color: #ddd;
+    background-color: $light-bg-color!important;
+  }
+  .jq-datepicker.form-control[readonly] {
+    background-color: #eeeeee;
+  }
+}

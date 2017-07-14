@@ -1,0 +1,117 @@
+
+//.off-canvas-wrap {
+//  -webkit-backface-visibility: hidden;
+//  position: relative;
+//  width: 100%;
+//  overflow: hidden;
+//}
+//.off-canvas-wrap.move-right, .off-canvas-wrap.move-left {
+//  height: 100%;
+//}
+.inner-wrap {
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  width: 100%;
+  *zoom: 1;
+}
+.inner-wrap:before, .inner-wrap:after {
+  content: " ";
+  display: table;
+}
+.inner-wrap:after {
+  clear: both;
+}
+.menubar-left {
+  height: 32px;
+  width: 34px;
+  line-height: 30px;
+  display: inline-block;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  padding: 2px 10px;
+  border: 1px solid $nav-mobile-bg;
+  font-size: 21px;
+  border-radius: $border-radius-base;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.no-csstransforms .left-off-canvas-menu {
+  left: -84%; }
+.no-csstransforms .right-off-canvas-menu {
+  right: -84%; }
+.no-csstransforms .move-left > .inner-wrap {
+  right: 84%; }
+.no-csstransforms .move-right > .inner-wrap {
+  left: 84%; }
+
+.exit-off-canvas, .exit-level2 {
+  margin-left: 10px;
+  margin-right:10px;
+}
+aside .menu-header {
+  margin-bottom: 10px;
+}
+.left-wrapper {
+  height: 100%;
+  background: #333;
+}
+.left-sidebar,
+.right-sidebar
+{
+  -webkit-transition: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -ms-transition: -ms-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition-property: left, right;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  position: fixed;
+  background: #333;
+  z-index: 9994;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  .jspVerticalBar {
+    width: 8px;
+    right: 1px;
+  }
+  .jspTrack {
+    background: #444;
+  }
+  .jspDrag {
+    background: rgb(187, 187, 187);
+    opacity: 0.3;
+  }
+}
+.left-sidebar {
+  left: -100%;
+}
+.right-sidebar {
+  right: -100%;
+}
+&.left-sidebar-open,
+&.right-sidebar-open {
+  height: 100%;
+}
+&.left-sidebar-open .left-sidebar {
+  left: 0;
+}
+&.right-sidebar-open .right-sidebar {
+  right: 0;
+}
+&.aside-language-open .level2.aside-language {
+  right: 0;
+}
+&.aside-currency-open .level2.aside-currency {
+  right: 0;
+}
+
+.right-menu.level2 {
+  position: absolute;
+  top: 0;
+  background: #333;
+  width: 100%;
+  right: -100%;
+}

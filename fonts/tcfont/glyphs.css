@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: 'tcglyphs';
+    src: url('tripcloudcustom-webfont.eot');
+    src: url('tripcloudcustom-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tripcloudcustom-webfont.woff2') format('woff2'),
+         url('tripcloudcustom-webfont.woff') format('woff'),
+         url('tripcloudcustom-webfont.ttf') format('truetype'),
+         url('tripcloudcustom-webfont.svg#untitled1regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.tcg {
+    display: inline-block;
+    font: normal normal normal 14px/1 tcglyphs;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.plane-right:before{content:"2"}
+.plane-left:before{content:"3"}
+.turboprop:before{content:"1"}
+.plane-directions:before{content:"0"}
+.flight-seat:before{content:"4"}
+.beach:before{content:"5"}

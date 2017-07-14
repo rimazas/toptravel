@@ -1,0 +1,200 @@
+@import "variables";
+@import "mixin";
+
+&.border-radius-0 {
+  $radius: 0;
+  @include themeBorderRadius($radius);
+}
+&.border-radius-2 {
+  $radius: 2px;
+  @include themeBorderRadius($radius);
+}
+&.border-radius-5 {
+  $radius: 5px;
+  @include themeBorderRadius($radius);
+}
+&.border-radius-10 {
+  $radius: 10px;
+  @include themeBorderRadius($radius);
+}
+&.font-roboto {
+  @include font-roboto;
+}
+&.font-open-sans {
+  @include font-open-sans;
+}
+&.font-avenir {
+  @include font-avenir;
+}
+&.font-tahoma {
+  @include font-tahoma;
+}
+
+&.size-1000 {
+  .container-fluid {
+    max-width: 1040px;
+  }
+  #departure-date-block,
+  #return-date-block,
+  {
+    width: 100%
+  }
+  .order-step .inline-lg {
+    display: none!important;
+  }
+  .find-faster {
+    margin-left: -250px;
+  }
+  .datepicker-container .form-control {
+    padding-right: 6px;
+  }
+  .tab-content.bordered .tab-pane {
+    padding: 20px 15px;
+  }
+  ul.banks li {
+    width: 126px;
+    margin-right: 12px;
+  }
+  .bank-sprite {
+    $scale: 4;
+    @include bank-sprite($scale);
+    margin-top: 17px;
+  }
+  .dotpay-sprite {
+    $scale: 4;
+    @include dotpay-sprite($scale);
+    margin-top: 17px;
+  }
+  #flight-more-options {
+    .col-xs-6 {
+      width: 100%;
+    }
+  }
+  .search-form-block {
+    &.col-md-4,
+      //      &.col-md-5,
+      //      &.col-md-6,
+      //      &.col-md-7,
+    {
+      .nav-tabs {
+        .hidden-xs {
+          display: none!important;
+        }
+        .visible-xs {
+          display: block!important;
+        }
+      }
+    }
+  }
+  .block-image.thumb {
+    margin-right: 3px;
+    margin-bottom: 3px;
+  }
+  .baggage-images {
+    .dimensions {
+      .weight {
+        left: 38%;
+        top: 39%;
+        font-size: 25px;
+        display: inline-block;
+        text-align: center;
+        width: 100px;
+      }
+      .height {
+        left: -3%;
+        top: 26%;
+      }
+      .depth {
+        left: 0%;
+        top: 68%;
+      }
+      .width {
+        left: 56%;
+        bottom: 0%;
+      }
+    }
+    .baggage-weight {
+      .weight {
+        position: absolute;
+        left: 21px;
+        top: 49px;
+        font-size: 25px;
+        width: 100px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+&.size-1100 {
+  .container-fluid {
+    max-width: 1100px;
+  }
+  .find-faster {
+    margin-left: -280px;
+  }
+  ul.banks li {
+    width: 137px;
+  }
+  .bank-sprite {
+    margin-top: 15px;
+    $scale: 3.5;
+    @include bank-sprite($scale);
+  }
+  .dotpay-sprite {
+    margin-top: 15px;
+    $scale: 3.5;
+    @include dotpay-sprite($scale);
+  }
+  .service-icons .service {
+    margin-right: 2px;
+  }
+  .baggage-images {
+    .dimensions {
+      .weight {
+        left: 34%;
+        top: 40%;
+        font-size: 25px;
+        display: inline-block;
+        text-align: center;
+        width: 120px;
+      }
+      .height {
+        left: 0;
+        top: 26%;
+      }
+      .depth {
+        left: 0%;
+        top: 68%;
+      }
+      .width {
+        left: 56%;
+        bottom: 0%;
+      }
+    }
+    .baggage-weight {
+      .weight {
+        position: absolute;
+        left: 21px;
+        top: 49px;
+        font-size: 25px;
+        width: 100px;
+        text-align: center;
+      }
+    }
+  }
+  &.font-avenir {
+    .row.compact {
+      .tripcloud-dp {
+        padding-left:5px;
+        padding-right:5px;
+      }
+    }
+  }
+}
+
+&.size-1200 {
+  .container-fluid {
+    max-width: 1200px
+  }
+}

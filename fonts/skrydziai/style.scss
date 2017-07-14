@@ -1,0 +1,978 @@
+@import "variables";
+
+@font-face {
+  font-family: 'flights';
+  src:
+    url('#{$icomoon-font-path}/flights.ttf?h9da1p') format('truetype'),
+    url('#{$icomoon-font-path}/flights.woff?h9da1p') format('woff'),
+    url('#{$icomoon-font-path}/flights.svg?h9da1p#flights') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="sk-"], [class*=" sk-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'flights' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sk-luggage {
+  &:before {
+    content: $sk-luggage;
+  }
+}
+.sk-briefcase {
+  &:before {
+    content: $sk-briefcase;
+  }
+}
+.sk-traveler-baggage {
+  &:before {
+    content: $sk-traveler-baggage;
+  }
+}
+.sk-shopping-bag {
+  &:before {
+    content: $sk-shopping-bag;
+  }
+}
+.sk-golf {
+  &:before {
+    content: $sk-golf;
+  }
+}
+.sk-flight-destination {
+  &:before {
+    content: $sk-flight-destination;
+  }
+}
+.sk-right-arrow {
+  &:before {
+    content: $sk-right-arrow;
+  }
+}
+.sk-left-arrow {
+  &:before {
+    content: $sk-left-arrow;
+  }
+}
+.sk-big-gift-box {
+  &:before {
+    content: $sk-big-gift-box;
+  }
+}
+.sk-users_two_switch {
+  &:before {
+    content: $sk-users_two_switch;
+  }
+}
+.sk-users_two_switch_2 {
+  &:before {
+    content: $sk-users_two_switch_2;
+  }
+}
+.sk-path-a-to-b {
+  &:before {
+    content: $sk-path-a-to-b;
+  }
+}
+.sk-lounge {
+  &:before {
+    content: $sk-lounge;
+  }
+}
+.sk-magazines {
+  &:before {
+    content: $sk-magazines;
+  }
+}
+.sk-miles {
+  &:before {
+    content: $sk-miles;
+  }
+}
+.sk-miles_25p {
+  &:before {
+    content: $sk-miles_25p;
+  }
+}
+.sk-miles_50p {
+  &:before {
+    content: $sk-miles_50p;
+  }
+}
+.sk-miles_100p {
+  &:before {
+    content: $sk-miles_100p;
+  }
+}
+.sk-miles_125 {
+  &:before {
+    content: $sk-miles_125;
+  }
+}
+.sk-miles_200p {
+  &:before {
+    content: $sk-miles_200p;
+  }
+}
+.sk-miles_250 {
+  &:before {
+    content: $sk-miles_250;
+  }
+}
+.sk-miles_300p {
+  &:before {
+    content: $sk-miles_300p;
+  }
+}
+.sk-miles_500 {
+  &:before {
+    content: $sk-miles_500;
+  }
+}
+.sk-miles_750 {
+  &:before {
+    content: $sk-miles_750;
+  }
+}
+.sk-miles_1000 {
+  &:before {
+    content: $sk-miles_1000;
+  }
+}
+.sk-miles_1250 {
+  &:before {
+    content: $sk-miles_1250;
+  }
+}
+.sk-miles_1500 {
+  &:before {
+    content: $sk-miles_1500;
+  }
+}
+.sk-miles_2000 {
+  &:before {
+    content: $sk-miles_2000;
+  }
+}
+.sk-sameday-standby {
+  &:before {
+    content: $sk-sameday-standby;
+  }
+}
+.sk-priority_checkin {
+  &:before {
+    content: $sk-priority_checkin;
+  }
+}
+.sk-priority_boarding {
+  &:before {
+    content: $sk-priority_boarding;
+  }
+}
+.sk-premium_food {
+  &:before {
+    content: $sk-premium_food;
+  }
+}
+.sk-more_space_recline {
+  &:before {
+    content: $sk-more_space_recline;
+  }
+}
+.sk-lounge_charge {
+  &:before {
+    content: $sk-lounge_charge;
+  }
+}
+.sk-seat_charge {
+  &:before {
+    content: $sk-seat_charge;
+  }
+}
+.sk-seat_no {
+  &:before {
+    content: $sk-seat_no;
+  }
+}
+.sk-miles_upgrade_no {
+  &:before {
+    content: $sk-miles_upgrade_no;
+  }
+}
+.sk-miles_upgrade {
+  &:before {
+    content: $sk-miles_upgrade;
+  }
+}
+.sk-miles_150p {
+  &:before {
+    content: $sk-miles_150p;
+  }
+}
+.sk-alacarte_dining {
+  &:before {
+    content: $sk-alacarte_dining;
+  }
+}
+.sk-miles_absolute {
+  &:before {
+    content: $sk-miles_absolute;
+  }
+}
+.sk-miles_percent {
+  &:before {
+    content: $sk-miles_percent;
+  }
+}
+.sk-seatmap_galley {
+  &:before {
+    content: $sk-seatmap_galley;
+  }
+}
+.sk-seatmap_seat_legroom {
+  &:before {
+    content: $sk-seatmap_seat_legroom;
+  }
+}
+.sk-one_way {
+  &:before {
+    content: $sk-one_way;
+  }
+}
+.sk-round_trip {
+  &:before {
+    content: $sk-round_trip;
+  }
+}
+.sk-multi_connection {
+  &:before {
+    content: $sk-multi_connection;
+  }
+}
+.sk-calendar {
+  &:before {
+    content: $sk-calendar;
+  }
+}
+.sk-cancel {
+  &:before {
+    content: $sk-cancel;
+  }
+}
+.sk-close {
+  &:before {
+    content: $sk-close;
+  }
+}
+.sk-dropdown {
+  &:before {
+    content: $sk-dropdown;
+  }
+}
+.sk-facebook {
+  &:before {
+    content: $sk-facebook;
+  }
+}
+.sk-google_plus {
+  &:before {
+    content: $sk-google_plus;
+  }
+}
+.sk-icon_19 {
+  &:before {
+    content: $sk-icon_19;
+  }
+}
+.sk-icon_32 {
+  &:before {
+    content: $sk-icon_32;
+  }
+}
+.sk-icon_38 {
+  &:before {
+    content: $sk-icon_38;
+  }
+}
+.sk-icon_42 {
+  &:before {
+    content: $sk-icon_42;
+  }
+}
+.sk-icon_48 {
+  &:before {
+    content: $sk-icon_48;
+  }
+}
+.sk-icon_50 {
+  &:before {
+    content: $sk-icon_50;
+  }
+}
+.sk-icon_58 {
+  &:before {
+    content: $sk-icon_58;
+  }
+}
+.sk-icon_84 {
+  &:before {
+    content: $sk-icon_84;
+  }
+}
+.sk-instagram {
+  &:before {
+    content: $sk-instagram;
+  }
+}
+.sk-palme {
+  &:before {
+    content: $sk-palme;
+  }
+}
+.sk-pin {
+  &:before {
+    content: $sk-pin;
+  }
+}
+.sk-plane {
+  &:before {
+    content: $sk-plane;
+  }
+}
+.sk-profile {
+  &:before {
+    content: $sk-profile;
+  }
+}
+.sk-profile-4 {
+  &:before {
+    content: $sk-profile-4;
+  }
+}
+.sk-profile-2 {
+  &:before {
+    content: $sk-profile-2;
+  }
+}
+.sk-switch {
+  &:before {
+    content: $sk-switch;
+  }
+}
+.sk-switch2 {
+  &:before {
+    content: $sk-switch2;
+  }
+}
+.sk-tag {
+  &:before {
+    content: $sk-tag;
+  }
+}
+.sk-tag2 {
+  &:before {
+    content: $sk-tag2;
+  }
+}
+.sk-tikrinti_uzsakyma {
+  &:before {
+    content: $sk-tikrinti_uzsakyma;
+  }
+}
+.sk-uzsakymai_grupems {
+  &:before {
+    content: $sk-uzsakymai_grupems;
+  }
+}
+.sk-uzsakymai_internetu {
+  &:before {
+    content: $sk-uzsakymai_internetu;
+  }
+}
+.sk-viezbutis {
+  &:before {
+    content: $sk-viezbutis;
+  }
+}
+.sk-switch-3 {
+  &:before {
+    content: $sk-switch-3;
+  }
+}
+.sk-icon_40 {
+  &:before {
+    content: $sk-icon_40;
+  }
+}
+.sk-icon_70 {
+  &:before {
+    content: $sk-icon_70;
+  }
+}
+.sk-animal2 {
+  &:before {
+    content: $sk-animal2;
+  }
+}
+.sk-bread2 {
+  &:before {
+    content: $sk-bread2;
+  }
+}
+.sk-camp1 {
+  &:before {
+    content: $sk-camp1;
+  }
+}
+.sk-favorite21 {
+  &:before {
+    content: $sk-favorite21;
+  }
+}
+.sk-icecreams9 {
+  &:before {
+    content: $sk-icecreams9;
+  }
+}
+.sk-mountain40 {
+  &:before {
+    content: $sk-mountain40;
+  }
+}
+.sk-snow42 {
+  &:before {
+    content: $sk-snow42;
+  }
+}
+.sk-bell84 {
+  &:before {
+    content: $sk-bell84;
+  }
+}
+.sk-plane2 {
+  &:before {
+    content: $sk-plane2;
+  }
+}
+.sk-new_bell {
+  &:before {
+    content: $sk-new_bell;
+  }
+}
+.sk-bell-2 {
+  &:before {
+    content: $sk-bell-2;
+  }
+}
+.sk-new_clock {
+  &:before {
+    content: $sk-new_clock;
+  }
+}
+.sk-new_left {
+  &:before {
+    content: $sk-new_left;
+  }
+}
+.sk-new_profile {
+  &:before {
+    content: $sk-new_profile;
+  }
+}
+.sk-new_right {
+  &:before {
+    content: $sk-new_right;
+  }
+}
+.sk-new_Security {
+  &:before {
+    content: $sk-new_Security;
+  }
+}
+.sk-error_button {
+  &:before {
+    content: $sk-error_button;
+  }
+}
+.sk-info_button {
+  &:before {
+    content: $sk-info_button;
+  }
+}
+.sk-linkedin {
+  &:before {
+    content: $sk-linkedin;
+  }
+}
+.sk-rightarrow59 {
+  &:before {
+    content: $sk-rightarrow59;
+  }
+}
+.sk-rss {
+  &:before {
+    content: $sk-rss;
+  }
+}
+.sk-skype_messenger_voip_call {
+  &:before {
+    content: $sk-skype_messenger_voip_call;
+  }
+}
+.sk-thumbs_up {
+  &:before {
+    content: $sk-thumbs_up;
+  }
+}
+.sk-tick_success {
+  &:before {
+    content: $sk-tick_success;
+  }
+}
+.sk-twitter {
+  &:before {
+    content: $sk-twitter;
+  }
+}
+.sk-x_button {
+  &:before {
+    content: $sk-x_button;
+  }
+}
+.sk-youtube_you_tube_google {
+  &:before {
+    content: $sk-youtube_you_tube_google;
+  }
+}
+.sk-close-2 {
+  &:before {
+    content: $sk-close-2;
+  }
+}
+.sk-close-3 {
+  &:before {
+    content: $sk-close-3;
+  }
+}
+.sk-add139 {
+  &:before {
+    content: $sk-add139;
+  }
+}
+.sk-delete96 {
+  &:before {
+    content: $sk-delete96;
+  }
+}
+.sk-DOWNLOAD {
+  &:before {
+    content: $sk-DOWNLOAD;
+  }
+}
+.sk-EDIT {
+  &:before {
+    content: $sk-EDIT;
+  }
+}
+.sk-newspaper {
+  &:before {
+    content: $sk-newspaper;
+  }
+}
+.sk-social {
+  &:before {
+    content: $sk-social;
+  }
+}
+.sk-VIEW {
+  &:before {
+    content: $sk-VIEW;
+  }
+}
+.sk-arrow-left {
+  &:before {
+    content: $sk-arrow-left;
+  }
+}
+.sk-arrow-right {
+  &:before {
+    content: $sk-arrow-right;
+  }
+}
+.sk-piggy_bank_coin {
+  &:before {
+    content: $sk-piggy_bank_coin;
+  }
+}
+.sk-pinwheel {
+  &:before {
+    content: $sk-pinwheel;
+  }
+}
+.sk-rocket {
+  &:before {
+    content: $sk-rocket;
+  }
+}
+.sk-tag-1 {
+  &:before {
+    content: $sk-tag-1;
+  }
+}
+.sk-ui_www {
+  &:before {
+    content: $sk-ui_www;
+  }
+}
+.sk-users_three {
+  &:before {
+    content: $sk-users_three;
+  }
+}
+.sk-baggage {
+  &:before {
+    content: $sk-baggage;
+  }
+}
+.sk-plane-3 {
+  &:before {
+    content: $sk-plane-3;
+  }
+}
+.sk-car {
+  &:before {
+    content: $sk-car;
+  }
+}
+.sk-seat {
+  &:before {
+    content: $sk-seat;
+  }
+}
+.sk-plane-4 {
+  &:before {
+    content: $sk-plane-4;
+  }
+}
+.sk-plane-bed {
+  &:before {
+    content: $sk-plane-bed;
+  }
+}
+.sk-bed-2 {
+  &:before {
+    content: $sk-bed-2;
+  }
+}
+.sk-plane-5 {
+  &:before {
+    content: $sk-plane-5;
+  }
+}
+.sk-multi_connection-2 {
+  &:before {
+    content: $sk-multi_connection-2;
+  }
+}
+.sk-handbag {
+  &:before {
+    content: $sk-handbag;
+  }
+}
+.sk-food {
+  &:before {
+    content: $sk-food;
+  }
+}
+.sk-priority {
+  &:before {
+    content: $sk-priority;
+  }
+}
+.sk-seats {
+  &:before {
+    content: $sk-seats;
+  }
+}
+.sk-seat-3 {
+  &:before {
+    content: $sk-seat-3;
+  }
+}
+.sk-cards {
+  &:before {
+    content: $sk-cards;
+  }
+}
+.sk-table-tools {
+  &:before {
+    content: $sk-table-tools;
+  }
+}
+.sk-clock-2 {
+  &:before {
+    content: $sk-clock-2;
+  }
+}
+.sk-plane-8 {
+  &:before {
+    content: $sk-plane-8;
+  }
+}
+.sk-plane3 {
+  &:before {
+    content: $sk-plane3;
+  }
+}
+.sk-seat-2 {
+  &:before {
+    content: $sk-seat-2;
+  }
+}
+.sk-seat-check {
+  &:before {
+    content: $sk-seat-check;
+  }
+}
+.sk-check-1 {
+  &:before {
+    content: $sk-check-1;
+  }
+}
+.sk-check-2 {
+  &:before {
+    content: $sk-check-2;
+  }
+}
+.sk-seat-4 {
+  &:before {
+    content: $sk-seat-4;
+  }
+}
+.sk-uniE661 {
+  &:before {
+    content: $sk-uniE661;
+  }
+}
+.sk-attention-triangle {
+  &:before {
+    content: $sk-attention-triangle;
+  }
+}
+.sk-attention-filled {
+  &:before {
+    content: $sk-attention-filled;
+  }
+}
+.sk-cancel-2 {
+  &:before {
+    content: $sk-cancel-2;
+  }
+}
+.sk-attention {
+  &:before {
+    content: $sk-attention;
+  }
+}
+.sk-plane-7 {
+  &:before {
+    content: $sk-plane-7;
+  }
+}
+.sk-emotion {
+  &:before {
+    content: $sk-emotion;
+  }
+}
+.sk-performance {
+  &:before {
+    content: $sk-performance;
+  }
+}
+.sk-Untitled-2-34 {
+  &:before {
+    content: $sk-Untitled-2-34;
+  }
+}
+.sk-coffee_cup {
+  &:before {
+    content: $sk-coffee_cup;
+  }
+}
+.sk-compass {
+  &:before {
+    content: $sk-compass;
+  }
+}
+.sk-globe {
+  &:before {
+    content: $sk-globe;
+  }
+}
+.sk-envelope {
+  &:before {
+    content: $sk-envelope;
+  }
+}
+.sk-right-arrows {
+  &:before {
+    content: $sk-right-arrows;
+  }
+}
+.sk-email-send {
+  &:before {
+    content: $sk-email-send;
+  }
+}
+.sk-horizontal_arrows {
+  &:before {
+    content: $sk-horizontal_arrows;
+  }
+}
+.sk-list-view {
+  &:before {
+    content: $sk-list-view;
+  }
+}
+.sk-thumbs-view {
+  &:before {
+    content: $sk-thumbs-view;
+  }
+}
+.sk-grid-view {
+  &:before {
+    content: $sk-grid-view;
+  }
+}
+.sk-dollar {
+  &:before {
+    content: $sk-dollar;
+  }
+}
+.sk-euro {
+  &:before {
+    content: $sk-euro;
+  }
+}
+.sk-favorites {
+  &:before {
+    content: $sk-favorites;
+  }
+}
+.sk-map_pin {
+  &:before {
+    content: $sk-map_pin;
+  }
+}
+.sk-left-arrow5 {
+  &:before {
+    content: $sk-left-arrow5;
+  }
+}
+.sk-wallet {
+  &:before {
+    content: $sk-wallet;
+  }
+}
+.sk-piggy_bank {
+  &:before {
+    content: $sk-piggy_bank;
+  }
+}
+.sk-search2 {
+  &:before {
+    content: $sk-search2;
+  }
+}
+.sk-email {
+  &:before {
+    content: $sk-email;
+  }
+}
+.sk-double_bed {
+  &:before {
+    content: $sk-double_bed;
+  }
+}
+.sk-bed {
+  &:before {
+    content: $sk-bed;
+  }
+}
+.sk-user-tick {
+  &:before {
+    content: $sk-user-tick;
+  }
+}
+.sk-credit-card {
+  &:before {
+    content: $sk-credit-card;
+  }
+}
+.sk-wallet_coins {
+  &:before {
+    content: $sk-wallet_coins;
+  }
+}
+.sk-sale_percentage {
+  &:before {
+    content: $sk-sale_percentage;
+  }
+}
+.sk-caller_female {
+  &:before {
+    content: $sk-caller_female;
+  }
+}
+.sk-cogs {
+  &:before {
+    content: $sk-cogs;
+  }
+}
+.sk-happy_face {
+  &:before {
+    content: $sk-happy_face;
+  }
+}
+.sk-smile {
+  &:before {
+    content: $sk-smile;
+  }
+}
+.sk-travelling {
+  &:before {
+    content: $sk-travelling;
+  }
+}
+.sk-transport {
+  &:before {
+    content: $sk-transport;
+  }
+}
+.sk-plane-9 {
+  &:before {
+    content: $sk-plane-9;
+  }
+}
+.sk-alarm {
+  &:before {
+    content: $sk-alarm;
+  }
+}
+.sk-crossed-alarm {
+  &:before {
+    content: $sk-crossed-alarm;
+  }
+}
+

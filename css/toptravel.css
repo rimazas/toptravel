@@ -1,0 +1,1587 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'flights';
+  src: url("../fonts/skrydziai/fonts/flights.ttf?h9da1p") format("truetype"), url("../fonts/skrydziai/fonts/flights.woff?h9da1p") format("woff"), url("../fonts/skrydziai/fonts/flights.svg?h9da1p#flights") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="sk-"], [class*=" sk-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'flights' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.sk-luggage:before {
+  content: ""; }
+
+.sk-briefcase:before {
+  content: ""; }
+
+.sk-traveler-baggage:before {
+  content: ""; }
+
+.sk-shopping-bag:before {
+  content: ""; }
+
+.sk-golf:before {
+  content: ""; }
+
+.sk-flight-destination:before {
+  content: ""; }
+
+.sk-right-arrow:before {
+  content: ""; }
+
+.sk-left-arrow:before {
+  content: ""; }
+
+.sk-big-gift-box:before {
+  content: ""; }
+
+.sk-users_two_switch:before {
+  content: ""; }
+
+.sk-users_two_switch_2:before {
+  content: ""; }
+
+.sk-path-a-to-b:before {
+  content: ""; }
+
+.sk-lounge:before {
+  content: ""; }
+
+.sk-magazines:before {
+  content: ""; }
+
+.sk-miles:before {
+  content: ""; }
+
+.sk-miles_25p:before {
+  content: ""; }
+
+.sk-miles_50p:before {
+  content: ""; }
+
+.sk-miles_100p:before {
+  content: ""; }
+
+.sk-miles_125:before {
+  content: ""; }
+
+.sk-miles_200p:before {
+  content: ""; }
+
+.sk-miles_250:before {
+  content: ""; }
+
+.sk-miles_300p:before {
+  content: ""; }
+
+.sk-miles_500:before {
+  content: ""; }
+
+.sk-miles_750:before {
+  content: ""; }
+
+.sk-miles_1000:before {
+  content: ""; }
+
+.sk-miles_1250:before {
+  content: ""; }
+
+.sk-miles_1500:before {
+  content: ""; }
+
+.sk-miles_2000:before {
+  content: ""; }
+
+.sk-sameday-standby:before {
+  content: ""; }
+
+.sk-priority_checkin:before {
+  content: ""; }
+
+.sk-priority_boarding:before {
+  content: ""; }
+
+.sk-premium_food:before {
+  content: ""; }
+
+.sk-more_space_recline:before {
+  content: ""; }
+
+.sk-lounge_charge:before {
+  content: ""; }
+
+.sk-seat_charge:before {
+  content: ""; }
+
+.sk-seat_no:before {
+  content: ""; }
+
+.sk-miles_upgrade_no:before {
+  content: ""; }
+
+.sk-miles_upgrade:before {
+  content: ""; }
+
+.sk-miles_150p:before {
+  content: ""; }
+
+.sk-alacarte_dining:before {
+  content: ""; }
+
+.sk-miles_absolute:before {
+  content: ""; }
+
+.sk-miles_percent:before {
+  content: ""; }
+
+.sk-seatmap_galley:before {
+  content: ""; }
+
+.sk-seatmap_seat_legroom:before {
+  content: ""; }
+
+.sk-one_way:before {
+  content: ""; }
+
+.sk-round_trip:before {
+  content: ""; }
+
+.sk-multi_connection:before {
+  content: ""; }
+
+.sk-calendar:before {
+  content: ""; }
+
+.sk-cancel:before {
+  content: ""; }
+
+.sk-close:before {
+  content: ""; }
+
+.sk-dropdown:before {
+  content: ""; }
+
+.sk-facebook:before {
+  content: ""; }
+
+.sk-google_plus:before {
+  content: ""; }
+
+.sk-icon_19:before {
+  content: ""; }
+
+.sk-icon_32:before {
+  content: ""; }
+
+.sk-icon_38:before {
+  content: ""; }
+
+.sk-icon_42:before {
+  content: ""; }
+
+.sk-icon_48:before {
+  content: ""; }
+
+.sk-icon_50:before {
+  content: ""; }
+
+.sk-icon_58:before {
+  content: ""; }
+
+.sk-icon_84:before {
+  content: ""; }
+
+.sk-instagram:before {
+  content: ""; }
+
+.sk-palme:before {
+  content: ""; }
+
+.sk-pin:before {
+  content: ""; }
+
+.sk-plane:before {
+  content: ""; }
+
+.sk-profile:before {
+  content: ""; }
+
+.sk-profile-4:before {
+  content: ""; }
+
+.sk-profile-2:before {
+  content: ""; }
+
+.sk-switch:before {
+  content: ""; }
+
+.sk-switch2:before {
+  content: ""; }
+
+.sk-tag:before {
+  content: ""; }
+
+.sk-tag2:before {
+  content: ""; }
+
+.sk-tikrinti_uzsakyma:before {
+  content: ""; }
+
+.sk-uzsakymai_grupems:before {
+  content: ""; }
+
+.sk-uzsakymai_internetu:before {
+  content: ""; }
+
+.sk-viezbutis:before {
+  content: ""; }
+
+.sk-switch-3:before {
+  content: ""; }
+
+.sk-icon_40:before {
+  content: ""; }
+
+.sk-icon_70:before {
+  content: ""; }
+
+.sk-animal2:before {
+  content: ""; }
+
+.sk-bread2:before {
+  content: ""; }
+
+.sk-camp1:before {
+  content: ""; }
+
+.sk-favorite21:before {
+  content: ""; }
+
+.sk-icecreams9:before {
+  content: ""; }
+
+.sk-mountain40:before {
+  content: ""; }
+
+.sk-snow42:before {
+  content: ""; }
+
+.sk-bell84:before {
+  content: ""; }
+
+.sk-plane2:before {
+  content: ""; }
+
+.sk-new_bell:before {
+  content: ""; }
+
+.sk-bell-2:before {
+  content: ""; }
+
+.sk-new_clock:before {
+  content: ""; }
+
+.sk-new_left:before {
+  content: ""; }
+
+.sk-new_profile:before {
+  content: ""; }
+
+.sk-new_right:before {
+  content: ""; }
+
+.sk-new_Security:before {
+  content: ""; }
+
+.sk-error_button:before {
+  content: ""; }
+
+.sk-info_button:before {
+  content: ""; }
+
+.sk-linkedin:before {
+  content: ""; }
+
+.sk-rightarrow59:before {
+  content: ""; }
+
+.sk-rss:before {
+  content: ""; }
+
+.sk-skype_messenger_voip_call:before {
+  content: ""; }
+
+.sk-thumbs_up:before {
+  content: ""; }
+
+.sk-tick_success:before {
+  content: ""; }
+
+.sk-twitter:before {
+  content: ""; }
+
+.sk-x_button:before {
+  content: ""; }
+
+.sk-youtube_you_tube_google:before {
+  content: ""; }
+
+.sk-close-2:before {
+  content: ""; }
+
+.sk-close-3:before {
+  content: ""; }
+
+.sk-add139:before {
+  content: ""; }
+
+.sk-delete96:before {
+  content: ""; }
+
+.sk-DOWNLOAD:before {
+  content: ""; }
+
+.sk-EDIT:before {
+  content: ""; }
+
+.sk-newspaper:before {
+  content: ""; }
+
+.sk-social:before {
+  content: ""; }
+
+.sk-VIEW:before {
+  content: ""; }
+
+.sk-arrow-left:before {
+  content: ""; }
+
+.sk-arrow-right:before {
+  content: ""; }
+
+.sk-piggy_bank_coin:before {
+  content: ""; }
+
+.sk-pinwheel:before {
+  content: ""; }
+
+.sk-rocket:before {
+  content: ""; }
+
+.sk-tag-1:before {
+  content: ""; }
+
+.sk-ui_www:before {
+  content: ""; }
+
+.sk-users_three:before {
+  content: ""; }
+
+.sk-baggage:before {
+  content: ""; }
+
+.sk-plane-3:before {
+  content: ""; }
+
+.sk-car:before {
+  content: ""; }
+
+.sk-seat:before {
+  content: ""; }
+
+.sk-plane-4:before {
+  content: ""; }
+
+.sk-plane-bed:before {
+  content: ""; }
+
+.sk-bed-2:before {
+  content: ""; }
+
+.sk-plane-5:before {
+  content: ""; }
+
+.sk-multi_connection-2:before {
+  content: ""; }
+
+.sk-handbag:before {
+  content: ""; }
+
+.sk-food:before {
+  content: ""; }
+
+.sk-priority:before {
+  content: ""; }
+
+.sk-seats:before {
+  content: ""; }
+
+.sk-seat-3:before {
+  content: ""; }
+
+.sk-cards:before {
+  content: ""; }
+
+.sk-table-tools:before {
+  content: ""; }
+
+.sk-clock-2:before {
+  content: ""; }
+
+.sk-plane-8:before {
+  content: ""; }
+
+.sk-plane3:before {
+  content: ""; }
+
+.sk-seat-2:before {
+  content: ""; }
+
+.sk-seat-check:before {
+  content: ""; }
+
+.sk-check-1:before {
+  content: ""; }
+
+.sk-check-2:before {
+  content: ""; }
+
+.sk-seat-4:before {
+  content: ""; }
+
+.sk-uniE661:before {
+  content: ""; }
+
+.sk-attention-triangle:before {
+  content: ""; }
+
+.sk-attention-filled:before {
+  content: ""; }
+
+.sk-cancel-2:before {
+  content: ""; }
+
+.sk-attention:before {
+  content: ""; }
+
+.sk-plane-7:before {
+  content: ""; }
+
+.sk-emotion:before {
+  content: ""; }
+
+.sk-performance:before {
+  content: ""; }
+
+.sk-Untitled-2-34:before {
+  content: ""; }
+
+.sk-coffee_cup:before {
+  content: ""; }
+
+.sk-compass:before {
+  content: ""; }
+
+.sk-globe:before {
+  content: ""; }
+
+.sk-envelope:before {
+  content: ""; }
+
+.sk-right-arrows:before {
+  content: ""; }
+
+.sk-email-send:before {
+  content: ""; }
+
+.sk-horizontal_arrows:before {
+  content: ""; }
+
+.sk-list-view:before {
+  content: ""; }
+
+.sk-thumbs-view:before {
+  content: ""; }
+
+.sk-grid-view:before {
+  content: ""; }
+
+.sk-dollar:before {
+  content: ""; }
+
+.sk-euro:before {
+  content: ""; }
+
+.sk-favorites:before {
+  content: ""; }
+
+.sk-map_pin:before {
+  content: ""; }
+
+.sk-left-arrow5:before {
+  content: ""; }
+
+.sk-wallet:before {
+  content: ""; }
+
+.sk-piggy_bank:before {
+  content: ""; }
+
+.sk-search2:before {
+  content: ""; }
+
+.sk-email:before {
+  content: ""; }
+
+.sk-double_bed:before {
+  content: ""; }
+
+.sk-bed:before {
+  content: ""; }
+
+.sk-user-tick:before {
+  content: ""; }
+
+.sk-credit-card:before {
+  content: ""; }
+
+.sk-wallet_coins:before {
+  content: ""; }
+
+.sk-sale_percentage:before {
+  content: ""; }
+
+.sk-caller_female:before {
+  content: ""; }
+
+.sk-cogs:before {
+  content: ""; }
+
+.sk-happy_face:before {
+  content: ""; }
+
+.sk-smile:before {
+  content: ""; }
+
+.sk-travelling:before {
+  content: ""; }
+
+.sk-transport:before {
+  content: ""; }
+
+.sk-plane-9:before {
+  content: ""; }
+
+.sk-alarm:before {
+  content: ""; }
+
+.sk-crossed-alarm:before {
+  content: ""; }
+
+.sk {
+  font-family: 'flights';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-light-webfont.eot");
+  src: local("☺"), url("../fonts/proximanova/proximanova-light-webfont.eot") format("embedded-opentype"), url("../fonts/proximanova/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-light-webfont.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-reg-webfont.eot");
+  src: local("☺"), url("../fonts/proximanova/proximanova-reg-webfont.eot") format("embedded-opentype"), url("../fonts/proximanova/proximanova-reg-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-reg-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-regular.svg#ProximaNovaRegular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-semibold-webfont.eot");
+  src: local("☺"), url("../fonts/proximanova/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-semibold-webfont.svg#proxima_nova_rgsemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-bold-webfont.eot");
+  src: local("☺"), url("../fonts/proximanova/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova Black';
+  src: url("../fonts/proximanova/proximanova-black-webfont.eot");
+  src: url("../fonts/proximanova/proximanova-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-black-webfont.woff2") format("woff2"), url("../fonts/proximanova/proximanova-black-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-black-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-black-webfont.svg#proxima_novablack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Sari;
+  src: url("../fonts/sari/SariWebPro-Light.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: Sari;
+  src: url("../fonts/sari/SariWebPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/avenir/AvenirNextLTPro-UltLtCn.woff") format("woff");
+  font-style: normal;
+  font-weight: 100; }
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/avenir/AvenirNextLTPro-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/avenir/AvenirNextLTPro-Demi.woff") format("woff");
+  font-style: normal;
+  font-weight: 600; }
+.sprite-ratings {
+  background-image: url("http://c1.tacdn.com/sprites/global_pack.png");
+  background-position: left -2594px;
+  width: 505px;
+  height: 260px;
+  background-repeat: no-repeat; }
+
+.rating {
+  height: 100%;
+  overflow: hidden; }
+
+.rating .rate, .rating em {
+  font-style: normal;
+  float: left; }
+
+.rate {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  .rate img {
+    position: absolute; }
+
+.rate_ss {
+  width: 51px;
+  height: 11px; }
+
+.rate_s {
+  width: 69px;
+  height: 14px; }
+
+.rate.s00 img {
+  left: -220px;
+  top: -140px; }
+
+.rate.s05 img {
+  left: -220px;
+  top: -126px; }
+
+.rate.s10 img {
+  left: -220px;
+  top: -112px; }
+
+.rate.s15 img {
+  left: -220px;
+  top: -98px; }
+
+.rate.s20 img {
+  left: -220px;
+  top: -84px; }
+
+.rate.s25 img {
+  left: -220px;
+  top: -70px; }
+
+.rate.s30 img {
+  left: -220px;
+  top: -56px; }
+
+.rate.s35 img {
+  left: -220px;
+  top: -42px; }
+
+.rate.s40 img {
+  left: -220px;
+  top: -28px; }
+
+.rate.s45 img {
+  left: -220px;
+  top: -14px; }
+
+.rate.s50 img {
+  left: -220px;
+  top: 0; }
+
+.rate.gs00 img {
+  left: -220px;
+  top: -154px; }
+
+.rate.s00 {
+  width: 0;
+  height: 0; }
+
+.rate.s00 img {
+  right: 0;
+  bottom: 0; }
+
+.rate_ss {
+  width: 51px;
+  height: 11px; }
+
+.rate.ss00 img {
+  left: -358px;
+  top: -110px; }
+
+.rate.ss05 img {
+  left: -358px;
+  top: -99px; }
+
+.rate.ss10 img {
+  left: -358px;
+  top: -88px; }
+
+.rate.ss15 img {
+  left: -358px;
+  top: -77px; }
+
+.rate.ss20 img {
+  left: -358px;
+  top: -66px; }
+
+.rate.ss25 img {
+  left: -358px;
+  top: -55px; }
+
+.rate.ss30 img {
+  left: -358px;
+  top: -44px; }
+
+.rate.ss35 img {
+  left: -358px;
+  top: -33px; }
+
+.rate.ss40 img {
+  left: -358px;
+  top: -22px; }
+
+.rate.ss45 img {
+  left: -358px;
+  top: -11px; }
+
+.rate.ss50 img {
+  left: -358px;
+  top: 0; }
+
+.rate_no {
+  width: 82px;
+  height: 17px; }
+
+.rate.no00 img {
+  left: -36px;
+  top: -202px; }
+
+.rate.no05 img {
+  left: -36px;
+  top: -182px; }
+
+.rate.no10 img {
+  left: -36px;
+  top: -162px; }
+
+.rate.no15 img {
+  left: -36px;
+  top: -142px; }
+
+.rate.no20 img {
+  left: -36px;
+  top: -122px; }
+
+.rate.no25 img {
+  left: -36px;
+  top: -102px; }
+
+.rate.no30 img {
+  left: -36px;
+  top: -82px; }
+
+.rate.no35 img {
+  left: -36px;
+  top: -62px; }
+
+.rate.no40 img {
+  left: -36px;
+  top: -42px; }
+
+.rate.no45 img {
+  left: -36px;
+  top: -22px; }
+
+.rate.no50 img {
+  left: -36px;
+  top: -2px; }
+
+.rate_xl {
+  width: 130px;
+  height: 26px; }
+
+.rate.xl00 img {
+  left: -130px;
+  top: 0; }
+
+.rate.xl05 img {
+  left: -364px;
+  top: 0; }
+
+.rate.xl10 img {
+  left: -104px;
+  top: 0; }
+
+.rate.xl15 img {
+  left: -338px;
+  top: 0; }
+
+.rate.xl20 img {
+  left: -78px;
+  top: 0; }
+
+.rate.xl25 img {
+  left: -312px;
+  top: 0; }
+
+.rate.xl30 img {
+  left: -52px;
+  top: 0; }
+
+.rate.xl35 img {
+  left: -286px;
+  top: 0; }
+
+.rate.xl40 img {
+  left: -26px;
+  top: 0; }
+
+.rate.xl45 img {
+  left: -260px;
+  top: 0; }
+
+.rate.xl50 img {
+  left: 0;
+  top: 0; }
+
+.rtl .rate.xl00 img {
+  left: -260px;
+  top: 0; }
+
+.rtl .rate.xl05 img {
+  left: -26px;
+  top: 0; }
+
+.rtl .rate.xl10 img {
+  left: -286px;
+  top: 0; }
+
+.rtl .rate.xl15 img {
+  left: -52px;
+  top: 0; }
+
+.rtl .rate.xl20 img {
+  left: -312px;
+  top: 0; }
+
+.rtl .rate.xl25 img {
+  left: -78px;
+  top: 0; }
+
+.rtl .rate.xl30 img {
+  left: -338px;
+  top: 0; }
+
+.rtl .rate.xl35 img {
+  left: -104px;
+  top: 0; }
+
+.rtl .rate.xl40 img {
+  left: -364px;
+  top: 0; }
+
+.rtl .rate.xl45 img {
+  left: -130px;
+  top: 0; }
+
+.rtl .rate.xl50 img {
+  left: -390px;
+  top: 0; }
+
+.tripad-logo {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-right: 4px !important; }
+  .tripad-logo img {
+    position: absolute; }
+  .tripad-logo .sprite-tripad-logo {
+    background-image: url("http://c1.tacdn.com/sprites/global_pack.png");
+    background-position: left -2594px;
+    width: 505px;
+    height: 260px;
+    background-repeat: no-repeat; }
+  .tripad-logo.logo-s {
+    width: 29px;
+    height: 18px; }
+  .tripad-logo.logo-no {
+    width: 34px;
+    height: 19px; }
+  .tripad-logo.logo-s img {
+    left: -118px;
+    top: 0; }
+  .tripad-logo.logo-no img {
+    left: 0;
+    top: 0; }
+
+.rate-block {
+  margin-bottom: 5px; }
+
+.rate-block .tripad-logo.logo-s {
+  margin-top: -3px !important; }
+
+.rate-block .tripad-logo.logo-no {
+  margin-top: -2px !important; }
+
+.tripad-rating-filter .checkbox,
+.tripad-rating-filter .radio {
+  padding-top: 4px;
+  padding-bottom: 2px; }
+.tripad-rating-filter .fa,
+.tripad-rating-filter .rating {
+  float: left; }
+.tripad-rating-filter .rating, .tripad-rating-filter .tripad-rating {
+  margin-left: 4px; }
+  .tripad-rating-filter .rating .rate, .tripad-rating-filter .tripad-rating .rate {
+    margin-top: 5px; }
+.tripad-rating-filter .rate-text {
+  padding-top: 1px !important; }
+  .tripad-rating-filter .rate-text.title {
+    padding-left: 8px;
+    line-height: 24px !important; }
+
+.tripad-rating {
+  height: 100%;
+  overflow: hidden; }
+  .tripad-rating .rate, .tripad-rating em {
+    font-style: normal;
+    float: left; }
+  .tripad-rating .rate {
+    display: block;
+    position: relative;
+    overflow: hidden; }
+    .tripad-rating .rate img {
+      position: absolute; }
+    .tripad-rating .rate .sprite-ratings {
+      background-image: url("/images/tripad-stars.png");
+      background-position: 0 0;
+      background-size: 115px 221px;
+      width: 132px !important;
+      height: 266px !important;
+      background-repeat: no-repeat; }
+  .tripad-rating .rate_ss {
+    width: 51px;
+    height: 11px; }
+  .tripad-rating .rate.ss00 img {
+    left: -358px;
+    top: -110px; }
+  .tripad-rating .rate.ss05 img {
+    left: -358px;
+    top: -99px; }
+  .tripad-rating .rate.ss10 img {
+    left: -358px;
+    top: -88px; }
+  .tripad-rating .rate.ss15 img {
+    left: -358px;
+    top: -77px; }
+  .tripad-rating .rate.ss20 img {
+    left: -358px;
+    top: -66px; }
+  .tripad-rating .rate.ss25 img {
+    left: -358px;
+    top: -55px; }
+  .tripad-rating .rate.ss30 img {
+    left: -358px;
+    top: -44px; }
+  .tripad-rating .rate.ss35 img {
+    left: -358px;
+    top: -33px; }
+  .tripad-rating .rate.ss40 img {
+    left: -358px;
+    top: -22px; }
+  .tripad-rating .rate.ss45 img {
+    left: -358px;
+    top: -11px; }
+  .tripad-rating .rate.ss50 img {
+    left: -358px;
+    top: 0; }
+  .tripad-rating .rate_s {
+    width: 69px;
+    height: 14px; }
+    .tripad-rating .rate_s .sprite-ratings {
+      background-image: url("/images/tripad-stars.png");
+      background-position: 0 0;
+      background-size: 99px 194px;
+      width: 132px;
+      height: 266px;
+      background-repeat: no-repeat; }
+  .tripad-rating .rate.s00 img {
+    left: -30px;
+    top: -164px; }
+  .tripad-rating .rate.s05 img {
+    left: -30px;
+    top: -148px; }
+  .tripad-rating .rate.s10 img {
+    left: -30px;
+    top: -132px; }
+  .tripad-rating .rate.s15 img {
+    left: -30px;
+    top: -115px; }
+  .tripad-rating .rate.s20 img {
+    left: -30px;
+    top: -99px; }
+  .tripad-rating .rate.s25 img {
+    left: -30px;
+    top: -83px; }
+  .tripad-rating .rate.s30 img {
+    left: -30px;
+    top: -67px; }
+  .tripad-rating .rate.s35 img {
+    left: -30px;
+    top: -51px; }
+  .tripad-rating .rate.s40 img {
+    left: -30px;
+    top: -35px; }
+  .tripad-rating .rate.s45 img {
+    left: -30px;
+    top: -19px; }
+  .tripad-rating .rate.s50 img {
+    left: -30px;
+    top: -2px; }
+  .tripad-rating .rate.s00 {
+    width: 0;
+    height: 0; }
+  .tripad-rating .rate.s00 img {
+    right: 0;
+    bottom: 0; }
+  .tripad-rating .rate_no {
+    width: 82px;
+    height: 17px; }
+  .tripad-rating .rate.no00 img {
+    left: -35px;
+    top: -187px; }
+  .tripad-rating .rate.no05 img {
+    left: -35px;
+    top: -168px; }
+  .tripad-rating .rate.no10 img {
+    left: -35px;
+    top: -150px; }
+  .tripad-rating .rate.no15 img {
+    left: -35px;
+    top: -131px; }
+  .tripad-rating .rate.no20 img {
+    left: -35px;
+    top: -113px; }
+  .tripad-rating .rate.no25 img {
+    left: -35px;
+    top: -94px; }
+  .tripad-rating .rate.no30 img {
+    left: -35px;
+    top: -76px; }
+  .tripad-rating .rate.no35 img {
+    left: -35px;
+    top: -57px; }
+  .tripad-rating .rate.no40 img {
+    left: -35px;
+    top: -39px; }
+  .tripad-rating .rate.no45 img {
+    left: -35px;
+    top: -21px; }
+  .tripad-rating .rate.no50 img {
+    left: -35px;
+    top: -3px; }
+  .tripad-rating .rate_xl {
+    width: 130px;
+    height: 26px; }
+  .tripad-rating .rate.xl00 img {
+    left: -130px;
+    top: 0; }
+  .tripad-rating .rate.xl05 img {
+    left: -364px;
+    top: 0; }
+  .tripad-rating .rate.xl10 img {
+    left: -104px;
+    top: 0; }
+  .tripad-rating .rate.xl15 img {
+    left: -338px;
+    top: 0; }
+  .tripad-rating .rate.xl20 img {
+    left: -78px;
+    top: 0; }
+  .tripad-rating .rate.xl25 img {
+    left: -312px;
+    top: 0; }
+  .tripad-rating .rate.xl30 img {
+    left: -52px;
+    top: 0; }
+  .tripad-rating .rate.xl35 img {
+    left: -286px;
+    top: 0; }
+  .tripad-rating .rate.xl40 img {
+    left: -26px;
+    top: 0; }
+  .tripad-rating .rate.xl45 img {
+    left: -260px;
+    top: 0; }
+  .tripad-rating .rate.xl50 img {
+    left: 0;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl00 img {
+    left: -260px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl05 img {
+    left: -26px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl10 img {
+    left: -286px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl15 img {
+    left: -52px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl20 img {
+    left: -312px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl25 img {
+    left: -78px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl30 img {
+    left: -338px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl35 img {
+    left: -104px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl40 img {
+    left: -364px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl45 img {
+    left: -130px;
+    top: 0; }
+  .tripad-rating .rtl .rate.xl50 img {
+    left: -390px;
+    top: 0; }
+
+.tripad-logo-local {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-right: 4px !important; }
+  .tripad-logo-local img {
+    position: absolute; }
+  .tripad-logo-local .sprite-tripad-logo {
+    background-image: url("/images/tripad-stars.png");
+    background-position: 0 0;
+    background-size: 99px 194px;
+    width: 132px;
+    height: 266px;
+    background-repeat: no-repeat; }
+  .tripad-logo-local.logo-s {
+    width: 29px;
+    height: 16px; }
+  .tripad-logo-local.logo-no {
+    width: 34px;
+    height: 16px; }
+  .tripad-logo-local.logo-s img {
+    left: 0;
+    top: 0; }
+  .tripad-logo-local.logo-no img {
+    left: 5px;
+    top: 0; }
+
+#tripcloud-setts {
+  min-width: 960px;
+  font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.42857; }
+@-ms-viewport {
+  #tripcloud-setts {
+    width: device-width; } }
+.results-page {
+  background-size: cover;
+  background: url("../images/toptravel/results-bg.jpg") 50% 0 repeat-x #f5f5f5; }
+
+.va-middle {
+  vertical-align: middle; }
+
+.logo-wrapper {
+  position: relative;
+  width: 270px;
+  height: 190px;
+  float: left;
+  z-index: 1; }
+  .logo-wrapper .logo {
+    position: absolute;
+    top: 0;
+    left: -60px; }
+
+.top-menu {
+  float: left;
+  width: calc(100% - 270px);
+  padding-top: 20px; }
+  .top-menu .main-menu {
+    margin-bottom: 15px; }
+  .top-menu > ul {
+    font-size: 0;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: row;
+    padding: 0; }
+    .top-menu > ul > li {
+      position: relative;
+      display: inline;
+      list-style: none;
+      flex-grow: 1;
+      text-align: center; }
+      .top-menu > ul > li a {
+        display: block;
+        padding: 12px 5px;
+        font-size: 12px;
+        line-height: 14px;
+        background: #7ec619;
+        text-transform: uppercase;
+        color: #fff;
+        border-right: 1px solid #65b31d; }
+      .top-menu > ul > li:first-child a {
+        padding-left: 30px; }
+      .top-menu > ul > li:last-child a {
+        border: none; }
+      .top-menu > ul > li.active a {
+        background: #ed1c24; }
+      .top-menu > ul > li.active:hover a {
+        background: #de1219; }
+      .top-menu > ul > li:hover a {
+        text-decoration: none;
+        background: #6ead16; }
+      .top-menu > ul > li:hover > ul {
+        display: block; }
+      .top-menu > ul > li > ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 0;
+        border-top: 1px solid #4d981d; }
+        .top-menu > ul > li > ul li {
+          width: 100%; }
+          .top-menu > ul > li > ul li a {
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid #4d981d;
+            padding-left: 15px;
+            padding-right: 15px; }
+          .top-menu > ul > li > ul li:hover a {
+            background: #4d971d; }
+
+.breadcrumbs {
+  padding: 0 20px;
+  float: left; }
+  .breadcrumbs ul {
+    list-style: none; }
+    .breadcrumbs ul li {
+      display: inline-block;
+      padding-right: 10px; }
+      .breadcrumbs ul li a {
+        font-size: 10px;
+        color: #fff;
+        padding-right: 10px; }
+      .breadcrumbs ul li:after {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f105";
+        vertical-align: middle;
+        color: #fff;
+        font-size: 10px; }
+      .breadcrumbs ul li:last-child:after {
+        content: ' '; }
+
+.user-menu {
+  float: right; }
+  .user-menu ul {
+    list-style: none;
+    font-size: 0; }
+    .user-menu ul li {
+      display: inline-block;
+      margin-right: 10px; }
+      .user-menu ul li:before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 12px;
+        border-radius: 15px 0 0 15px;
+        background: #fff;
+        vertical-align: middle; }
+      .user-menu ul li:after {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 12px;
+        border-radius: 0 15px 15px 0;
+        background: #fff;
+        vertical-align: middle; }
+      .user-menu ul li:last-child {
+        margin-right: 0; }
+      .user-menu ul li a {
+        display: inline-block;
+        background: #fff;
+        color: #222;
+        font-size: 12px;
+        line-height: 25px;
+        vertical-align: middle;
+        text-decoration: none; }
+        .user-menu ul li a:hover {
+          color: #3c3c3c; }
+          .user-menu ul li a:hover i {
+            color: #88aa2a; }
+      .user-menu ul li i {
+        color: #a6ce39;
+        padding-right: 5px;
+        vertical-align: middle; }
+
+.results-filter {
+  margin-bottom: 30px; }
+  .results-filter h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400; }
+  .results-filter .wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    padding: 15px; }
+    .results-filter .wrapper .col {
+      width: 20%;
+      float: left;
+      padding: 0 15px; }
+      .results-filter .wrapper .col label {
+        color: #6f777a;
+        font-weight: 400;
+        display: block; }
+      .results-filter .wrapper .col .setting > label {
+        width: 100%;
+        display: inline-block;
+        color: #6f777a;
+        border-bottom: 1px solid #c1c1c1;
+        padding-bottom: 5px; }
+      .results-filter .wrapper .col .setting label {
+        display: inline-block; }
+  .results-filter .btn-reset {
+    background: #ed1c24;
+    color: #fff;
+    width: 16%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 2px; }
+    .results-filter .btn-reset:hover {
+      background: #de1219; }
+
+.block-image {
+  display: block;
+  border-radius: 2px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.special-offers {
+  margin-bottom: 40px; }
+  .special-offers .item {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 5px; }
+    .special-offers .item .picture {
+      float: left;
+      height: 170px;
+      width: 250px; }
+    .special-offers .item .top-offer {
+      position: absolute;
+      top: 25px;
+      left: -3px; }
+      .special-offers .item .top-offer .label {
+        position: relative;
+        background: #ed1c24;
+        border-radius: 0 4px 4px 0;
+        padding: 9px 12px; }
+        .special-offers .item .top-offer .label:after {
+          position: absolute;
+          content: ' ';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 3px 3px 0;
+          border-color: transparent #970c11 transparent transparent;
+          left: 0;
+          bottom: -3px; }
+    .special-offers .item .info {
+      position: relative;
+      float: left;
+      padding: 20px;
+      width: 50%;
+      height: 170px; }
+      .special-offers .item .info h3 {
+        margin: 0 0 10px;
+        font-size: 21px;
+        line-height: 14px; }
+        .special-offers .item .info h3 a {
+          text-decoration: none;
+          color: #000; }
+    .special-offers .item .destination .country {
+      color: #585858;
+      font-size: 18px;
+      font-weight: 400;
+      margin-right: 15px;
+      vertical-align: middle; }
+    .special-offers .item .destination .sun {
+      color: #6b6b6b;
+      margin-right: 15px; }
+      .special-offers .item .destination .sun i {
+        color: #f8c80a; }
+    .special-offers .item .destination .water {
+      color: #6b6b6b; }
+      .special-offers .item .destination .water i {
+        color: #1c89cd; }
+    .special-offers .item .hotel-info {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      width: 100%; }
+      .special-offers .item .hotel-info .block {
+        float: left;
+        margin-right: 20px;
+        border-right: 1px solid #f2f2f2;
+        padding: 5px 20px 10px 0; }
+        .special-offers .item .hotel-info .block:nth-child(1) {
+          width: 35%; }
+        .special-offers .item .hotel-info .block:nth-child(2) {
+          width: 30%; }
+        .special-offers .item .hotel-info .block:nth-child(3) {
+          width: auto;
+          border: none; }
+        .special-offers .item .hotel-info .block label {
+          color: #fe7a00;
+          font-size: 17px;
+          margin-bottom: 0; }
+        .special-offers .item .hotel-info .block .type {
+          color: #6b6b6b;
+          font-size: 15px;
+          line-height: 15px; }
+    .special-offers .item .price-block {
+      position: relative;
+      float: right;
+      min-width: 200px;
+      width: 25%;
+      height: 170px;
+      padding: 20px; }
+      .special-offers .item .price-block .tripad {
+        text-align: right;
+        line-height: 18px; }
+        .special-offers .item .price-block .tripad span {
+          padding-right: 10px;
+          vertical-align: top;
+          color: #35851c;
+          font-size: 18px; }
+      .special-offers .item .price-block .prices {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 100%; }
+        .special-offers .item .price-block .prices .block {
+          float: left;
+          padding: 0 5px; }
+          .special-offers .item .price-block .prices .block:nth-child(1) {
+            width: 80px; }
+          .special-offers .item .price-block .prices .block:nth-child(2) {
+            width: 158px;
+            padding-right: 20px; }
+          .special-offers .item .price-block .prices .block:nth-child(3) {
+            width: 45px;
+            padding-right: 0; }
+        .special-offers .item .price-block .prices .old-price {
+          text-decoration: line-through;
+          color: #6b6b6b;
+          font-size: 18px;
+          margin-bottom: 5px;
+          text-align: center; }
+        .special-offers .item .price-block .prices .price {
+          font-size: 30px;
+          line-height: 30px;
+          color: #000;
+          text-align: right;
+          font-weight: 600;
+          margin-bottom: 8px; }
+        .special-offers .item .price-block .prices .person {
+          color: #6b6b6b;
+          font-size: 15px;
+          text-align: right; }
+        .special-offers .item .price-block .prices .label-discount {
+          position: relative;
+          background: #ff0004;
+          border-radius: 0;
+          padding: 4px 5px;
+          margin-left: 15px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #fff;
+          display: inline-block; }
+          .special-offers .item .price-block .prices .label-discount:after {
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-right-color: #ff0000;
+            border-width: 13px;
+            margin-top: -13px; }
+        .special-offers .item .price-block .prices .btn-select {
+          background: #7ec619;
+          padding: 8px 12px 11px;
+          border-radius: 2px; }
+          .special-offers .item .price-block .prices .btn-select i {
+            color: #fff;
+            font-size: 35px; }
+    .special-offers .item .rate-stars {
+      padding-left: 10px; }
+      .special-offers .item .rate-stars i {
+        font-size: 14px;
+        color: #f8c80a; }
+
+footer {
+  background: #fff;
+  padding: 30px 0; }
+  footer ul li a {
+    font-size: 13px;
+    color: #7b7b7b; }
+    footer ul li a:hover {
+      text-decoration: none;
+      color: #1485cb; }
+
+/*# sourceMappingURL=toptravel.css.map */

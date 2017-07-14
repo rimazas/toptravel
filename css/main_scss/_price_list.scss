@@ -1,0 +1,145 @@
+@import "../main_scss/_variables";
+@import "../main_scss/_mixin";
+
+  .prices-list-container{
+    border: 1px solid $light-border-color;
+    border-radius: $border-radius-base;
+    padding-top: 15px;
+    &.bg-light-grey {
+      background-color: #fdfdfd;
+    }
+    &.no-top-border {
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &.no-border {
+      border: none;
+    }
+    .block-info {
+      width: 100%;
+    }
+  }
+  .prices-list {
+    margin: 0;
+    > li {
+      margin-bottom: 1px;
+      > a:after{
+        content: " ";
+        display: block;
+        height: 1px;
+        position: absolute;
+        bottom: -1px;
+        left: $prices-list-h-padding;
+        right: $prices-list-h-padding;
+        background: $light-border-color;
+      }
+      > a {
+        color: $prices-list-font-color;
+        display: block;
+        font-size: 16px;
+        padding: 10px 20px 8px;
+        text-decoration: none;
+        position: relative;
+        strong {
+          color: #ff4444;
+          font-weight: 600;
+          small {
+            font-size: round($prices-list-font-size * 0.933);
+          }
+        }
+        small {
+          font-size: $prices-list-font-size * 0.8;
+          margin-right: 5px;
+        }
+        .price {
+          margin-top: 0;
+          font-size: 22px;
+          line-height: 20px;
+          float:right;
+          strong {
+            color: #E92133;
+          }
+        }
+        .title {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        &:hover {
+          background: $prices-list-link-hover-color;
+          color: #fff;
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: -1px;
+          padding-top: 11px;
+          .price, strong {
+            color: #fff;
+          }
+          &:after {
+            background: transparent;
+          }
+        }
+
+      }
+    }
+    > li:last-child > a:after {
+      content: " ";
+      display: block;
+      height: 1px;
+      position: absolute;
+      bottom: -1px;
+      left: 20px;
+      right: 20px;
+      background: #e7e7e7;
+      &:hover {
+        background: none!important;
+      }
+    }
+    &.city-page {
+      > li > a {
+        padding: 15px 5px 15px 10px;
+      }
+      a {
+        font-size: $font-size-base;
+        span {
+          font-size: $font-size-base;
+          display: inline-block;
+          width: 33%;
+        }
+        .date {
+          padding-left: 5px;
+        }
+        .offer {
+          font-size: $font-size-medium;
+          &.cheapest {
+            color: $orange-color;
+            .fa {
+              margin-right: 1px;
+            }
+          }
+          &.weekend {
+            color: $green-color;
+          }
+        }
+        .duration {
+          text-align: center;
+        }
+        .price {
+          text-align: right;
+          font-weight: 600;
+          color: $dark-color;
+          font-size: 20px;
+          line-height: 24px;
+        }
+        &:hover {
+          border-right: none;
+          .offer, .price {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }

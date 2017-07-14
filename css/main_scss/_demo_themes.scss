@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixin";
+
+$demo-font-main: "Sari", Helvetica, sans-serif;
+
+#tripcloud-setts {
+  @include theme-light2;
+  @include theme-light;
+  @include theme-lime;
+  @include theme-blue;
+  @include theme-grey;
+  @include theme-sea;
+  @include theme-pink;
+  @include theme-dark;
+  @include theme-black;
+  @include theme-water;
+  @include theme-fog;
+  @include theme-light-pink;
+  @include theme-old;
+}
+
+.select2-drop, .ui-datepicker {
+  @include theme-light2;
+  @include theme-light;
+  @include theme-lime;
+  @include theme-blue;
+  @include theme-grey;
+  @include theme-sea;
+  @include theme-pink;
+  @include theme-dark;
+  @include theme-black;
+  @include theme-water;
+  @include theme-fog;
+  @include theme-light-pink;
+  @include theme-old;
+}
+.fancybox-skin .heading, .fancybox-skin .content {
+  &.font-roboto {
+    font-family:'Roboto';
+  }
+  &.font-proximanova {
+    font-family:'Proximanova';
+  }
+  &.font-open-sans {
+    font-family:'Open Sans';
+  }
+}
+

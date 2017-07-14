@@ -1,0 +1,12 @@
+.inside {
+  #footer .links {
+    border-left: 1px solid $light-border-color;
+    border-right: 1px solid $light-border-color;
+  }
+}
+&.int {
+  .modal {
+    width: auto;
+    margin-left: 0;
+  }
+}

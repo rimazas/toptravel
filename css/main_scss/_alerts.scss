@@ -1,0 +1,36 @@
+  .alert{
+    border: none;
+    border-radius: $border-radius-base;
+    font-size: $font-size-base;
+    margin-bottom: $grid-gutter-width;
+    padding: 20px;
+    label {
+      font-weight: 400;
+    }
+    .checkbox {
+      margin: 0;
+    }
+    &.rules, &.duplicate {
+      label {
+        padding-left: 40px;
+        i {
+          position: absolute;
+          left: 0;
+          top: 5px;
+        }
+      }
+      //p.error {
+      //  margin-left: 45px;
+      //}
+    }
+  }
+  .alert {
+      &.alert-warning {
+          border: 1px solid #ECE3A9;
+          background-color: #FDFCF4;
+          color: #8a6d3b;
+      }
+  }
+  .alert-dismissable .close, .alert-dismissible .close {
+    right: 0;
+  }

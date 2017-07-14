@@ -1,0 +1,2071 @@
+//**************************************
+//    MEDIA
+//**************************************/
+
+
+// MOBILE MENU
+  .nav > li {
+    &.active {
+      a{
+        @include color-variants("color", " i ", "");
+      }
+    }
+  }
+  .left-menu{
+    background: $nav-mobile-bg;
+    -webkit-backface-visibility: hidden;
+    min-width: $screen-xxs-min;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    overflow-y: auto;
+    z-index: 1001;
+    box-sizing: content-box;
+    left: 0;
+  }
+  .menu-header {
+    background: $nav-mobile-header-bg;
+    height: 50px;
+    border-bottom: 1px solid $nav-mobile-header-border;
+    margin-bottom: $nav-mobile-gap-space * 2 + 5;
+  }
+  .menu-header > a {
+    color: $nav-mobile-hover-color;
+  }
+  .menu-header > a > .fa{
+    font-size: 21px;
+  }
+  .menu-group{
+    margin-top: $nav-mobile-gap-space * 2 + 5;
+    margin-bottom: $nav-mobile-gap-space * 2 + 5;
+  }
+  .menu-label {
+    display: block;
+    margin: 0 $nav-mobile-gap-space;
+    padding-bottom: $nav-mobile-gap-space + 5;
+    padding-left: $nav-mobile-gap-space;
+    color: $nav-mobile-hover-color;
+    font-size: $nav-mobile-font-size;
+    font-weight: 600;
+    border-bottom: 2px solid $nav-mobile-btn-color;
+  }
+  .link-mobile{
+    display: block;
+    height: $nav-mobile-btn-height;
+    line-height: $nav-mobile-btn-height - 16;
+    margin: 0 $nav-mobile-gap-space;
+    padding-left: $nav-mobile-gap-space;
+    padding-right: $nav-mobile-gap-space;
+    color: $nav-mobile-link-color;
+    font-size: $nav-mobile-font-size - 4;
+    text-align: left;
+    border-bottom: 1px solid $nav-mobile-btn-color;
+    img{
+      margin-right: $nav-mobile-gap-space;
+      margin-top: -3px;
+    }
+    &:hover, &.active{
+      color: $nav-mobile-hover-color;
+      background-color: $nav-mobile-btn-hover;
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
+      padding-left: $nav-mobile-gap-space * 2;
+      padding-right: $nav-mobile-gap-space * 2;
+    }
+    .fa {
+      float: right;
+      line-height: $nav-mobile-line-height;
+      font-size: $font-size-medium;
+    }
+    .flag {
+      vertical-align: middle;
+    }
+  }
+  .show-xs {
+    display: none;
+  }
+
+//*****************************************************
+// LG media min 1200px
+//*****************************************************
+@media (min-width: $screen-lg-min){
+    .sidebar-block {
+      letter-spacing: 0;
+      &.padding {
+        padding: 20px 15px;
+      }
+    }
+    .offer-item .bigger {
+      font-size: ceil(($font-size-small * 1.30)); // ~16px;
+    }
+//    .page-title {
+//      font-size: 32px;
+//    }
+    #left-filter-block.hidden,
+    #left-search-block.hidden
+    {
+      display:block !important;
+      visibility: visible !important;
+    }
+    #sort-block {
+      display: none !important;
+    }
+    .payment-method {
+      .bank-logos, .bank-logos2 {
+        li {
+          width: 149px;
+        }
+      }
+    }
+    .visible-lg.inline-lg {
+      display: inline-block !important;
+    }
+    .row.compact {
+      .tripcloud-dp {
+        padding-left:10px;
+        padding-right: 10px;
+      }
+      .preloader {
+        right: 8px;
+      }
+    }
+
+} // END MD media
+
+//*****************************************************
+// MD media max 1200px
+//*****************************************************
+@media (min-width: $screen-md-min) and (max-width: $screen-lg-min){
+
+    .flight-info {
+      .airport {
+        td:first-child{
+          width: 1%;
+        }
+      }
+      .airport-compact,
+      .airport-compact.last {
+        td:first-child {
+          padding-left: 0;
+//          width: 56%;
+          background: transparent;
+        }
+        .big {
+          font-size: $font-size-large;
+        }
+      }
+    }
+    #left-filter-block.hidden,
+    #left-search-block.hidden
+    {
+     display:block !important;
+     visibility: visible !important;
+    }
+    #sort-block {
+      display: none !important;
+    }
+//    .sidebar-block {
+//      padding-left: 15px;
+//      padding-right: 15px;
+//    }
+    .payment-method {
+      .bank-logos, .bank-logos2 {
+        li {
+          width: 154px;
+        }
+      }
+    }
+    .from-block  {
+      text-align: left !important;
+    }
+
+
+} // END MD media
+
+//*****************************************************
+// SM media max 991px
+//*****************************************************
+@media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+
+    .flight-info {
+      .airport {
+        td:first-child{
+          width: 1%;
+        }
+      }
+      .airport-compact,
+      .airport-compact.last {
+        td:first-child {
+          padding-left: 0;
+//          width: 56%;
+          background: transparent;
+        }
+        .big {
+          font-size: $font-size-large;
+        }
+      }
+    }
+    #left-filter-block {
+      &.scroll {
+        position: inherit !important;
+        top: auto !important;
+      }
+    }
+    .right-side {
+      &.hotel-item {
+        background: none;
+        border: none;
+        margin-left: -10px;
+        margin-right: -10px;
+        h4 {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+      .m-no-border {
+        border-top: none !important;
+        border-bottom: none !important;
+        border-right: none !important;
+        border-left: none !important;
+      }
+      .m-border-bottom-dashed {
+        border-bottom-style: dashed !important;
+      }
+      .m-pb-0 {
+        padding-bottom: 0 !important;
+      }
+      .distances p:nth-child(odd) {
+        background-color: #f3f3f3;
+      }
+      .distances p {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .t-label {
+        font-weight: 600;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+    #left-filter-block + div {
+      display: none !important;
+    }
+    .from-block  {
+      text-align: left !important;
+    }
+    .aside-zone {
+      padding-top: 0;
+    }
+    .order-progress {
+      .order-step {
+        text-align: center;
+      }
+    }
+
+}
+
+//*****************************************************
+// XS media max 768px
+//*****************************************************
+
+@media (max-width: $screen-xs-max) {
+
+
+  /**********************************
+      General styles
+  **********************************/
+    .results-wrapper {
+      min-height: 400px;
+    }
+    .from-block  {
+      text-align: left !important;
+    }
+    .container-fluid {
+      padding-left: $nav-mobile-gap-space;
+      padding-right: $nav-mobile-gap-space;
+      &.with-padding {
+        padding-left: $nav-mobile-gap-space * 2;
+        padding-right: $nav-mobile-gap-space * 2;
+      }
+    }
+    h2 {
+      font-size: 20px;
+      padding-bottom: $nav-mobile-gap-space + 5;
+      margin-bottom: $nav-mobile-gap-space * 2;
+      margin-top: $nav-mobile-gap-space * 4;
+      border-bottom: 1px solid $light-border-color;
+      font-weight: 600;
+    }
+    .logo img{
+      max-width: 128px;
+      max-height: 30px;
+    }
+    .xs-to-center{
+      text-align: center;
+    }
+    .tab-content.bordered {
+//      margin-left: -10px;
+//      margin-right: -10px;
+      border-radius: 0;
+      .tab-pane {
+        padding: 10px 10px 20px;
+      }
+    }
+    .text-right.xs-right-to-left{
+      text-align: left;
+    }
+    .xs-grid-gutter-margin-top {
+      margin-top: $grid-gutter-width;
+    }
+    .xs-half-grid-gutter-margin-top {
+      margin-top: $grid-gutter-width / 2;
+    }
+    .xs-grid-gutter-margin-bottom {
+      margin-bottom: $grid-gutter-width;
+    }
+    .show-inline {
+      display: inline-block !important;
+    }
+    .help-block {
+      margin-top: 8px;
+    }
+    .m-sep{
+      height: 1px;
+      background-color: $light-border-color;
+      margin-top: $nav-mobile-gap-space * 2;
+      margin-bottom: $nav-mobile-gap-space * 2;
+    }
+    .mt-40 {
+      margin-top: 20px !important;
+    }
+//    .alert {
+//      padding-left: 25px;
+//    }
+    .social a {
+      text-decoration: none;
+    }
+    .social a > i {
+      font-size: 38px;
+      float: left;
+    }
+    .btn.google, .btn.facebook {
+      margin-top: $nav-mobile-gap-space;
+      i{
+        font-size: $font-size-large;
+        top: 1px;
+      }
+    }
+    .or-split{
+      padding-top: $nav-mobile-gap-space + 5;
+      padding-bottom: $nav-mobile-gap-space + 5;
+    }
+    .m-sep-20 {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    .autocomplete-search-results .item-wrapper {
+      max-width: 70%;
+    }
+
+    .fancybox-skin {
+      .jspVerticalBar {
+        margin-right: -10px;
+      }
+      .jspHorizontalBar {
+        height: 6px;
+        background: transparent;
+      }
+      .jspDrag {
+        &.jspHover, &.jspActive {
+          width: 5px;
+          left: 0;
+        }
+      }
+    }
+    .m-no-border {
+      border: none;
+    }
+    .m-block {
+      display: block;
+    }
+
+  /*********************************
+      Navigation bar
+  **********************************/
+
+    .navbar {
+      margin-bottom: 0;
+    }
+    .navbar-header {
+      background-color: #F8F8F8;
+      height: 50px;
+      border-bottom: 1px solid #e7e7e7;
+    }
+    .navbar-default {
+      background-color: transparent;
+      border: none;
+    }
+    .nav-tabs {
+      margin-top: $nav-mobile-gap-space;
+    }
+    .nav-tabs > li {
+      a{
+        text-align: center;
+        height: 55px;
+        padding: 12px 14px 10px;
+      }
+    }
+    .nav-tabs.bordered > li.active a,
+    .nav-tabs.bordered > li.active a:hover,
+    .nav-tabs.bordered > li.active a:focus {
+      padding-top: 10px;
+    }
+    .content-wrap.with-sidebar {
+      margin-left: 0;
+      .content {
+        margin-left: 0;
+      }
+    }
+//    .nav-tabs > li > a > i.fa {
+//      padding-top: 10px;
+//    }
+
+    /*********************************
+        Banners
+    *********************************/
+
+    .big-banner{
+      height: $big-banner-xs-height;
+      padding: 50px $grid-gutter-width 50px $grid-gutter-width;
+      .label-1 {
+        font-size: 32px;
+      }
+    }
+    .banner-heading,
+    .banner-heading .text-block {
+      height: $banner-heading-height * 1.5 !important;
+    }
+
+  /**********************************
+      Labels
+  **********************************/
+
+    label {
+      &.xs-fix{
+         margin-top: $grid-gutter-width/2 + 1;
+      }
+      &.xs {
+        font-size: $font-size-large + 2;
+        font-weight: 400;
+        margin-left: 10px;
+        margin-bottom: 15px;
+      }
+    }
+
+  /***********************************
+      Forms
+  ************************************/
+    .bs-callout {
+      border-left-width: 2px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .form-group {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+  /**********************************
+      Search
+  ***********************************/
+
+    .m-search-edit {
+      margin-top: -$nav-mobile-gap-space;
+      .fa{
+        font-size: $nav-link-font-size;
+      }
+    }
+    .search-results-name {
+      padding-left: 0;
+      h2 {
+        border-bottom: 0;
+        font-size: $font-size-large;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      p {
+        font-size: $font-size-medium;
+      }
+    }
+    .search-results-preloader {
+      margin-left: -$nav-mobile-gap-space;
+      margin-right: -$nav-mobile-gap-space;
+      padding-left: $nav-mobile-gap-space;
+      padding-right: $nav-mobile-gap-space;
+    }
+    .search-content {
+      h3 {
+        font-size: $search-mobile-h3-font-size;
+      }
+    }
+    .search-results-name {
+      margin-top: 25px;
+    }
+
+    .m-travel-type {
+      width: 100%;
+        &.m-1-option{
+          label{
+            width: 100%;
+          }
+        }
+        &.m-2-options{
+        }
+        &.m-3-options{
+          label{
+            width: 33%;
+          }
+        }
+    }
+
+
+  /*******************************
+      Filters
+  *******************************/
+
+    .filter-block {
+      .t-label {
+        font-size: $font-size-large;
+      }
+    }
+
+  /*******************************
+      Slider
+  ********************************/
+
+    .ui-slider-horizontal{
+      margin: 14px 16px 10px 7px;
+      background: #fff;
+      border: 1px solid #ccc;
+      height: 7px;
+    }
+    .ui-slider-horizontal .ui-slider-range{
+      background: $blue-color;
+    }
+    .ui-slider .ui-slider-handle{
+      border: 1px solid #ccc;
+      width: 27px;
+      height: 27px;
+    }
+    .ui-slider-horizontal .ui-slider-handle {
+      top: -12px;
+    }
+    .checkbox.styled .ico {
+      border: 1px solid #ccc;
+    }
+
+  /*********************************
+        Flights search
+  *********************************/
+
+    .flight-info {
+      .airport {
+        border-bottom: none;
+        margin-bottom: 0;
+        &.last{
+          border-bottom: 0;
+          margin-bottom: 0;
+          border-top: 1px solid #e7e7e7;
+          td {
+            padding-top: 10px;
+          }
+        }
+        td {
+          border-right: 0!important;
+          padding-bottom: 10px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        td:first-child{
+          width: 3%;
+        }
+        td:nth-child(2){
+          padding-right: 10px;
+        }
+        td:nth-child(3){
+          min-width: 100px;
+          width: 15%;
+        }
+        td:nth-child(4){
+          padding-left: 10px;
+        }
+        td img {
+        max-width: 35px;
+        }
+        .duration {
+          font-size: $font-size-medium;
+          border-bottom: 1px solid $light-border-color;
+          margin-bottom: 7px;
+          margin-top: 0;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .label {
+          font-size: $font-size-small;
+        }
+        .notify {
+          line-height: 14px;
+          margin: 0 5px;
+        }
+        .big {
+          font-size: $font-size-large;
+          color: $grey-color;
+          line-height: 20px;
+          strong {
+            color: $dark-color;
+            font-size: $font-size-large + 4;
+            padding-bottom: 13px;
+          }
+        }
+        .transfer {
+          background: #e5e5e5;
+          border-radius: 100px;
+          border: 1px solid #cacaca;
+          display: block;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          bottom: -7px;
+          &.time-1 {
+            left: 45%;
+          }
+          &.time-2 {
+            left: 45%;
+            &:nth-child(2) {
+              left: 35%;
+            }
+            &:nth-child(3) {
+              left: 55%;
+            }
+          }
+          &.time-3 {
+            left: 45%;
+            &:nth-child(2) {
+              left: 25%;
+            }
+            &:nth-child(3) {
+              left: 48%;
+            }
+            &:nth-child(4) {
+              left: 70%;
+            }
+          }
+        }
+      }
+      .airport-compact,
+      .airport-compact.last {
+        border-bottom: 0;
+        margin-bottom: 0;
+        margin-top: -10px;
+        td:first-child {
+          letter-spacing: -1px;
+          p{
+            float: left;
+            width: 33%;
+          }
+        }
+      }
+      .notify {
+        margin-top: 2px;
+      }
+      .summary{
+        display: none;
+      }
+      .m-price {
+        border-top: 1px solid $light-border-color;
+        background: $light-bg-color-2;
+        border-bottom-left-radius: $border-radius-base;
+        border-bottom-right-radius: $border-radius-base;
+      }
+      .offer-price {
+        padding-left: 0;
+        a.btn{
+          margin: 10px 0;
+          padding-top: 2px;
+          padding-bottom: 2px;
+        }
+        .price-value {
+          color: #fff;
+          font-size: $font-size-large + 2;
+        }
+        sup {
+          top: -7px;
+          font-size: 11px;
+        }
+        .availability {
+          padding: 20px 5px 5px 0px;
+        }
+      }
+    }
+    a.big-close-btn.absolute {
+      top: 10px !important;
+      right: 10px;
+    }
+    .offer-item {
+      .big {
+        .airportcode {
+          clear: both;
+          display: inherit;
+          span {
+            display: inline-block !important;
+            padding: 0 10px;
+            font-size: $font-size-base;
+          }
+        }
+        .time {
+          display: inline-block;
+          color: #252525;
+          font-size: 22px;
+          padding-bottom: 13px;
+        }
+        .big-left {
+          .time {
+            padding-left: 10px;
+            float: right;
+          }
+          .code {
+            float: right;
+            clear: both;
+            span {
+              padding: 0 10px;
+            }
+          }
+        }
+        .big-right {
+          .time {
+            float: left;
+            padding-left: 0;
+            padding-right: 10px;
+          }
+          .code {
+            float: left;
+          }
+        }
+      }
+    }
+
+  /************************************
+          $PANELS
+  **************************************/
+
+    .panel {
+      margin-bottom: $nav-mobile-gap-space * 2;
+//      margin-left: -$nav-mobile-gap-space;
+//      margin-right: -$nav-mobile-gap-space;
+      .panel-body{
+        padding-top: $nav-mobile-gap-space;
+        padding-right: $nav-mobile-gap-space;
+        padding-left: $nav-mobile-gap-space;
+      }
+      .panel-heading.inside {
+        margin: 0 -10px;
+      }
+      .info-line {
+        &.type1, &.type2, &.type3, &.type4 {
+          padding-left: 10px;
+          padding-right: 10px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+      .info-line.no-margin {
+        margin: 0 -10px;
+      }
+      &.offer-item {
+      margin-left: -$nav-mobile-gap-space;
+      margin-right: -$nav-mobile-gap-space;
+      }
+      &.hotel {
+        .panel-body{
+          padding-bottom: 0;
+        }
+        .offer-price {
+          .price-value {
+            padding-top: 8px;
+            color: #fff;
+          }
+        }
+        .hotel-info-block {
+          margin-top: 10px;
+        }
+        .hotel-info .picture-fix {
+          margin: 0;
+        }
+        .service-icons {
+          float: right;
+          text-align: right;
+        }
+        .offer-price a.btn {
+          margin-top: 10px;
+        }
+      }
+      .v-split {
+        display: none;
+      }
+      &.m-no-margin {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .panel-extra {
+      margin-bottom: $nav-mobile-gap-space;
+      .panel-heading {
+        padding-left: $nav-mobile-gap-space;
+        padding-right: $nav-mobile-gap-space;
+      }
+      .panel-body {
+        padding-bottom: $nav-mobile-gap-space;
+        .info {
+          margin-bottom: 0;
+        }
+      }
+      .border-left {
+        padding-left: $nav-mobile-gap-space;
+        border-left: 0;
+      }
+      .icon {
+        font-size: 31px;
+        line-height: 26px;
+      }
+      .icon.parking {
+        padding: 4px 7px 0 8px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .price {
+        line-height: inherit;
+        font-size: 14px;
+        span {
+          font-size: 16px;
+        }
+        .angle {
+          line-height: 20px;
+          margin-right: 0;
+          font-size: 16px;
+        }
+      }
+      h4 {
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+      &.last {
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      td {
+        padding-top: 5px !important;
+      }
+      .checkbox.styled label {
+        font-size: $font-size-medium;
+      }
+    }
+    .panel-order {
+      .panel-heading {
+        padding: 5px 10px;
+      }
+      .flight-destination {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .flight-time {
+        font-size: $font-size-medium;
+        margin-right: 5px;
+      }
+      .order-mobile {
+        th {
+          padding-right: 10px;
+          width: 15%;
+          color: #888;
+          text-align: right;
+          font-size: $font-size-medium;
+          font-weight: normal;
+        }
+        td {
+          font-size: $font-size-medium;
+          padding-top: 0;
+          padding-bottom: 0;
+          width: 85%;
+        }
+        .text-left {
+          text-align: left !important;
+        }
+        .inside-line {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+      .extra-info {
+        h4 {
+          font-size: $font-size-large;
+        }
+        .medium {
+          &.strong {
+            font-weight: 400;
+          }
+        }
+        .lh-24 {
+          line-height: 16px;
+        }
+        .t-label {
+          font-size: 14px !important;
+        }
+      }
+    }
+    .panel-room {
+      .panel-heading {
+        .label {
+          margin-left: 30px;
+        }
+        span {
+          font-size: $font-size-medium;
+        }
+        i {
+          line-height: normal;
+        }
+      }
+      .panel-body {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        .radio label {
+          font-size: $font-size-base;
+          line-height: 24px;
+        }
+        td {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        td:first-child {
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+        .conditions {
+          margin-top: 10px;
+          p {
+            line-height: 15px;
+          }
+          td {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+          td:last-child {
+            text-align: right;
+            vertical-align: bottom;
+          }
+        }
+        .offer-price .price-value {
+          font-size: 22px;
+          text-align: right;
+          padding-top: 0;
+          sup {
+            font-size: 10px;
+          }
+        }
+        .offer-price .large{
+          font-size: $font-size-small;
+        }
+        .ico {
+          float:left;
+        }
+        .option {
+          float:left;
+          width: 90%;
+          padding-top: 3px;
+          line-height: 18px;
+        }
+        .rooms-options {
+          label {
+            .ico {
+              position: absolute;
+              left: 0;
+            }
+            padding-left: 30px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .panel-table {
+      h2 {
+        font-size: $font-size-large;
+        font-weight: 600;
+      }
+    }
+    .rooms {
+      border-bottom: 1px solid $light-border-color;
+      margin-bottom: 20px;
+    }
+    .order-title {
+      padding-left: 0;
+    }
+    .page-title {
+      font-size: 24px!important;
+      padding-bottom: 10px;
+      padding-top: 0;
+      .remark {
+        font-size: $font-size-medium;
+        line-height: 14px;
+      }
+    }
+    .page-title-padding {
+      &.border-bottom {
+        border-bottom: none;
+        padding-left: 0;
+      }
+    }
+    .discount {
+      label {
+        font-weight: normal;
+        font-size: 16px;
+      }
+    }
+    .offer-item .panel-body {
+      padding-bottom: 0;
+    }
+    .panel-footer {
+      padding: 12px 10px;
+    }
+
+    .testimonials {
+      margin-left: -$nav-mobile-gap-space;
+      margin-right: -$nav-mobile-gap-space;
+    }
+    .panel.passenger {
+      margin-right: 0;
+      margin-left: 0;
+      .panel-body .panel-footer {
+        margin-right: -10px;
+        margin-left: -10px;
+      }
+    }
+
+   /*****************************************
+        $-WELL
+   *****************************************/
+
+    .well {
+      padding: 10px;
+//      margin-left: -$nav-mobile-gap-space;
+//      margin-right: -$nav-mobile-gap-space;
+      &.xxs {
+        padding: $nav-mobile-gap-space * 2;
+        border-radius: 0;
+        border-right: 0;
+        border-left: 0;
+      }
+    }
+    .well.discount .border-left {
+      border-left: 0;
+      margin-left: 0;
+    }
+    .well .order-status {
+      $gap: 10px;
+      .left-block {
+        padding: $gap;
+        border-bottom: 1px solid $light-border-color;
+        label {
+          margin-bottom: 0;
+        }
+      }
+      .right-block {
+        padding: $gap;
+      }
+      &.canceled {
+        .left-block {
+          border-color: darken(#f3d4d5, 3%);
+        }
+      }
+      .mt-20 {
+        margin-top: $gap !important;
+      }
+    }
+    .well table.flight-info-short .sep  {
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+    .well.passengers .sep {
+      margin: 12px -10px 10px -10px;
+    }
+    .well.passengers {
+      .mt-20 {
+        margin-top: 10px !important;
+      }
+    }
+    .well.grey .checkbox {
+      margin-top: 0;
+    }
+
+  /********************************
+        $-Banners
+  ********************************/
+    .page-banner {
+      &.lowest-prices {
+        padding: 0;
+      }
+    }
+
+  //-----------------------
+
+  /***************************************
+        $-Hotel item
+  ***************************************/
+
+    .h-search-track {
+      padding-top: 0;
+      padding-bottom: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      &.hotel-item {
+        padding-bottom: 0;
+        margin-top: 0;
+      }
+    }
+    .hotels-navigation {
+      margin-top: 12px;
+      margin-right: 10px;
+    }
+    .icon-circle.like {
+      height: 40px;
+      width: 40px;
+      margin-right: 0;
+      margin-left: 10px;
+      margin-top: 8px;
+      line-height: 28px;
+    }
+    .photo-container {
+      height: $block-hotel-image-height / 1.6;
+      border-radius: 0;
+      a.prev {
+        top: $block-hotel-image-height / 3.2 - 20;
+        left: 10px;
+      }
+      a.next {
+        top: $block-hotel-image-height / 3.2 - 20;
+        right: 10px;
+      }
+    }
+    .block-image.hotel {
+      height: 100%;
+    }
+    .hotel-title {
+      margin-bottom: 10px;
+    }
+    .hotel-gallery {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    .dashed-sep {
+      border-bottom: 1px dashed $light-border-color;
+      padding-bottom: 15px;
+    }
+    .distances-block {
+      border-bottom: 1px solid $light-border-color;
+      padding-bottom: 20px;
+    }
+    .distances-title {
+      margin: 19px 10px 0;
+    }
+    .distances {
+      p {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      p:nth-child(odd) {
+        background-color: #f3f3f3;
+      }
+    }
+
+    .room-prices {
+      h2 {
+        margin-top: 15px;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+      .description {
+        position: relative;
+        p {
+          margin-bottom: 0;
+          font-size: $font-size-medium;
+        }
+        .m-absolute {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: $font-size-medium;
+        }
+      }
+    }
+    .right-side {
+      &.hotel-item {
+        background: none;
+        border: none;
+        margin-bottom: 0;
+        margin-left: -10px;
+        margin-right: -10px;
+        h4 {
+          font-size: $font-size-base + 2;
+          font-weight: 600;
+        }
+        .sidebar-block {
+          padding-left: 0;
+          padding-right: 0;
+          .t-label {
+            font-weight: 600;
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .hotel-description {
+      color: $grey-color;
+    }
+
+    /********************************
+          $-Hotels Countrypage
+    ********************************/
+
+    .h-search-track {
+      margin-bottom: 0;
+    }
+    .banner-heading.mobile {
+      margin-left: -$nav-mobile-gap-space * 2;
+      margin-right: -$nav-mobile-gap-space * 2;
+      border-radius: 0;
+      margin-top: -1px;
+    }
+    .overview {
+      h4 {
+        font-size: $font-size-large;
+        font-weight: 600;
+      }
+      ul {
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+      li {
+        margin-bottom: 10px;
+        padding: 0 10px 10px 10px;
+        border-bottom: 1px solid $light-border-color;
+      }
+      li:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    /********************************
+          $-Self service
+    ********************************/
+    .order-number {
+      .fix {
+        padding-top: 0;
+        padding-left: 0;
+      }
+      .date {
+        padding: 11px 0 0;
+        display: inline-block;
+        color: $grey-color;
+        line-height: 28px;
+      }
+    }
+    .payment-method .footer {
+      .lh-47 {
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
+    }
+    .order-summary .tooltip .tooltip-inner {
+      min-width: inherit;
+    }
+    #left-filter-block {
+      &.scroll {
+        position: inherit !important;
+        top: auto !important;
+        width: 100% !important;
+      }
+    }
+    //------------------------
+    .lowest-prices-table {
+      table {
+        td {
+          font-size: $font-size-base - 2;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        td:nth-child(1) {
+          width: 30%;
+          padding-left: 5px;
+        }
+        td:nth-child(3) {
+          min-width: 45px;
+        }
+        td:nth-child(4) {
+        min-width: 85px;
+        }
+        td:nth-child(5) {
+          padding-right: 5px;
+        }
+      }
+    }
+    .lowest-prices-nearby-airports {
+      .pull-left, .pull-right {
+        float: none !important;
+        text-align: center;
+        line-height: 20px !important;
+      }
+    }
+
+    .page-title-padding.mobile {
+      margin: 0;
+      h2 {
+        border: none;
+        padding-bottom: 0;
+      }
+      .base {
+        font-size: $font-size-base - 2;
+      }
+    }
+    .page-title.mobile {
+      h2 {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+    .col-xxs-50.radio {
+      margin-top: 0;
+    }
+    .close-block.absolute {
+      top: 10px !important;
+      right: 10px;
+    }
+
+    .radio-btns.btn-group {
+      margin-top: 3px;
+    }
+    .size-42 {
+      padding: 8px 0;
+    }
+    #flights-init-position {
+      .init {
+        display: block !important;
+        visibility: visible !important;
+      }
+      .init-hide {
+        display: none !important;
+      }
+    }
+    #left-filter-block + div {
+      display: none !important;
+    }
+    .modal-dialog {
+      h2 {
+        border-bottom: none;
+        margin-top: 20px;
+      }
+    }
+    .expired .modal-body {
+      padding: 20px;
+    }
+    .expired .modal-footer {
+      margin-top: 0px;
+    }
+
+    .parking-rfix {
+      padding-right: 0;
+    }
+    .parking-lfix {
+      padding-left: 0;
+    }
+    .order-progress {
+      td {
+        text-align: center;
+      }
+      .badge {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+    }
+    .order-number {
+      .text-right {
+        text-align: left;
+      }
+      .date {
+        text-align: right;
+      }
+    }
+    .flight-info .airport-compact td:first-child,
+    .flight-info .airport-compact.last td:first-child {
+      background: transparent;
+    }
+    .m-mh-gap {
+        margin-right: $nav-mobile-gap-space;
+        margin-left: $nav-mobile-gap-space;
+        h2 {
+          margin-left: -$nav-mobile-gap-space;
+          margin-right: -$nav-mobile-gap-space;
+          padding-left: $nav-mobile-gap-space;
+          padding-right: $nav-mobile-gap-space;
+        }
+    }
+    .panel-extra .price .fa-check {
+      font-size: 16px;
+    }
+    .order-summary .details .tooltip .tooltip-inner {
+      min-width: 250px;
+    }
+    .order.pay.processing {
+      font-size: 16px;
+    }
+    .aside-zone {
+      padding-top: 0;
+    }
+    .results-counter,
+    .change-search
+    {
+      margin-left: 0;
+    }
+
+  .order-progress {
+    .order-step {
+      text-align: center;
+    }
+  }
+  .person-form {
+    span.error {
+      display: inline;
+    }
+    .checkbox {
+      span.error {
+        display: inline-block;
+      }
+    }
+  }
+  .main-section {
+    overflow: hidden;
+  }
+  &.left-sidebar-open.opened,
+  &.right-sidebar-open.opened
+  {
+    .main-section,
+    .tab-content > .active {
+      visibility: hidden;
+    }
+    .inner-wrap {
+      background:#333;
+    }
+    footer {
+      display: none!important;
+    }
+  }
+  .order-status {
+    .left-block {
+      label {
+        display: none;
+      }
+    }
+  }
+
+  .m-mt-gap { margin-top: $mobile-vert-gap; }
+  .m-mt-fix { margin-top: $mobile-vert-gap + 2; }
+  .m-mt-0   { margin-top: 0 !important; }
+  .m-mt-10  { margin-top: 10px !important; }
+  .m-mt-15  { margin-top: 15px !important; }
+  .m-mt-20  { margin-top: 20px !important; }
+  .m-mt-30  { margin-top: 30px !important; }
+
+  .m-mb-gap { margin-bottom: $mobile-vert-gap; }
+  .m-mb-fix { margin-bottom: $mobile-vert-gap + 2; }
+  .m-mb-0  { margin-bottom: 0 !important;  }
+  .m-mb-5  { margin-bottom: 5px !important; }
+  .m-mb-10 { margin-bottom: 10px !important; }
+  .m-mb-15 { margin-bottom: 15px !important; }
+  .m-mb-20 { margin-bottom: 20px !important; }
+
+  .m-ml-0   { margin-left: 0 !important; }
+  .m-ph-gap {
+    padding-right: $nav-mobile-gap-space;
+    padding-left: $nav-mobile-gap-space;
+  }
+  .m-p-0    { padding: 0!important; }
+  .m-pl-20  { padding-left: 20px !important; }
+  .m-pl-25  { padding-left: 25px !important; }
+  .m-pb-0   { padding-bottom: 0px !important; }
+
+  .m-mr-5 { margin-right: 5px!important; }
+  .m-lr-0   {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+  }
+  .m-lr-minus-10,
+  .m-extend-10
+  {
+      margin-left: -10px !important;
+      margin-right: -10px !important;
+  }
+  .m-lr-m20 {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .m-lr-minus-20,
+  .m-extend-20
+  {
+      margin-left: -20px !important;
+      margin-right: -20px !important;
+  }
+  .m-lr-minus-30 {
+      margin-left: -30px !important;
+      margin-right: -30px !important;
+  }
+  .m-no-border {
+      border-top: none !important;
+      border-bottom: none !important;
+      border-right: none !important;
+      border-left: none !important;
+  }
+  .m-border-bottom-dashed {
+      border-bottom-style: dashed !important;
+  }
+
+} //END SM media
+
+
+
+//*****************************************************
+// XXS media max 480px
+//*****************************************************
+
+
+  .visible-xxs {
+    display:none;
+  }
+
+
+@media (max-width: $screen-xxs-max) {
+
+    .btn:not(.link-mobile,.btn-mobile) {
+      display: block;
+      white-space: initial;
+      width: 100%;
+    }
+    .col-xxs {
+      display:block;
+      width: 100%;
+    }
+    .btn.col-xxs {
+      white-space: initial;
+    }
+    .col-xxs-50{
+      width: 50%;
+      float: left;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    .xxs-mb-10 { margin-bottom: 10px !important; }
+    .xxs-mb-15 { margin-bottom: 15px !important; }
+
+    .btn-sm    { line-height: 1.85; }
+    .m-btn-center {
+      white-space: initial;
+      line-height: 24px;
+    }
+    .form-group:after {
+      clear: both;
+      content: " ";
+      display: table;
+    }
+    .visible-xxs {
+      display:block;
+    }
+    .hidden-xxs {
+      display: none;
+    }
+    .toggler, .toggler-container{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .flight-info {
+      .airport {
+        td:first-child{
+          width: 1%;
+          img {
+            width: 24px;
+          }
+        }
+        .notify {
+          margin-top: 1px;
+//          display: none;
+          float: right;
+        }
+      }
+      .airport-compact {
+        .from-block {
+          min-width: inherit;
+          display: inline;
+        }
+        td:first-child > div {
+          text-align: center;
+        }
+      }
+    }
+
+  .photo-container {
+    height: $block-hotel-image-height / 2;
+    border-radius: 0;
+    a.prev {
+      top: $block-hotel-image-height / 4 - 20;
+      left: 10px;
+    }
+    a.next {
+      top: $block-hotel-image-height / 4 - 20;
+      right: 10px;
+    }
+  }
+
+  .block-image.banner-heading,
+  .block-image.banner-heading .text-block {
+    height: $banner-heading-height;
+  }
+    //datepicker
+    .ui-datepicker {
+      left: 20px !important;
+      @include box-shadow(0 0 0 rgba(0,0,0,.2));
+      border: 1px solid $input-border;
+      &.top{
+        .arrow{
+          border-width: $popover-arrow-outer-width;
+          left: 50px;
+          margin-left: -$popover-arrow-outer-width;
+          border-bottom-width: 0;
+          border-top-color: $popover-arrow-outer-fallback-color; // IE8 fallback
+          border-top-color: $input-border;
+          bottom: -$popover-arrow-outer-width;
+        }
+        .arrow:after{
+          border-width: $popover-arrow-width;
+          content: " ";
+          bottom: 1px;
+          margin-left: -$popover-arrow-width;
+          border-bottom-width: 0;
+          border-top-color: #fff;
+        }
+        &.to .arrow{ left: 165px; }
+        &.from .arrow{ left: 50px; }
+      }
+      &.bottom{
+        .arrow{
+          border-width: $popover-arrow-outer-width;
+          left: 50px;
+          margin-left: -$popover-arrow-outer-width;
+          border-top-width: 0;
+          border-bottom-color: $popover-arrow-outer-fallback-color; // IE8 fallback
+          border-bottom-color: $input-border;
+          top: -$popover-arrow-outer-width;
+        }
+        .arrow:after{
+          border-width: $popover-arrow-width;
+          content: " ";
+          top: 1px;
+          margin-left: -$popover-arrow-width;
+          border-top-width: 0;
+          border-color: transparent transparent $light-bg-color transparent;
+        }
+        &.to .arrow{ left: 165px; }
+        &.from .arrow{ left: 50px; }
+      }
+    }
+
+    .offer-item {
+      .big {
+        .code {
+          span {
+            display: none !important;
+          }
+        }
+      }
+    }
+
+    //banners
+    .big-banner {
+      height: $big-banner-xxs-height;
+      padding: 30px $grid-gutter-width 30px $grid-gutter-width;
+      .btn{
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    .banner-heading {
+      height: $banner-heading-height;
+    }
+    .sidebar-block .checkbox .only {
+      display: block;
+    }
+
+    .m-wrap {
+      display: block;
+      word-wrap: break-word;
+      width: 73px;
+    }
+
+    a.big-close-btn.absolute2 {
+      top: 5px;
+      right: 5px;
+    }
+
+    .flight-search-form .btn-group {
+      margin-top: 25px;
+    }
+
+  .size-42 {
+    top: 0 !important;
+    padding: 8px 0;
+  }
+  .close-block.absolute {
+    top: 10px !important;
+    right: 10px;
+  }
+
+  .radio {
+    margin-bottom: 0;
+  }
+  .radio + .radio {
+    margin-top: 10px;
+  }
+
+  .checked {
+    &.radio-btn {
+      label {
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      }
+    }
+  }
+  #left-search-block {
+    .checked {
+      &.radio-btn {
+        label {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  #sticky-block {
+    > div {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+  .btn-group {
+    &.form-group{
+      width: 100%;
+      margin-top: 30px;
+    }
+    &.m-3-options .radio {
+      width: 33%;
+      label{
+        width: 100%;
+      }
+    }
+    &.m-2-options .radio {
+      width: 50%;
+      label{
+        width: 100%;
+      }
+    }
+    .radio-btn:first-child:not(:last-child):not(.dropdown-toggle) label {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .radio-btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+      border-radius: 0;
+    }
+    .radio-btn:last-child:not(:first-child):not(.dropdown-toggle) label {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    .radio-btn + .radio-btn {
+      margin-top: 0;
+      margin-left: -1px !important;
+    }
+    .radio-btn {
+      margin-top:0;
+      display:inline-block;
+      width: 50%;
+      float: left;
+      margin-right: 0;
+      label {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        white-space: nowrap;
+        padding: 12px 15px 9px;
+        font-size: 16px;
+        line-height: 1.42857;
+        border-radius: $border-radius-base;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        position: relative;
+        color: #333333;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        outline: none !important;
+        span {
+          display: none;
+        }
+      }
+      input[type=checkbox]:not(.old),
+      input[type=radio   ]:not(.old){
+        display: none;
+      }
+      input[type=checkbox]:not(.old):checked + label,
+      input[type=radio   ]:not(.old):checked + label {
+        background-color: #ebebeb;
+        border-color: #adadad;
+        z-index: 2;
+      }
+    }
+  }
+  .radio-btns.btn-group {
+//    margin-top: 30px !important;
+    margin-bottom: 15px;
+  }
+  #left-filter-block + div {
+    display: none !important;
+  }
+  /*********************************
+      $$-Well
+  **********************************/
+  .well-content.right-side {
+    padding-left: 15px;
+  }
+  .well table.flight-info-short td:first-child {
+    width: 25px;
+  }
+  .well.passengers {
+    .btn {
+      font-size: $font-size-medium;
+      display: block;
+    }
+  }
+  .well.contact-person {
+    .big {
+      font-size: $font-size-big - 2;
+    }
+  }
+
+  /********************************
+        $$-Panels
+  ********************************/
+  .panel.passenger {
+    .panel-heading {
+      padding-right: 10px;
+      padding-left: 10px;
+      a {
+        margin-top: 11px;
+      }
+    }
+  }
+  .panel-order {
+    .logo {
+      max-width: 32px;
+    }
+    .extra-info {
+      .base {
+        font-size: $font-size-base - 2;
+      }
+    }
+  }
+  /********************************
+        $$-Banners
+  ********************************/
+  .page-banner.lowest-prices {
+    padding: 0;
+  }
+
+  /********************************
+        $$-Buttons
+  ********************************/
+  .m-btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  /*********************************
+      $$-Hotel checkout
+  **********************************/
+
+  #left-filter-block {
+    &.scroll {
+      position: inherit !important;
+      top: auto !important;
+    }
+  }
+  .form-control{
+    height: 45px;
+    padding-right: 10px;
+    &:not(.select2) {
+      -webkit-appearance: none;
+    }
+    .select2-choice {
+      padding: 12px 15px 9px 15px;
+      .select2-arrow {
+        line-height: 44px;
+      }
+    }
+  }
+  .form-control.select2-container .select2-choice {
+    padding: 12px 15px 9px 15px;
+  }
+  .autocomplete-container .iata {
+    top: 15px;
+  }
+  .with-clear-btn a.clear {
+    .fa {
+      line-height: 45px;
+    }
+  }
+  .country-code.with {
+    span {
+      line-height: 45px;
+    }
+  }
+  .country-code {
+    &.with-select2 {
+      .select2-container {
+        .select2-choice {
+          padding: 12px 5px 9px 10px;
+          height: 45px;
+          line-height: 22px;
+        }
+        .select2-arrow {
+          line-height: 45px;
+          height: 42px;
+        }
+      }
+      .select-form {
+        height: 44px;
+      }
+    }
+  }
+
+  /********************************
+        $$-Self service
+  ********************************/
+  .order-number {
+    .number {
+      font-size: 18px;
+      margin-left: 0;
+    }
+    .date {
+      padding-top: 7px;
+    }
+  }
+  .flight-info-short {
+    .big {
+      font-size:  $font-size-big - 4;
+    }
+    .base {
+      font-size: $font-size-base - 2;
+    }
+  }
+  .select2-search input, .select2-search-choice-close, .select2-container .select2-choice abbr, .select2-container .select2-choice .select2-arrow b {
+    background-image: none !important;
+  }
+  .lowest-prices .text h1 {
+    font-size: 24px;
+  }
+
+  .from-block  {
+    text-align: left !important;
+  }
+  .flight-info .airport-compact td:first-child,
+  .flight-info .airport-compact.last td:first-child {
+    background: transparent;
+  }
+
+  .header{
+    display: none;
+  }
+
+  .inner-wrap{
+    margin-left: 0;
+    width: auto;
+  }
+  .left-off-canvas-menu{
+    display: none;
+  }
+  .navbar-brand.home{
+    display: none;
+  }
+  .order-progress {
+    .order-step {
+      text-align: center;
+    }
+  }
+  .nav-tabs > li > a {
+    height: 50px;
+    padding: 12px 10px 10px;
+    > i {
+      padding: 2px 2px;
+      font-size: 22px;
+    }
+  }
+
+} //END XXS media
+
+@media (max-width: 480px) {
+
+  &.iframe-search {
+    .btn:not(.link-mobile,.btn-mobile) {
+      display: block;
+      white-space: initial;
+      width: 100%;
+    }
+    .col-xxs {
+      display:block;
+      width: 100%;
+    }
+    .btn.col-xxs {
+      white-space: initial;
+    }
+    .col-xxs-50{
+      width: 50%;
+      float: left;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    .xxs-mb-10 { margin-bottom: 10px !important; }
+    .xxs-mb-15 { margin-bottom: 15px !important; }
+  }
+
+}

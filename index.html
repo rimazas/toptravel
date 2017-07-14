@@ -7,309 +7,313 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="scss/normalize.css">
-        <link rel="stylesheet" href="scss/main.css">
-        <link rel="stylesheet" href="scss/toptravel.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/toptravel.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <section class="results-page">
-            <div class="container">
-                <header>
-                    <div class="logo-wrapper">
-                        <a href="#" class="logo">
-                            <img src="img/toptravel-logo.png" alt="Toptravel logo">
-                        </a>
-                    </div>
-                    <div class="top-menu">
-                        <ul class="main-menu">
-                            <li>
-                                <a href="#">Poilsines keliones</a>
-                            </li>
-                            <li class="active">
-                                <a href="#">Novaturo keliones</a>
-                            </li>
-                            <li>
-                                <a href="#">Keliones su persedimu</a>
-                                <ul>
+        <div id="tripcloud">
+            <div id="tripcloud-setts">
+                <section class="results-page">
+                    <div class="container">
+                        <header>
+                            <div class="logo-wrapper">
+                                <a href="#" class="logo">
+                                    <img src="images/toptravel/toptravel-logo.png" alt="Toptravel logo">
+                                </a>
+                            </div>
+                            <div class="top-menu">
+                                <ul class="main-menu">
                                     <li>
-                                        <a href="#">Keliones autobusu</a>
+                                        <a href="#">Poilsines keliones</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">Novaturo keliones</a>
                                     </li>
                                     <li>
-                                        <a href="">Keliones lektuvu</a>
+                                        <a href="#">Keliones su persedimu</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Keliones autobusu</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Keliones lektuvu</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Egzotines keliones (su vadovu is Lietuvos)</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="#">Egzotines keliones (su vadovu is Lietuvos)</a>
+                                        <a href="#">Kanaru salos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spec pasiulymai</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="#">Kanaru salos</a>
-                            </li>
-                            <li>
-                                <a href="#">Spec pasiulymai</a>
-                            </li>
-                        </ul>
-                        <div class="breadcrumbs">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#">Pradzia</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pasiulymai</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="user-menu">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-list"></i>
-                                        <span>Whishlist (2)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-lock"></i>
-                                        <span>Login</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-user-plus"></i>
-                                        <span>Create account</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </header>
-                <div class="results-filter">
-                    <h3>
-                        <i class="fa fa-sliders"></i>
-                        <span>Filter special offers on your preferences</span>
-                    </h3>
-                    <div class="wrapper">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="to">To</label>
-                                <select name="" id="to" class="form-control select2">
-                                    <option value="0">Kaunas</option>
-                                    <option value="1">Vilnius</option>
-                                </select>
-                            </div>
-                            <div class="setting rate">
-                                <label>Kategorija</label>
-                                <div class="filter">
-
+                                <div class="breadcrumbs">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">Pradzia</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pasiulymai</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="user-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-list"></i>
+                                                <span>Whishlist (2)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-lock"></i>
+                                                <span>Login</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-user-plus"></i>
+                                                <span>Create account</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label>From</label>
-                                <select name="" class="form-control select2">
-                                    <option value="0">Kaunas</option>
-                                    <option value="1">Vilnius</option>
-                                </select>
-                            </div>
-                            <div class="setting catering">
-                                <label>Maitinimas</label>
-                                <div class="filter">
+                            <div class="clearfix"></div>
+                        </header>
+                        <div class="results-filter">
+                            <h3>
+                                <i class="fa fa-sliders"></i>
+                                <span>Filter special offers on your preferences</span>
+                            </h3>
+                            <div class="wrapper">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="to">To</label>
+                                        <select name="" id="to" class="form-control select2">
+                                            <option value="0">Kaunas</option>
+                                            <option value="1">Vilnius</option>
+                                        </select>
+                                    </div>
+                                    <div class="setting rate">
+                                        <label>Kategorija</label>
+                                        <div class="filter">
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label>When</label>
-                                <select name="" class="form-control select2">
-                                    <option value="0">Winter</option>
-                                    <option value="1">Summer</option>
-                                </select>
-                            </div>
-                            <div class="setting temperature">
-                                <label>Temperature</label>
-                                <div class="filter">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label>Duration</label>
-                                <select name="" class="form-control select2">
-                                    <option value="0">7 n.</option>
-                                    <option value="1">14 n.</option>
-                                </select>
-                            </div>
-                            <div class="setting temperature">
-                                <label>Geriausi pasiulymai</label>
-                                <div class="filter">
-                                    <div>
-                                        <input type="checkbox">
-                                        <label for="">For solo travelers</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">
-                                        <label for="">Top season offers</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">
-                                        <label for="">Traveling with children</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">
-                                        <label for="">For couples</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label>Tripadvisor</label>
-                                <select name="" class="form-control select2">
-                                    <option value="0">Very good 10</option>
-                                    <option value="1">Good 8</option>
-                                </select>
-                            </div>
-                            <div class="setting temperature">
-                                <label>Budget</label>
-                                <div class="filter">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>From</label>
+                                        <select name="" class="form-control select2">
+                                            <option value="0">Kaunas</option>
+                                            <option value="1">Vilnius</option>
+                                        </select>
+                                    </div>
+                                    <div class="setting catering">
+                                        <label>Maitinimas</label>
+                                        <div class="filter">
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>When</label>
+                                        <select name="" class="form-control select2">
+                                            <option value="0">Winter</option>
+                                            <option value="1">Summer</option>
+                                        </select>
+                                    </div>
+                                    <div class="setting temperature">
+                                        <label>Temperature</label>
+                                        <div class="filter">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Duration</label>
+                                        <select name="" class="form-control select2">
+                                            <option value="0">7 n.</option>
+                                            <option value="1">14 n.</option>
+                                        </select>
+                                    </div>
+                                    <div class="setting temperature">
+                                        <label>Geriausi pasiulymai</label>
+                                        <div class="filter">
+                                            <div>
+                                                <input type="checkbox">
+                                                <label for="">For solo travelers</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label for="">Top season offers</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label for="">Traveling with children</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox">
+                                                <label for="">For couples</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Tripadvisor</label>
+                                        <select name="" class="form-control select2">
+                                            <option value="0">Very good 10</option>
+                                            <option value="1">Good 8</option>
+                                        </select>
+                                    </div>
+                                    <div class="setting temperature">
+                                        <label>Budget</label>
+                                        <div class="filter">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="text-center">
+                                    <a href="" class="btn btn-reset">Reset</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="text-center">
-                            <a href="" class="btn btn-reset">Reset</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="special-offers">
-                    <div class="item">
-                        <a href="#" class="block-image picture" style="background-image:url('img/item.jpg')">
+                        <div class="special-offers">
+                            <div class="item">
+                                <a href="#" class="block-image picture" style="background-image:url('images/tmp/item.jpg')">
                             <span class="top-offer">
                                 <span class="label">TOP sezono pasiulymas</span>
                             </span>
-                        </a>
-                        <div class="info">
-                            <h3>
-                                <a href="#" class="va-middle">Side Crown Palace</a>
-                                <span class="rate-stars">
+                                </a>
+                                <div class="info">
+                                    <h3>
+                                        <a href="#" class="va-middle">Side Crown Palace</a>
+                                        <span class="rate-stars">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                 </span>
-                            </h3>
-                            <div class="destination">
-                                <span class="country">Alanija, Turkija</span>
-                                <span class="sun">
+                                    </h3>
+                                    <div class="destination">
+                                        <span class="country">Alanija, Turkija</span>
+                                        <span class="sun">
                                     <i class="icon fa fa-sun-o"></i>
                                     <span>+31&deg;</span>
                                 </span>
-                                <span class="water">
+                                        <span class="water">
                                     <i class="icon fa fa-tint"></i>
                                     <span>+24&deg;</span>
                                 </span>
-                            </div>
-                            <div class="hotel-info">
-                                <div class="block">
-                                    <label for="">Breakfast and Dinner</label>
-                                    <div class="type">Double or Twin promo</div>
+                                    </div>
+                                    <div class="hotel-info">
+                                        <div class="block">
+                                            <label for="">Breakfast and Dinner</label>
+                                            <div class="type">Double or Twin promo</div>
+                                        </div>
+                                        <div class="block">
+                                            <label for="">7 nights</label>
+                                            <div class="type">2017.10.15 - 10.20</div>
+                                        </div>
+                                        <div class="block">
+                                            <label for="">VLN</label>
+                                            <div class="type">Isvykimas</div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
                                 </div>
-                                <div class="block">
-                                    <label for="">7 nights</label>
-                                    <div class="type">2017.10.15 - 10.20</div>
-                                </div>
-                                <div class="block">
-                                    <label for="">VLN</label>
-                                    <div class="type">Isvykimas</div>
+                                <div class="price-block">
+                                    <div class="tripad">
+                                        <span>Labai geras, 8</span>
+                                        <div class="tripad-logo-local logo-s pull-right">
+                                            <img class="sprite-tripad-logo" src="images/x.gif">
+                                        </div>
+                                    </div>
+                                    <div class="prices">
+                                        <div class="block">
+                                            <div class="old-price strike">&euro; 500</div>
+                                            <div class="label label-discount">-15%</div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="price">&euro; 400</div>
+                                            <div class="person">Price per person</div>
+                                        </div>
+                                        <div class="block">
+                                            <a class="btn btn-select btn-block" href="#">
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                         </div>
-                        <div class="price-block">
-                            <div class="tripad">
-                                <span>Labai geras, 8</span>
-                                <div class="tripad-logo-local logo-s pull-right">
-                                    <img class="sprite-tripad-logo" src="img/x.gif">
+                    </div>
+                    <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <h4>Svarbi informacija</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Kaip pirkti internetu</a></li>
+                                        <li><a href="">Kur isigyti keliones?</a></li>
+                                        <li><a href="">Informacija ir patarimai keliaujantiems</a></li>
+                                        <li><a href="">Apklausos anketa</a></li>
+                                        <li><a href="">Rasyti atsiliepima</a></li>
+                                        <li><a href="">Diskusijos</a></li>
+                                        <li><a href="">Kontaktai</a></li>
+                                        <li><a href="">Privatumo politika</a></li>
+                                        <li><a href="">Prisijungimas agenturoms</a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="prices">
-                                <div class="block">
-                                    <div class="old-price strike">&euro; 500</div>
-                                    <div class="label label-discount">-15%</div>
+                                <div class="col-xs-3">
+                                    <h4>Mes siulome</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Poilsines keliones</a></li>
+                                        <li><a href="">Slidinejimo keliones</a></li>
+                                        <li><a href="">Pazintines keliones lektuvu</a></li>
+                                        <li><a href="">Pazintines keliones autobusu</a></li>
+                                        <li><a href="">Tolimuju krastu keliones</a></li>
+                                        <li><a href="">Skrydziai</a></li>
+                                        <li><a href="">Ekskursijos</a></li>
+                                        <li><a href="">Papildomos paslaugos</a></li>
+                                        <li><a href="">Kelioniu pirkimas issimoketinai</a></li>
+                                    </ul>
                                 </div>
-                                <div class="block">
-                                    <div class="price">&euro; 400</div>
-                                    <div class="person">Price per person</div>
+                                <div class="col-xs-3">
+                                    <h4>Geriausiu pasiulymu prenumerata</h4>
+                                    <div><input type="text"></div>
+                                    <ul class="list-unstyled reasons">
+                                        <li><a href="#">Tik verti demesio pasiulymai</a></li>
+                                        <li><a href="">Iki 2 kasrtu per savaite</a></li>
+                                        <li><a href="">Lengvai atsisakysite bet kada</a></li>
+                                    </ul>
                                 </div>
-                                <div class="block">
-                                    <a class="btn btn-select btn-block" href="#">
-                                        <i class="fa fa-angle-right"></i>
-                                    </a>
+                                <div class="col-xs-3">
+                                    FB page
                                 </div>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
+                    </footer>
+                </section>
             </div>
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <h4>Svarbi informacija</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Kaip pirkti internetu</a></li>
-                                <li><a href="">Kur isigyti keliones?</a></li>
-                                <li><a href="">Informacija ir patarimai keliaujantiems</a></li>
-                                <li><a href="">Apklausos anketa</a></li>
-                                <li><a href="">Rasyti atsiliepima</a></li>
-                                <li><a href="">Diskusijos</a></li>
-                                <li><a href="">Kontaktai</a></li>
-                                <li><a href="">Privatumo politika</a></li>
-                                <li><a href="">Prisijungimas agenturoms</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-3">
-                            <h4>Mes siulome</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Poilsines keliones</a></li>
-                                <li><a href="">Slidinejimo keliones</a></li>
-                                <li><a href="">Pazintines keliones lektuvu</a></li>
-                                <li><a href="">Pazintines keliones autobusu</a></li>
-                                <li><a href="">Tolimuju krastu keliones</a></li>
-                                <li><a href="">Skrydziai</a></li>
-                                <li><a href="">Ekskursijos</a></li>
-                                <li><a href="">Papildomos paslaugos</a></li>
-                                <li><a href="">Kelioniu pirkimas issimoketinai</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-3">
-                            <h4>Geriausiu pasiulymu prenumerata</h4>
-                            <div><input type="text"></div>
-                            <ul class="list-unstyled reasons">
-                                <li><a href="#">Tik verti demesio pasiulymai</a></li>
-                                <li><a href="">Iki 2 kasrtu per savaite</a></li>
-                                <li><a href="">Lengvai atsisakysite bet kada</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-3">
-                            FB page
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
+        </div>
+
 
         <script
                 src="https://code.jquery.com/jquery-3.2.1.min.js"

@@ -1,0 +1,460 @@
+//**************************************************
+//                WELLS
+//****************************************************/
+
+  .well {
+    //border-radius: $border-radius-base;
+    position: relative;
+    padding: 20px;
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #c3daeb;
+    //@include box-shadow(none);
+    h3 { margin-top: 0; }
+    .title {
+      margin-bottom: 20px;
+      h4 { margin-bottom: 0; }
+      a {
+        font-size: $font-size-medium;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          color: $link-hover-color;
+        }
+        i { margin-left:10px; }
+      }
+    }
+    &.p-10  { padding: 10px; }
+    &.p-0   { padding: 0; }
+    .sep {
+      height: 1px;
+      border-bottom: 1px solid $light-border-color;
+      &.dashed {
+        border-bottom-style: dashed;
+        border-color: $light-grey-color;
+      }
+    }
+    &.borderless  { border: none; }
+    &.dark-grey   { background: #f2f2f2; }
+    &.grey {
+      background-color: $well-grey-bg;
+      h4 {
+        margin-top: 0;
+      }
+      .checkbox {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      &.light {
+        border-color: $well-grey-border;
+      }
+    }
+    &.blue {
+      background-color: #eff5f8;
+      border: 1px solid #d1deee;
+      margin-bottom: 30px;
+      .description {
+        color: #658ab9;
+        font-size: $font-size-large;
+        margin-bottom: 20px;
+      }
+    }
+    &.red { background-color: #fceaeb; }
+    &.approved { background-color: rgba($success-color,.1); }
+    &.crystal-blue {
+      background-color: $bg-crystal-blue;
+      border-color: $border-crystal-blue;
+      color: $text-crystal-blue;
+    }
+    &.info {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    &.order {
+      margin-bottom: 20px;
+      label {
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .inside-line {
+        color: #bf9758;
+        margin-top: 18px;
+      }
+      .glyphicons {
+        width: 15px;
+        text-align: center;
+      }
+      &.last {
+        margin-bottom: 30px;
+      }
+      .row .row:last-child .sep{
+        display: none;
+      }
+      .panel {
+        margin-bottom: 15px!important;
+        border: none!important;
+        background: transparent!important;
+        width: auto;
+      }
+      .baggage-title {
+        font-size: 13px;
+        font-weight: 600;
+        span {
+          vertical-align: middle;
+        }
+        i {
+          font-size: 14px;
+          color: $yellow-color;
+          vertical-align: middle;
+          &.fa-suitcase {
+            vertical-align: top;
+            line-height: 18px;
+          }
+        }
+      }
+      .remarks :last-child {
+        margin-bottom: 20px;
+      }
+      .baggage-block {
+        background: url('/bundles/tripcloudproject/images/skrydziai/pattern_001.png') #fdfdfd repeat top left;
+        border-top: 1px dashed #d1d1d1;
+        margin: 0 -20px -20px;
+        padding: 20px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        .offer {
+          color: $dark-color;
+          margin-bottom: 10px;
+          .line {
+            padding-bottom: 10px;
+          }
+          .special {
+            background: url('/bundles/tripcloudproject/images/skrydziai/line-green.png') no-repeat 5px 19px;
+            position: absolute;
+            height: 30px;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+    &.discount {
+      border-style: dashed;
+      border-color: #ccc;
+      table {
+        width: 100%;
+      }
+      .icon {
+        font-size: 55px;
+        text-align: center;
+        line-height: 70px;
+        color: $success-color;
+        font-weight:bold;
+        padding-right: 15px;
+      }
+      td:first-child {
+        width: 10%;
+        padding-right: 5px;
+      }
+      td:nth-child(2) {
+        width: 90%;
+      }
+      .border-left {
+        border-left: 1px solid #e7e7e7;
+        margin-left: 7px;
+      }
+    }
+    &.reasons {
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .blue {
+        color: $blue-color;
+      }
+      .pink {
+        color: $pink-color;
+        font-weight: 600;
+      }
+      ul {
+        margin-bottom: 0;
+        li {
+          list-style: none;
+          font-size: $font-size-medium;
+          color: $blue-color;
+          line-height: 18px;
+          margin-bottom: 5px;
+          clear: both;
+          p {
+            float: left;
+            width: 90%;
+          }
+          .fa {
+            font-size: 16px;
+            color: $pink-color;
+            margin-right: 10px;
+            float: left;
+          }
+        }
+        padding: 0;
+      }
+    }
+    &.passengers {
+      ul {
+        margin: 0;
+        padding-left: 15px;
+      }
+      .sep {
+        border-bottom: 1px solid $light-border-color;
+        margin: 22px -20px 20px;
+        height: 1px;
+      }
+    }
+    &.price-details {
+      p:last-child {
+        margin-bottom: 0 !important;
+      }
+      table {
+        width: 100%;
+        td {
+          line-height: 18px;
+          padding-bottom: 5px;
+        }
+        .price {
+          text-align: right;
+          vertical-align: top;
+          min-width: 70px;
+        }
+      }
+    }
+    &.flight-registration {
+      .panel:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .order-status {
+      .left-block {
+        padding: 20px 20px 0;
+      }
+      .right-block {
+        padding:20px;
+        min-height: 130px;
+        p:last-of-type {
+          margin-bottom: 5px;
+        }
+      }
+      label {
+        font-size: $font-size-base;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: 0;
+      }
+      &.waiting-payment {
+        .title { color: $link-color; }
+        .right-block { background-color: #fff; }
+      }
+      &.processing {
+        .title { color: $link-color; }
+        .right-block { background-color: #fff; }
+      }
+      &.waiting-registration,
+      &.processing-registration
+      {
+        .title { color: $link-color; }
+        .right-block { background-color: #fff; }
+      }
+      &.canceled {
+        .title { color: $coral-color; }
+        .right-block {  background-color: #fff; }
+      }
+      &.approved {
+        .title { color: $green-dark-color; }
+        .right-block { background-color: #fff; }
+      }
+
+      button {
+        vertical-align: top;
+        margin-bottom: 10px;
+      }
+      .buttons {
+        margin-bottom: 20px;
+      }
+    }
+    table.flight-info-short {
+      width: 100%;
+      td:first-child {
+        width: 35px;
+        vertical-align: top;
+      }
+      p{ margin: 0; }
+      .sep {
+        border-bottom: 1px dashed #dfdfdf;
+        vertical-align: bottom;
+        margin: 10px -20px;
+      }
+      .fa {
+        color: $light-grey-color;
+        margin-top: 5px;
+        font-size: 18px;
+      }
+    }
+    .advanced { line-height: 47px; }
+
+    &.flights-research-block {
+      background-color: $light-bg-color;
+      margin-bottom: 30px;
+      .close-block {
+        top: 20px;
+        color: $grey-color;
+      }
+      .btn {
+        font-size: 18px;
+      }
+      label {
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+    &.hotels-research-block {
+      background-color: $light-bg-color;
+      padding: 15px;
+      margin-bottom: 30px;
+      .close-block {
+        top: 20px;
+        color: $grey-color;
+      }
+      .btn {
+        font-size: 18px;
+        background-color: $success-color;
+      }
+      label {
+        font-weight: 400;
+        font-size: 16px;
+      }
+      h4 {
+        margin-top:0;
+        margin-bottom: 15px;
+      }
+    }
+    &.travels-research-block,
+    &.travel-search-block {
+      background-color: #fffcec;
+      padding: 15px 15px 20px 15px;
+      margin-bottom: 30px;
+      border: 2px solid #ffdb00;
+      .close-block {
+        top: 20px;
+        color: $grey-color;
+      }
+      .btn {
+        font-size: 18px;
+        &:not(.btn-default) {
+          background-color: $travels-dark-blue;
+          border-radius: 3px;
+          &:hover {
+            background:darken($travels-dark-blue, 5%);
+          }
+        }
+        &.btn-primary {
+          background: #ffa400;
+          text-shadow: 0 -1px 0 #db7e01 !Important;
+          border-left: 1px solid #ed8800;
+          border-right: 1px solid #ed8800;
+          border-top: 1px solid #fd9100;
+          border-bottom: 1px solid #db7e01;
+          background-image: linear-gradient(to bottom,#ffa400,#ff8300);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+          &:hover {
+            background-image: linear-gradient(to bottom,darken(#ffa400,5%),darken(#ff8300,5%));
+          }
+        }
+      }
+      label {
+        font-weight: 400;
+        font-size: 14px;
+      }
+      h4 {
+        margin-top:0;
+        margin-bottom: 15px;
+      }
+    }
+    &.travel-filter {
+      background-color: #5f9cc9;
+      border:none;
+      padding-top: 15px;
+    }
+    &.sidebar-contact {
+      padding: 10px;
+    }
+    &.no-padding {
+      padding: 0;
+    }
+    &.lowest-blocks {
+      padding: 10px;
+      .head-title {
+        font-size: 16px;
+        margin: -10px -10px 10px;
+        padding: 10px;
+        background: #F9F9F9;
+      }
+      .prices-list > li > a {
+        font-size: 14px;
+        padding: 5px 10px 3px;
+        &:hover {
+          padding-top: 6px;
+        }
+        small {
+          margin-right: 5px;
+        }
+        .price {
+          font-size: 14px;
+          margin: -1px;
+        }
+      }
+      .from-city {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .more-links-wrap {
+        margin-bottom: 10px;
+      }
+      .more {
+        text-decoration: none;
+        font-size: 12px;
+        padding-left: 10px;
+      }
+    }
+    &.coupon-form {
+      .btn-primary {
+        font-weight:600;
+        font-size:16px;
+      }
+    }
+  }
+
+  .more-hotels {
+    font-size: $font-size-base;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .more-travels {
+    font-size: $font-size-base;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .well-content {
+    padding: 20px;
+    margin-bottom: 0;
+    &.right-side  { padding-left: 0; }
+    &.left-side   { padding-right: 0; }
+    .hotel-name {
+      float: left;
+      margin: 0 10px 0 0;
+      font-size: 22px;
+    }
+  }

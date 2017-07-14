@@ -1,0 +1,72 @@
+
+.header{
+  font-size: $font-size-medium;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .logo{
+  }
+  .phone{
+    margin: 2px 0;
+  }
+  .phone i{
+    font-size: 14px;
+  }
+  .info{
+    margin: 3px 0;
+  }
+  .info i{
+    font-size: 12px;
+  }
+  .nav-wrapper {
+    border-bottom: 1px solid $navbar-default-border;
+  }
+  .nav-tabs > li{
+    margin-bottom: 0;
+  }
+  .nav-tabs > li > a
+  {
+    margin: $header-menu-margin;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    text-decoration: none;
+    color: $header-menu-color;
+    font-size: $header-menu-font-size;
+  }
+  .nav-tabs > li > a:focus{
+    background: none;
+    border: none;
+  }
+  .nav-tabs > li > a:before{
+    display: none;
+  }
+  .nav-tabs > li > a:hover{
+    background: none;
+    color: $header-menu-hover-color;
+    border: none;
+  }
+  .nav-tabs > li > a:hover{
+    @include color-variants("color", "", "");
+  }
+  .nav-tabs > li.active > a{
+    background: none;
+    color: $blue-color;
+    border-bottom: 3px solid $blue-color;
+    border-top: none;
+  }
+  .nav-tabs > li.active > a:hover{
+    border-top: none;
+  }
+
+  .nav-tabs > li.active > a{
+    @include color-variants("color", "", "");
+    @include color-variants("border-bottom-color", "", "");
+  }
+}
+
+//  Hotels
+.hotels {
+  .header {
+    margin-bottom: 0;
+  }
+}

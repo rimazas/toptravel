@@ -1,10 +1,27 @@
+@import 'main_scss/fonts';
+@import 'main_scss/variables';
+@import 'main_scss/mixin';
+@import 'main_scss/tripadvisor';
+
+#tripcloud-setts {
+  @-ms-viewport {
+    width: device-width;
+  }
+  min-width: 960px;
+  font-family: $tripcloud-font-family;
+  background: #fff;
+  font-size: $font-size-base;
+  line-height: 1.42857;
+  //  transition: all 1s ease;
+}
+
 
 .container {
   //width: 1150px;
 }
 .results-page {
   background-size: cover;
-  background: url("../img/results-bg.jpg") 0 0 repeat-x #f5f5f5;
+  background: url("../images/toptravel/results-bg.jpg") 50% 0 repeat-x #f5f5f5;
 }
 .va-middle {
   vertical-align: middle;
@@ -465,31 +482,4 @@ footer {
       }
     }
   }
-}
-
-//------- Look for tripadvisor.scss in skrydziai
-.tripad-logo-local.logo-s {
-  width: 29px;
-  height: 16px;
-}
-.tripad-logo-local {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin-right: 4px !important;
-}
-.tripad-logo-local.logo-s img {
-  left: 0;
-  top: 0;
-}
-.tripad-logo-local .sprite-tripad-logo {
-  background-image: url(../img/tripad-stars.png);
-  background-position: 0 0;
-  background-size: 99px 194px;
-  width: 132px;
-  height: 266px;
-  background-repeat: no-repeat;
-}
-.tripad-logo-local img {
-  position: absolute;
 }

@@ -1,0 +1,2352 @@
+  .search-wrapper {
+    margin-bottom: 80px;
+  }
+  .search-content{
+    margin-bottom: 40px;
+  }
+  .search-content h3{
+    margin-top: 0;
+    font-size: $search-h3-font-size;
+  }
+
+  .search-content #flights h3{
+    margin-bottom: 21px;
+  }
+  .matrix-table {
+    border-bottom: 1px solid $light-border-color;
+    margin-top: -8px;
+    margin-bottom: 0;
+    td{
+      text-align: center;
+      &.text-left {
+        text-align: left;
+      }
+    }
+    th {
+      font-weight: 400;
+    }
+    .t-head{
+      background: $light-bg-color;
+      color: $dark-color;
+      font-size: $font-size-base;
+      font-weight: normal;
+    }
+    .header.one-way {
+      border:none;
+      text-align:left;
+      padding:4px 0px!important;
+    }
+    .t-header {
+      text-align: left;
+      font-size: $font-size-medium;
+      &.one-way {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+    td, th{
+      padding: 9px 4px 6px 4px!important;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+    .t-blank{
+      border: none;
+    }
+    td.date{
+      color: $dark-color;
+      background-color: $light-bg-color;
+    }
+    td.value{
+      position: relative;
+      color: $dark-color;
+      font-size: $font-size-base;
+      &.important{
+        $color: $success-color;
+        color: $color!important;
+        background-color: rgba($color,.1);
+        font-weight: 600;
+        a {
+          color: $color;
+        }
+      }
+      &.current{
+        background-color: #A1B7C3;
+        border: 1px solid #A1B7C3;
+        color: #fff;
+        cursor: default;
+        font-weight: 600;
+        &:hover {
+          background-color: #A1B7C3!important;
+        }
+      }
+      &.search {
+        cursor: pointer;
+        font-weight: 600;
+        color: $link-color;
+      }
+    }
+    td.date{
+      font-size: $font-size-medium;
+      &.oneway {
+        height: 38px;
+        vertical-align: middle;
+      }
+    }
+    td.value:hover,
+    td.date.hover
+    {
+      background: #ebebeb !important;
+    }
+    td.date.current {
+      background: #ebebeb;
+    }
+    .preloader{
+      vertical-align: baseline;
+    }
+    .fa-search{
+      color: $light-grey-color;
+      font-size: $font-size-medium;
+    }
+    .input-loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -5px;
+      margin-left: -8px;
+      width: 16px;
+      height: 11px;
+      display: block;
+      z-index: 10;
+    }
+  }
+  .btn-xs.paddfix {
+    padding: 2px 7px 0;
+  }
+  .offer-list{
+    margin: $grid-gutter-width 0 0;
+    .panel-footer{
+      background: $light-bg-color-2;
+      sup {
+        top: -3px;
+      }
+    }
+    .bottom-fix-15{
+      margin-bottom: -15px;
+    }
+    .top-fix-5{
+      margin-top: -5px;
+    }
+    .top-fix-3{
+      margin-top: -3px;
+    }
+    a.toggler{
+      &.active .fa:before{
+        content: "\f106";
+      }
+    }
+    .btn-select {
+      position: relative;
+      padding-right: 20px;
+      i {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+  .offer-item{
+    p{
+      margin: 0;
+    }
+  }
+  .offer-item .panel-footer{
+    .togglers{
+      margin: -10px -20px;
+      .toggler{
+        padding:  12px 15px 9px 20px;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: $font-size-medium;
+        color: $grey-color;
+        border-right: 1px solid $light-border-color;
+        position: relative;
+        z-index: 1;
+        &:hover{
+          color: $dark-color;
+        }
+        &.active{
+          background: #fff;
+          border-bottom: 1px solid #fff;
+          margin-bottom: -1px;
+          color: $dark-color;
+        }
+      }
+    }
+    .toggler-container{
+      padding: 20px;
+      margin: 10px -20px -10px;
+      background: #fff;
+      border-top: 1px solid $light-border-color;
+      border-bottom-left-radius: $border-radius-base;
+      border-bottom-right-radius: $border-radius-base;
+      &.routes {
+        padding: 10px;
+      }
+    }
+    .routes{
+      h4{
+        font-size: $font-size-large;
+        font-weight: normal;
+        margin-top: 0;
+      }
+      .map-container{
+        width: 100%;
+        height: 370px;
+      }
+    }
+  }
+  &.size-1000, &.size-1100 {
+    .flight-info{
+      .stops-block {
+        font-size: 12px;
+      }
+      .airport{
+        .label{ font-size: 12px; }
+      }
+      .airport-compact{
+        .direction-ico{
+          padding: 0 5px;
+          line-height: 24px;
+        }
+        td:first-child {
+          width: 50%;
+        }
+        td:nth-child(2) {
+          width: 21%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .flight-info{
+    position: relative;
+    .stops-block {
+      font-size: 14px;
+    }
+    .airport{
+      border-bottom: 1px solid $light-border-color;
+      margin-bottom: 14px;
+      &.dashed{
+        border-bottom: 1px dashed $light-border-color;
+      }
+      &.code { border-bottom: none; }
+      &:last-child { border-bottom: 0; }
+      .label{
+        font-size: 14px;
+        &.label-success {
+          color: #83b746!important;
+          background-color: #fff!important;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+      td{
+        vertical-align: top;
+        width: 25%;
+        padding: 0 15px;
+      }
+      td:not(:last-child){  border-right: 1px solid $light-border-color; }
+      td:first-child{
+        padding-left: 0;
+        padding-right: 0;
+        width: 9%;
+        border-right: 0;
+        img {
+          max-width: 44px;
+        }
+      }
+      td:nth-child(2) {  width: 25%;  }
+      td:nth-child(3) {  width: 20%; padding: 0; }
+      td.gap{ height: 14px; }
+
+      td:last-child { padding-right: 0; }
+      .duration {
+        margin: 4px 0 2px;
+        line-height: 18px;
+      }
+
+      .big-left {
+        .time {
+          display: inline-block;
+          float:right;
+          padding-left:8px;
+        }
+      }
+      .big {
+        line-height: 22px;
+        color: #324d5b;
+      }
+      .time {
+        font-weight: 600;
+      }
+    }
+    .airport-compact{
+      width: 100%;
+      margin-top: -15px;
+      border-bottom: 1px solid $light-border-color;
+      margin-bottom: 14px;
+      .from-block, .to-block {
+        min-width: 110px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 5px;
+        color: #324d5b;
+      }
+      &.dashed      { border-bottom-style: dashed; }
+      &.dashed.last { border-bottom-style: solid; }
+      .airportcode  { margin-bottom: 0!important; }
+      .tcg {
+        color: #CDCDCD;
+        vertical-align: top;
+        padding-top: 5px;
+      }
+      .direction-ico{
+        color: $panel-primary-bg;
+        padding: 0 10px;
+        vertical-align: text-top;
+        line-height: 20px;
+      }
+      td{
+        vertical-align: middle;
+        img {
+          max-width: 35px;
+        }
+      }
+      td:first-child  { width: 45%; }
+      td:nth-child(2) { width: 25%; }
+      td:nth-child(3) { width: 20%; }
+      td:nth-child(4) { width: 10%; text-align: right; }
+      &.last .plane-right:before {
+        content: "3";
+      }
+      tr > td{
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-bottom: 1px dashed $light-border-color;
+      }
+      tr:first-child > td{
+      }
+      tr:last-child > td{
+        border-bottom: none;
+      }
+    }
+    .summary{
+      .flight-class {
+        line-height: 25px;
+      }
+    }
+    .v-split{
+      margin-right: -($grid-gutter-width / 2);
+      right: 25%;
+      position: absolute;
+      width: 1px;
+      top: -15px; bottom: -15px;
+      background: $light-border-color;
+    }
+    .popovers > a{
+      cursor: pointer;
+      margin: 0 3px;
+      &:hover{
+        color: darken($grey-color, 20%);
+      }
+    }
+    .popovers > a:last-child{
+      margin-right: 0;
+    }
+    .notify{
+      cursor: pointer;
+      padding: 2px 5px 2px;
+    }
+    .label.notify{
+      font-size: 12px;
+      float: right;
+      margin-top: 6px;
+    }
+    .notify:hover{
+      background: darken($grey-color, 20%);
+    }
+  }
+  .offer-list {
+    &.dt4 {
+      .airport-main {
+        .panel-heading {
+          padding:5px 15px;
+        }
+        .flight-details {
+          padding:20px 0px;
+          border-top:1px solid #ddd;
+          margin-top:7px;
+        }
+        .panel-body {
+          padding:20px 20px 6px 20px;
+          .big {
+            font-size:18px!important;
+            font-weight:600;
+          }
+          .stops-line {
+            color:#999;
+          }
+          .stops-line {
+            .medium {
+              line-height:1.2;
+              font-size:12px!important;
+            }
+          }
+          .flight-info {
+            line-height:18px;
+            .v-split {
+              top:0px;
+              bottom:0px;
+              margin-bottom:-40px;
+              right:0;
+            }
+            .last tr:last-child .gap {
+              display:none;
+              visibility:hidden;
+            }
+            .label.notify {
+              margin-top:0;
+            }
+            .city {
+              padding-top:0px;
+              font-size:14px;
+            }
+            .airport {
+              border-bottom:none!important;
+              margin:0;
+              tr:not(.hidden-xs) {
+                td:first-child {
+                  border-right:1px solid #e7e7e7;
+                  text-align:center;
+                  padding:0px 20px;
+                }
+                .text-center {
+                  padding:0px 10px;
+                }
+                td:nth-child(3) {
+                  width:25%;
+                }
+
+              }
+              td.gap {
+                height:12px;
+              }
+              &:last-child {
+                tr:last-child td.gap {
+                  height:0;
+                }
+              }
+
+              .duration {
+                margin-bottom:5px;
+                margin-top:0;
+                line-height:15px;
+              }
+              .stops-line {
+                line-height:16px;
+              }
+              .stops, .info {
+                display:block;
+              }
+
+            }
+
+            .header {
+              background:#f4f4f4;
+              font-size:13px;
+              padding:5px;
+              margin:0px 0px 5px 0px;
+              .cc {
+                color:#999999;
+                padding-left:5px;
+              }
+              span {
+                i {
+                  font-size:12px;
+                  padding:0px 7px;
+                }
+              }
+            }
+            .message {
+              color: #ff4444;
+              display: inline-block;
+              font-size: 12px;
+              padding: 0px 0px 3px 0px;
+              margin-bottom:5px;
+            }
+          }
+          .right-block {
+            height:100%;
+            position:relative;
+            .offer-price {
+              .price-value {
+                font-size:36px;
+                font-weight:normal;
+                display:block;
+                padding-top:10px;
+                sup {
+                  font-size:18px;
+                  top:-12px;
+                }
+              }
+              .grey {
+                display:block;
+                padding:5px 0px;
+                font-size:14px;
+              }
+            }
+            .mt-60 {
+              margin-top:65px!important;
+            }
+            .select {
+              float:left;
+              width:100%;
+              .seats-left {
+                color:red;
+                font-size:14px;
+                padding:5px 0px 0px 0px;
+                text-align:right;
+                display:block;
+              }
+              .bottom {
+                margin-top:15px;
+              }
+              .icon-text {
+                display:block;
+                padding:10px 0px 0px 0px;
+                font-size:14px;
+                font-weight:600;
+                .weight-metric {
+                  font-weight:inherit;
+                }
+                .fa {
+                  left:0;
+                  padding-right:0px;
+                  position:relative;
+                  top:-1px;
+                }
+                .title {
+                  padding-left:5px;
+                }
+              }
+            }
+          }
+        }
+        .panel-footer {
+          background:none;
+          border-top:none;
+          padding:12px 0px 0px 0px;
+          .togglers {
+            margin:0;
+            border-top:1px solid #ddd;
+            .toggler, .bs-popover, .additional-fees {
+              padding:5px 0px;
+              font-size:14px;
+              border:none;
+            }
+            .summary {
+              padding:7px 0px 0px 0px;
+            }
+            .toggler {
+              color:#878787;
+              text-transform:lowercase!important;
+              line-height:22px;
+              &:first-letter {
+                text-transform:uppercase;
+              }
+              i {
+                color:#878787;
+                padding-top:2px;
+                font-size:14px;
+              }
+
+            }
+            .important {
+              width:15px;
+              float:right;
+
+              padding:5px 0px;
+              line-height:22px;
+              span {
+                background:red;
+                color:#fff;
+                @include radius(999px,999px,999px,999px);
+                width:15px;
+                height:15px;
+                line-height:15px;
+
+                font-size:13px;
+                font-weight:800;
+                display:inline-block;
+                vertical-align:middle;
+                text-align:center;
+                cursor:pointer;
+
+              }
+            }
+            .bs-popover {
+              color:#999999;
+              line-height:22px;
+              span {
+                display:inline-block;
+              }
+              .weight-metric {
+                vertical-align:middle;
+              }
+              .baggage-items {
+                .icon-text {
+                  i {
+                    top:3px;
+                  }
+                }
+                .grey:hover {
+                  color:#555!important;
+                  .fa, .weight-metric {
+                    color:#555!important;
+                  }
+                }
+              }
+              a:hover {
+                color:none!important;
+                .fa-suitcase, .weight-metric {
+                  color:#7fba00;
+                }
+              }
+
+            }
+            .additional-fees {
+              padding-left:15px;
+              vertical-align:middle;
+              color:#999999;
+              line-height:22px;
+              float:right;
+              text-align:right;
+
+              sup {
+                font-size:9px;
+                display:inline-block;
+                padding-top:5px;
+                vertical-align:middle;
+              }
+            }
+          }
+          .flight-details {
+            margin:0;
+          }
+        }
+      }
+    }
+
+    &.dt5 {
+      .offer-item {
+        @include fancyshadow();
+        &:hover {
+          @include boxshadow(0, 0, 10px, 0, rgba(158, 158, 158, 0.5));
+          border-top: 1px solid transparent;
+        }
+      }
+      .airport-main {
+        .panel-heading {
+          padding:5px 15px;
+        }
+        .flight-details {
+          padding:20px 0px;
+        }
+        .panel-body {
+          padding:5px 20px 5px 20px;
+          .big {
+            font-size:24px!important;
+            color: #37474f;
+            .time {
+              font-weight:600;
+              &.landing {
+                padding-right:8px;
+              }
+            }
+            .code {
+              font-weight:400;
+              color:#68757B;
+            }
+            .city {
+              color:#68757B;
+            }
+          }
+          .stops-block {
+            .stops {
+              cursor:pointer;
+            }
+          }
+          .stops-line {
+            color:#999;
+          }
+          .stops-line {
+            .medium {
+              line-height:1.2;
+              font-size:12px!important;
+            }
+          }
+          .flight-info {
+            line-height:18px;
+            padding:15px 0px 0px 0px;
+            .label.notify {
+              margin-top:2px;
+              background:#fff;
+              border:1px solid #888;
+              color:#888;
+            }
+            .city {
+              padding-top:0px;
+              font-size:14px;
+            }
+            .v-split {
+              top:0;
+              bottom:0;
+            }
+            .right-block {
+              height:100%;
+              .mt-60 {
+                margin-top:65px!important;
+              }
+              .select {
+                float:left;
+                width:100%;
+                .seats-left {
+                  color:red;
+                  font-size:14px;
+                  padding:5px 0px 0px 0px;
+                  text-align:right;
+                  display:block;
+                }
+                .bottom {
+                  margin-top:15px;
+                }
+                .icon-text {
+                  display:block;
+                  padding:10px 0px 0px 0px;
+                  font-size:14px;
+                  font-weight:600;
+                  .weight-metric {
+                    font-weight:inherit;
+                  }
+                  .fa {
+                    left:0;
+                    padding-right:0px;
+                    position:relative;
+                    top:-1px;
+                  }
+                  .title {
+                    padding-left:5px;
+                  }
+                }
+              }
+              .btn-select {
+                font-size:16px;
+                text-transform:uppercase;
+                font-weight:500;
+              }
+            }
+            .offer-price {
+              p {
+                margin:0;
+              }
+              .price-value {
+                font-size:38px;
+                padding-top:8px;
+                img {
+                  height:20px;
+                  width:auto;
+                  margin-top:2px;
+                  margin-right:2px;
+                }
+                sup {
+                  font-size:16px;
+                  top:-14px;
+                }
+              }
+              .grey {
+                display:block;
+                padding:5px 0px;
+                font-size:14px;
+              }
+            }
+            .airport {
+              margin:0;
+              border-color:#ddd;
+              .gap {
+                &.first {
+                  height:0;
+                }
+                &.last {
+                  height:15px;
+                }
+              }
+              tr:not(.hidden-xs) {
+                td:first-child {
+                  img {
+                    max-width:42px;
+                  }
+                }
+                .text-center {
+                  padding:0px 10px;
+                }
+                td:nth-child(3) {
+                  width:22%;
+                }
+              }
+              td:not(:last-child):not(:first-child) {
+                border-right:2px dotted #e7e7e7;
+              }
+              .duration {
+                margin-bottom:5px;
+                margin-top:0;
+                line-height:15px;
+                color: #37474f;
+              }
+              .label-success {
+                color: #90bd12!important;
+              }
+              .stops-line {
+                line-height:16px;
+              }
+              .stopping-line {
+                width:80%;
+                margin:7px auto;
+                height:2px;
+                background:#858585;
+                position:relative;
+                ul {
+                  position:absolute;
+                  top:-10px;
+                  bottom:0;
+                  left:0;
+                  right:0;
+                  margin:auto;
+                  padding:0;
+                  text-align:center;
+                }
+                li {
+                  width:7px;
+                  height:8px;
+                  @include radius(50%,50%,50%,50%);
+                  background:#858585;
+                  display:inline-block;
+                  margin:-1px 3px;
+                  text-align:center;
+                }
+                &.direct {
+                  background: #90bd12;
+                  li {
+                    background: #90bd12;
+                  }
+                }
+              }
+              .stops, .info {
+                display:block;
+              }
+            }
+            .c-header {
+              font-size:10px;
+              &.last {
+                padding-top:8px;
+              }
+            }
+            .message {
+              color: #ff4444;
+              display: inline-block;
+              font-size: 12px;
+              padding: 0px 0px 3px 0px;
+              margin-bottom:5px;
+            }
+          }
+        }
+        .togglers {
+          margin:0;
+          .toggler, .bs-popover, .additional-fees {
+            padding:5px 0px;
+            font-size:14px;
+            border:none;
+          }
+          .summary {
+            padding:7px 5px;
+            & > div[class^='col'] {
+              padding-left:5px!important;
+              padding-right:5px!important;
+            }
+          }
+          .toggler {
+            color:#878787;
+            line-height:22px;
+            display:inline-block;
+            @include radius(2px,2px,2px,2px);
+            border:1px solid #35afde;
+            background:lighten(#F0F9FC,3%);
+            padding:2px 10px;
+            margin-top:10px;
+            margin-right:20px;
+            &:hover {
+              background:#F0F9FC;
+            }
+            i {
+              color:#878787;
+              margin-right:7px;
+              margin-top:-2px;
+              vertical-align:middle;
+              font-size:14px;
+            }
+
+          }
+          .perks {
+            display:inline-block;
+            .fa {
+              top:3px;
+            }
+            .glyphicons {
+              top:4px;
+              font-size:14px;
+              padding-right:6px;
+            }
+            .plus {
+              font-size:20px;
+              display:inline-block;
+              padding:0px 10px;
+            }
+          }
+          .important {
+            width:15px;
+            float:right;
+            padding:5px 0px;
+            line-height:22px;
+            span {
+              background:red;
+              color:#fff;
+              @include radius(999px,999px,999px,999px);
+              width:15px;
+              height:15px;
+              line-height:15px;
+              font-size:13px;
+              font-weight:800;
+              display:inline-block;
+              vertical-align:middle;
+              text-align:center;
+              cursor:pointer;
+
+            }
+          }
+          .bs-popover {
+            color:#999999;
+            line-height:22px;
+            span {
+              display:inline-block;
+            }
+            .weight-metric {
+              vertical-align:middle;
+            }
+            .baggage-items {
+              .icon-text {
+                i {
+                  top:3px;
+                }
+              }
+              .grey:hover {
+                color:#555!important;
+                .fa, .weight-metric {
+                  color:#555!important;
+                }
+              }
+            }
+            a:hover {
+              color:none!important;
+              .fa-suitcase, .weight-metric {
+                color:#7fba00;
+              }
+            }
+          }
+          .popovers {
+            min-height:40px;
+          }
+          .additional-fees {
+            vertical-align:middle;
+            color:#999999;
+            line-height:18px;
+            width:100%;
+            display:block;
+            text-align:right;
+            padding:5px 0px 0px 0px;
+            .no-fee {
+              color:#7fba00;
+            }
+            sup {
+              font-size:9px;
+              display:inline-block;
+              padding-top:5px;
+              vertical-align:middle;
+            }
+          }
+        }
+        .panel-footer {
+          background:none;
+          border-top:none;
+          padding:0px 20px;
+          .flight-details {
+            margin:0;
+          }
+        }
+      }
+    }
+  }
+  .travel-info {
+    .offer-price {
+      .price-value {
+        color: #ff4444;
+      }
+    }
+  }
+  .offer-price {
+    sup{
+      font-size: 16px;
+      position: relative;
+      top: -14px;
+    }
+    a.btn{
+      margin: 10px 0;
+    }
+    a.btn.smaller-margins{
+      margin: 15px 0;
+    }
+    .price-value{
+      font-size: $offer-price-value-size;
+      display: inline-block;
+      padding-top: 8px;
+      line-height: 18px;
+      letter-spacing: -1px;
+      color: #E92133;
+      i{
+        font-size: 18px;
+        font-style: normal;
+        line-height: 20px;
+        vertical-align: baseline;
+      }
+      &._BYR,
+      &._RUB {
+        font-size: 28px;
+        sup {
+
+        }
+      }
+    }
+    .seats-left {
+      font-size: $font-size-small;
+      color: $red-color;
+      border-radius: $border-radius-base;
+      display: inline-block;
+      margin-top: 5px;
+      padding: 3px 0;
+      font-weight: 600;
+    }
+    .per-person {
+      color: $grey-color;
+      font-size: 13px;
+    }
+  }
+
+  .flight-details{
+    .direction{
+      margin-bottom: 16px;
+      background-color: $light-blue-color;
+      padding: 7px 10px 4px;
+      border-radius: $border-radius-base;
+      border: 1px solid $border-light-blue;
+      .v-sep {
+        height: 19px;
+        color: #d8eaf1;
+      }
+    }
+    .direction .name{
+      padding-right: 15px;
+      margin-right: 15px;
+      border-right: 1px solid $border-light-blue;
+    }
+    .large{
+      font-weight: 600;
+    }
+    table.info{
+      border-top: none;
+      margin-bottom: 0;
+      td, th{
+        vertical-align: top;
+        width: 25%;
+        padding: 0 20px;
+        border: none;
+      }
+      th{
+        font-weight: normal;
+        color: $grey-color;
+        font-size: 14px;
+        padding-bottom: 14px;
+      }
+      td:first-child,
+      th:first-child
+      {
+        padding-left: 0;
+        img {
+          margin-right: 10px;
+        }
+      }
+      td:last-child,
+      th:last-child
+      {
+        padding-right: 0;
+        img {
+          margin-right: 10px;
+        }
+      }
+      p{
+        line-height: 18px;
+      }
+      .align {
+        width: 60%;
+      }
+    }
+    hr{
+      margin: 20px -20px 20px !important;
+      border-top: 1px dashed $light-border-color;
+    }
+    .stopover{
+      margin: 10px 0 17px;
+      padding: 5px 0;
+      border-top: 1px dashed $light-border-color;
+      border-bottom: 1px dashed $light-border-color;
+      p:last-child {
+        margin-bottom: 0;
+        padding-top: 2px;
+      }
+      .fa {
+        margin-left: 3px;
+        margin-right: 5px;
+      }
+      .sk {
+        font-size: 18px;
+        vertical-align: text-bottom;
+      }
+    }
+    .guarantee-info {
+      color: #45af49;
+      i {
+        margin-right: 3px;
+      }
+    }
+    .trip-details {
+      margin-top: 5px;
+      p {
+        line-height: 24px;
+      }
+    }
+    .glyphicons-train, .glyphicons-bus {
+      width: 18px;
+      text-align: center;
+      margin-right: 4px;
+    }
+    .glyphicons-train {
+      margin-top: -3px;
+    }
+    .glyphicons-bus {
+      margin-top: -4px;
+    }
+  }
+
+  .flight-search-form{
+    border-radius: $border-radius-base;
+    background: $light-bg-color-2;
+    form{
+      margin-top: 5px;
+    }
+    .submit-cell{
+      margin-top: -47px;
+    }
+    .toggle-group{
+      margin-top: -6px;
+    }
+    .toggler-container{
+      margin-bottom: 47px;
+    }
+    .toggler{
+      margin: 14px 0 11px;
+    }
+    .toggler.active{
+      margin-bottom: 20px;
+    }
+  }
+  .search-results{
+    hr{
+      margin: 20px 0;
+    }
+  }
+  .search-results-name{
+    h1, h2 {
+      font-size: 28px;
+      margin-bottom: 5px;
+      margin-top: 0;
+      color: #0085ca;
+      font-weight: 600;
+    }
+    p:last-child{
+      margin-bottom: 0;
+    }
+    span{
+      color: #C4CDD2;
+      margin-left: 5px;
+    }
+    i {
+      font-size: 18px;
+      line-height: 30px;
+      vertical-align: bottom;
+      color: #A1B7C3;
+    }
+  }
+  .flight-date {
+    span {
+      color: $grey-color;
+    }
+  }
+  .search-results-preloader {
+    &.well {
+      padding: 10px 20px;
+      font-size: $font-size-base;
+      margin-top: 20px;
+      .progress{
+        margin-bottom: 10px;
+      }
+      p{
+        margin-top: 2px;
+        margin-bottom: 5px;
+        color: $grey-color;
+      }
+    }
+    &.giant {
+      position: relative;
+      margin-top: 20px;
+      .progress{
+        margin-bottom: 10px;
+        height: 40px;
+      }
+      p{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        color: $dark-color;
+        text-shadow: 0 0 4px #FFF, 0 2px 4px #FFF, 2px -1px 6px #FFF, -2px -2px 11px #FFF, 2px -3px 18px #FFF;
+      }
+    }
+    .ui-widget-header {
+      border: none;
+    }
+  }
+  .sort-by {
+    h4 {
+      font-size: $sidebar-header-font-size;
+      margin-top: 0;
+    }
+    a {
+      display: block;
+      font-size: $font-size-base;
+      padding: 5px 15px;
+      line-height: 38px;
+      text-decoration: none;
+      color: $dark-color;
+      border-radius: $border-radius-base;
+      &:hover, &:focus {
+        background: #ebebeb;
+      }
+      &.active {
+        background: darken(#ebebeb,3%);
+      }
+    }
+  }
+
+  //  Hotels
+
+  .hotels {
+    .search-results-name {
+      span {
+        color: #888;
+      }
+    }
+  }
+  .h-search-track {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $light-border-color;
+    td {
+      vertical-align: top;
+      i {
+        padding: 0 20px;
+        color: $light-grey-color2;
+      }
+    }
+    td:first-child {
+      padding-left: 20px;
+    }
+    a {
+      font-size: 15px;
+    }
+    p{
+      color: #888;
+      font-size: 12px;
+      margin-bottom: 0
+    }
+  }
+
+  .hotel-info {
+    position: relative;
+    .picture-fix {
+//      margin-top: -5px;
+//      margin-bottom: -5px;
+      margin-left: -10px;
+    }
+    .hotel-images {
+      position: relative;
+      .sale {
+        $size: 50px;
+        display: block;
+        width: $size;
+        height: $size;
+        line-height: $size;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 999px;
+        background-color: $red-color;
+        font-weight: 600;
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .label-tri {
+        position: absolute;
+        top: 20px;
+        left: -5px;
+        .meal {
+          position: relative;
+          background-color: $red-color;
+          padding: 5px 25px;
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+        }
+        i {
+          position: absolute;
+          left: 0;
+          bottom: -8px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 5px 5px 0;
+          border-color: transparent darken($red-color, 25%) transparent transparent;
+        }
+      }
+      .hotel-type {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        .hotel-type-icon {
+          $size: 40px;
+          display: inline-block;
+          width: $size;
+          height: $size;
+          line-height: $size;
+          font-size: 16px;
+          text-align: center;
+          margin-right: 5px;
+          border-radius: 999px;
+          color: #fff;
+          background-color: #ccc;
+          i {
+            vertical-align: middle;
+            padding-top: 2px;
+            width: $size;
+            &.glyphicons {
+              padding-bottom: 7px;
+            }
+          }
+          &.badge-beach {
+            background-color: $yellow-color;
+          }
+          &.badge-family {
+            background-color: $blue-color;
+            i {
+              font-size: 14px;
+            }
+          }
+          &.badge-business {
+            background-color: $violet-color;
+          }
+          &.badge-citybreak {
+            background-color: $success-color;
+          }
+        }
+      }
+    }
+    .hotel-picture {
+      $block-height: 220px;
+      position: relative;
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+      .block-image {
+        height: $block-height;
+      }
+      &:hover .shield {
+        opacity: 0.3;
+      }
+      &:hover .icon {
+        display: block;
+      }
+      .icon {
+        display: none;
+        width: 100%;
+        text-align: center;
+        line-height: $block-height;
+        color: #fff;
+        font-size: 28px;
+        position: relative;
+      }
+      .gallery-preloader {
+        display: none;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        padding-top: 70px;
+        i {
+          font-size: 28px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+      &.active .shield {
+        opacity: 0.5;
+      }
+      &.disabled {
+        pointer-events: none;
+      }
+      &.active {
+        .gallery-preloader {
+          display: block;
+        }
+      }
+      .block-image {
+        img {
+          height: $block-height;
+        }
+        &.slick-slider {
+          margin-bottom: 0;
+        }
+        .slick-nav {
+          position: absolute;
+          height: 100%;
+          width: 20%;
+//          margin-top: 0;
+//          top: 0;
+          i {
+            position: absolute;
+            color: #fff;
+            opacity: 0.5;
+            font-size: 50px;
+            line-height: 50px;
+            top: 50%;
+            margin-top: -25px;
+          }
+          &:hover, &:focus {
+            i {
+              opacity: 1;
+            }
+          }
+        }
+        .slick-prev {
+          &:before {
+            content: '';
+          }
+          left: 0;
+          i {
+            left: 10px;
+          }
+        }
+        .slick-next {
+          &:before {
+            content: '';
+          }
+          right: 0;
+          i {
+            right: 10px;
+          }
+        }
+      }
+    }
+    .no-image {
+      width: 100%;
+      font-size: 100px;
+      line-height: 200%;
+      text-align: center;
+      background: #f1f1f1;
+      color: $light-grey-color2;
+    }
+    .hotel-name {
+      font-size: $font-size-large + 2;
+      color: #00a2de;
+      line-height: 20px;
+      padding-bottom: 3px;
+      font-weight: 600;
+      display: block;
+      max-height: 40px;
+      overflow: hidden;
+      text-decoration: none;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-bottom: 5px;
+      &:hover {
+        color: darken($hotel-title-color, 5%);
+      }
+    }
+    .rate-points {
+      font-size: $font-size-large;
+      color: $dark-color;
+      line-height: 20px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .distance {
+      margin-bottom: 3px;
+      position: relative;
+      .distance-tooltip {
+        display:inline-block;
+      }
+      &.last {
+        margin-bottom: 0;
+      }
+      i {
+        margin:2px 5px 0 0;
+        color: #324d5b;
+      }
+      .fa {
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+      .glyphicons {
+        padding-left: 2px;
+        &.glyphicons-bus {
+          font-size: 12px;
+          padding-right: 2px;
+          line-height: 17px;
+          margin-left: 1px;
+        }
+      }
+    }
+    .rating-block {
+//      min-height: 129px;
+      .rate-block {
+        margin-bottom: 3px;
+      }
+      .thumb-rate {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1;
+      }
+    }
+    .offer-price {
+      .price-value {
+        padding-top: 0;
+      }
+      .features {
+        color: $tripadvisors-color;
+        border-top: 1px solid #ccc;
+        margin-top: 5px;
+        padding-top: 10px;
+        float: right;
+        ul {
+          list-style: none;
+          padding-left: 0;
+          li {
+            font-size: 14px;
+            line-height: 15px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+    table.properties {
+      position: absolute;
+      bottom: 0;
+    }
+    .hotel-info-col {
+      height: $block-height;
+      position: relative;
+      max-width: 270px;
+    }
+    .hotel-price-col {
+      text-align: right;
+      min-width: 180px;
+    }
+  }
+  .hotel-tripad-block {
+    table {
+      width: 100%;
+      td:nth-child(2n) {
+        text-align: right;
+        vertical-align: middle;
+      }
+    }
+    .rate {
+      margin: 0;
+    }
+  }
+  .rate-stars {
+    i.star {
+      font-size: $font-size-base;
+      color: #dbdbdb;
+    }
+    .star:not(.fa-star-o) {
+      font-size: $font-size-base;
+      color: $stars-color;
+    }
+    .thumb {
+      display: inline-block;
+      border-radius: $border-radius-base;
+      padding: 0 5px 3px;
+      margin-left: 5px;
+      line-height: 20px;
+      width: 23px;
+      height: 23px;
+      .fa {
+        color: $success-color;
+        font-size: 16px;
+      }
+    }
+    a:hover.thumb{
+      color: darken($success-color,3%);
+    }
+  }
+  .hotel-info-block {
+    .rate-stars .thumb {
+      padding: 0 2px 0px;
+      margin-left: 5px;
+      line-height: 16px;
+    }
+    .rate-stars {
+      margin-top: -5px;
+    }
+  }
+  .hotels {
+    .hotels-map-big {
+      margin-bottom: 20px;
+      border:1px solid $light-grey-color;
+      border-radius: $border-radius-base;
+      background: #f9f9f9;
+      .headline {
+        h2 {
+          margin: 0;
+          line-height: 36px;
+        }
+        border-bottom: 1px solid $light-grey-color;
+        padding: 20px;
+      }
+      .btn-close-map {
+        border: 1px solid $light-grey-color;
+        border-radius: $border-radius-base;
+        background: #fff;
+        font-size: $font-size-large;
+        color: $grey-color;
+        text-decoration: none;
+        padding: 5px 20px;
+        i {
+          margin-left: 10px;
+        }
+      }
+    }
+    .map-wrapper {
+      height: 500px;
+      position: relative;
+
+    }
+    .marker-info {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 570px;
+      height: 120px;
+      background: #fff;
+      border-radius: $border-radius-base;
+      display:none;
+    }
+  }
+  .hotels {
+    .room-footer {
+      margin-top: 5px;
+      .arrow i {
+        color: $link-color;
+        font-size: 14px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .panel.panel-room {
+    .rooms-options {
+      border-bottom:1px solid $light-border-color;
+    }
+  }
+  .panel.hotel {
+    .rooms-list {
+      margin-top: 10px;
+      margin-bottom: 15px;
+      &:last-child {
+        table tr:not(.hidden):last-child {
+          border: none;
+          td {
+            border: none;
+          }
+        }
+      }
+    }
+    .room-header {
+      padding: 2px 15px;
+      margin-left: -15px;
+      margin-right: -15px;
+      border-top: 1px solid rgba(55,71,79,0.08);
+      border-bottom: 1px solid rgba(55,71,79,0.08);
+      background: url("../images/skrydziai/grid.png") repeat rgba(55, 71, 79, 0.05);
+      span {
+        font-weight: 600;
+        color: #37474f;
+      }
+    }
+    &:not(.travel-info) {
+      .room-options {
+        td {
+          &.passengers {
+            display:none;
+          }
+        }
+      }
+    }
+    .room-options {
+      td {
+//        padding: 10px;
+        vertical-align: top;
+        font-size: 15px;
+        .fa-user {
+          color: #bbb;
+          margin-right: 3px;
+          &.adult {
+            font-size: 14px;
+          }
+          &.child {
+            font-size: 12px;
+          }
+          &.infant {
+            font-size: 10px;
+          }
+        }
+        i {
+          font-style: normal;
+          margin-top:2px;
+        }
+      }
+      .row-border {
+        border-bottom: 1px solid #e7e7e7;
+      }
+      tr:hover {
+        background-color: #f9f9f9;
+        cursor: pointer;
+      }
+      td:nth-child(1) {
+        padding-left: 10px;
+        width: 15%;
+        padding-right:10px;
+      }
+      td:nth-child(2) {
+        width: 15%;
+      }
+      td:nth-child(3) {
+        width: 5%;
+      }
+      td:nth-child(4) {
+        width: 9%;
+        text-align: right;
+      }
+      td:nth-child(5) {
+        width: 20%;
+        text-align: right;
+        i {
+          margin-right: 5px;
+          font-style: normal;
+          font-size: 14px;
+        }
+        .label {
+          margin-right: 5px;
+        }
+      }
+      td:last-child {
+        padding-right: 10px;
+      }
+      .coral {
+        color: #ff4444 !important;
+      }
+      .dark-color {
+        color: #333;
+      }
+      .hotel-room-price {
+        color: #FE6601;
+        font-size: 20px;
+        line-height: 16px;
+        vertical-align: middle;
+        strong {
+          font-weight: 800;
+        }
+      }
+      .history-price {
+        font-size: 13px;
+        color:#999;
+        vertical-align: middle;
+      }
+      .price {
+        vertical-align: middle;
+      }
+      .rooms-head {
+        border-bottom: 1px solid #e7e7e7;
+        &:hover {
+          background-color: transparent;
+          cursor: default;
+        }
+        td {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-size: 13px;
+          font-weight: 600;
+          &:last-child {
+            padding-right: 10px;
+          }
+        }
+      }
+      .room-footer {
+        margin-left: 0;
+        a {
+          font-weight: 600;
+        }
+      }
+    }
+    &.travel-info {
+      position: relative;
+      .picture-fix {
+        margin-left: -10px;
+      }
+      .images {
+        position: relative;
+        .sale {
+          display: block;
+          width: 42px;
+          height: 42px;
+          border-radius: 999px;
+          background-color: $travels-red-color;
+          color: #fff;
+          font-size: 14px;
+          line-height: 42px;
+          text-align: center;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+      }
+      .picture {
+        position: relative;
+        display: block;
+        &:hover .shield {
+          opacity: 0.3;
+        }
+        &:hover .icon {
+          display: block;
+        }
+        .icon {
+          display: none;
+          width: 100%;
+          text-align: center;
+          line-height: 200px;
+          color: #fff;
+          font-size: 28px;
+          position: relative;
+        }
+      }
+      .no-image {
+        width: 100%;
+        font-size: 100px;
+        line-height: 200%;
+        text-align: center;
+        background: #f1f1f1;
+        color: $light-grey-color2;
+      }
+      .hotel-info {
+        .hotel-info-col {
+          padding-right: 0;
+          max-width: 40%;
+          table.properties {
+            bottom: -5px;
+          }
+        }
+      }
+      .hotel-info-block {
+        .label {
+          font-size:12px;
+          position: relative;
+          bottom: auto;
+          right: auto;
+          &.label-danger {
+            background:$travels-red-color;
+          }
+          &.label-success {
+            padding:5px 0px 0px 0px;
+          }
+          &.label-green {
+            background: #99cc00;
+            color: #fff;
+          }
+        }
+        .hotel-description {
+          font-size: 14px;
+          font-style: italic;
+          line-height: 15px;
+          color: #888;
+          overflow: hidden;
+          margin: 10px 0 0;
+          height: 100px;
+        }
+      }
+      .name {
+        font-size: $font-size-large + 2;
+        color: $dark-color;
+        line-height: 20px;
+        font-weight: 600;
+        display: inline-block;
+        max-height: 40px;
+        overflow: hidden;
+      }
+      .rate-points {
+        margin-bottom: 3px;
+      }
+      .distance {
+        margin-bottom: 5px;
+        margin-right: 10px;
+        position: relative;
+        display: inline;
+        color: #324d5b;
+        &.last {
+          margin-bottom: 0;
+        }
+        .fa {
+          padding-left: 2px;
+          padding-right: 2px;
+          color: #324d5b;
+        }
+        .glyphicons {
+          padding-left: 2px;
+          &.glyphicons-bus {
+            font-size: 12px;
+            padding-right: 2px;
+            line-height: 17px;
+            margin-left: 1px;
+          }
+        }
+      }
+      .room-options {
+        th {
+          border-top:1px dashed #e7e7e7;
+          vertical-align: top;
+          padding-top: 10px;
+          padding-bottom: 10px;
+//          font-weight: 400;
+        }
+
+        td, th {
+          vertical-align: middle;
+          line-height: 16px;
+          &:nth-child(1) {
+            width: 35%;
+          }
+          &:nth-child(2) {
+            width: 23%;
+          }
+          &:nth-child(3) {
+            width: 17%;
+          }
+          &:nth-child(4) {
+            width: 7%;
+            text-align:left;
+          }
+          &:nth-child(5) {
+            width: 23%;
+          }
+          &:nth-child(6) {
+            width: 18%;
+          }
+          &:nth-child(7) {
+            width: 10%;
+            text-align: right;
+          }
+          &:last-child {
+            text-align:right;
+          }
+        }
+        tr:last-child {
+          td {
+            border-bottom: 1px solid $light-border-color!important;
+          }
+        }
+        .price {
+          color: $travels-red-color;
+          i {
+            font-size: 13px;
+            font-style: normal;
+          }
+        }
+        .room-nr {
+          td {
+            background-color: $light-bg-color;
+            padding-left: 10px;
+          }
+        }
+        .hotel-room-price {
+          color: #FE6601;
+        }
+        .more-rooms {
+          padding-bottom: 10px;
+        }
+        .label {
+          padding:7px;
+          line-height:8px;
+          display:inline-block;
+          &.label-warning {
+            background:$travels-primary-color;
+          }
+          &.label-danger {
+            background:#ff4444 !important;;
+          }
+        }
+        &.head {
+          tr {
+            &:hover {
+              background-color: transparent;
+              cursor: default;
+            }
+          }
+        }
+      }
+      .room-header {
+        padding-bottom: 0;
+        i {
+          color: #888;
+        }
+      }
+      .rating-block {
+//        min-height: 105px;
+        .rate-block {
+          margin-bottom: 1px;
+        }
+        .thumb-rate {
+          font-weight: 600;
+        }
+      }
+      .price-block {
+        position: absolute;
+        bottom: 5px;
+        right: 0px;
+        width: 90%;
+      }
+      .offer-price {
+        .price-value {
+          padding-top: 0;
+        }
+      }
+      table.properties {
+        position: absolute;
+        bottom: 0;
+      }
+      .info-col {
+        min-height: 195px;
+        position: relative;
+      }
+      .service-icons {
+        margin-bottom: 0;
+        max-width: inherit;
+        .service {
+          width: 30px;
+          height: 30px;
+          padding: 7px 0;
+          margin-right: 5px;
+          margin-bottom: 2px;
+          margin-top: 4px;
+          border-radius: 5px;
+          cursor:pointer;
+          &.active {
+            color: #90979A;
+            border-color: #FFCD44;
+            background-color: #fff;
+          }
+        }
+      }
+      .room-footer {
+        margin-top: 10px;
+        font-weight:600;
+        a {
+          margin-left: 15px;
+        }
+      }
+    }
+    &.special-offer {
+      border-color: $travels-primary-color;
+      .panel-heading {
+        background-color: $travels-primary-color;
+        color: #fff;
+      }
+    }
+    .offer-price {
+      height: 220px;
+      position: relative;
+      .price-value {
+        padding-top: 0;
+      }
+      .history-price {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+    .price-block {
+      position: absolute;
+      bottom: 15px;
+      right: 0px;
+      width: 90%;
+    }
+  }
+  &.card-1 {
+    .panel.hotel {
+      $padding: 15px;
+      .room-options-block {
+        display: none;
+      }
+      .panel-body {
+        padding: 0;
+      }
+      .hotel-info-col {
+        padding-top: $padding;
+        table.properties {
+          bottom: $padding;
+        }
+      }
+      .offer-price {
+        padding-right: $padding;
+        padding-top: $padding;
+      }
+      .hotel-info {
+        .hotel-picture .block-image {
+          border-top-right-radius: 0!important;
+          border-bottom-right-radius: 0!important;
+        }
+        .rating-block {
+          min-height: 77px;
+        }
+      }
+      .price-block {
+        right: 15px;
+      }
+    }
+  }
+  &.card-2 {
+    .panel.hotel {
+      .room-options-block {
+        padding: 15px 0 0;
+        .room-options {
+          th {
+            border-top: 1px dashed $light-border-color;
+            vertical-align: top;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          td {
+            border-top: 1px solid $light-border-color;
+          }
+          tr:first-child {
+            td {
+              border-top: none;
+            }
+          }
+          tr:last-child {
+            td {
+              border-bottom: 1px solid $light-border-color;
+            }
+          }
+          .all-inclusive {
+            color: #f85b0c;
+          }
+          .traveler {
+            margin-right: 3px;
+          }
+        }
+      }
+      .panel-body {
+        padding: 12px 15px;
+      }
+      .hotel-images {
+        padding: 15px 0 5px 15px;
+      }
+      .history-price {
+        margin-right: 5px;
+        margin-left: 10px;
+        font-size: 14px;
+        vertical-align: initial;
+      }
+      .room-price {
+        display: inline-block;
+        margin-left: 5px;
+      }
+      .panel-body {
+        padding: 0;
+      }
+      .hotel-images {
+        position: relative;
+        .sale {
+          $size: 50px;
+          width: $size;
+          height: $size;
+          line-height: $size;
+        }
+      }
+//      .hotel-picture {
+//        $block-height: 200px;
+//        .block-image {
+//          height: $block-height;
+//          border-top-right-radius: 0;
+//          border-bottom-right-radius: 0;
+//        }
+//        .icon {
+//          line-height: $block-height;
+//        }
+//      }
+      .hotel-info-col {
+        height: 230px;
+        padding-top: 15px;
+        padding-left: 5px;
+        table.properties {
+          position: absolute;
+          bottom: 5px;
+        }
+      }
+      .hotel-price-col {
+        text-align: right;
+        padding-top: 15px;
+        padding-left: 5px;
+        .offer-price {
+          padding-right: 15px;
+        }
+        .rating-block {
+//          min-height: 105px;
+        }
+      }
+      .room-options-block {
+        padding: 0 15px;
+      }
+      .ver1-icons {
+        display: none;
+      }
+      .service {
+        margin-right: 7px;
+        border-radius: 5px;
+      }
+      .price-block {
+        right: 15px;
+      }
+    }
+  }
+  .travel-icons i {
+    color: $success-color;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .travels, .travel-sys {
+    .map-big {
+      margin-bottom: 20px;
+      border:1px solid $light-grey-color;
+      border-radius: $border-radius-base;
+      background: #f9f9f9;
+      .headline {
+        h2 {
+          margin: 0;
+          line-height: 36px;
+        }
+        border-bottom: 1px solid $light-grey-color;
+        padding: 20px;
+      }
+      .btn-close-map {
+        border: 1px solid $light-grey-color;
+        border-radius: $border-radius-base;
+        background: #fff;
+        font-size: $font-size-large;
+        color: $grey-color;
+        text-decoration: none;
+        padding: 5px 20px;
+        i {
+          margin-left: 10px;
+        }
+      }
+    }
+    .map-wrapper {
+      height: 500px;
+      position: relative;
+
+    }
+    .marker-info {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 570px;
+      height: 120px;
+      background: #fff;
+      border-radius: $border-radius-base;
+      display:none;
+    }
+  }
+
+  .mark-stops .stops,
+  .mark-duration .duration,
+  .mark-take-off-out-time .airport:not(.last) .take-off.time,
+  .mark-take-off-in-time .airport.last .take-off.time,
+  .mark-landing-out-time .airport:not(.last) .landing.time,
+  .mark-landing-in-time .airport.last .landing.time,
+  .mark-airport-code .airport.code,
+  .mark-take-off-out-time .airport-compact:not(.last) .take-off.time,
+  .mark-take-off-in-time .airport-compact.last .take-off.time,
+  .mark-landing-out-time .airport-compact:not(.last) .landing.time,
+  .mark-landing-in-time .airport-compact.last .landing.time,
+  .mark-airport-code .airport-compact.code
+  {
+      color: $primary-color;
+  }
+
+  .baggage-slash {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #5A5A5A;
+    font-size: 26px;
+  }

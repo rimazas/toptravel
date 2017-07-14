@@ -1,0 +1,1128 @@
+@import "../main_scss/_variables";
+@import "../main_scss/_mixin";
+
+@mixin radius($x) {
+  border-radius:$x;
+}
+.payment-method, .order-details, .hotels-order-block {
+  .panel {
+    border:1px solid #e7e7e7;
+    margin-bottom:0; //No margins for sticky block
+    background:#fff!important;
+    width:100%;
+    @include radius(4px);
+    &.payment-method-block {
+      border:none!important;
+      .btn {
+        padding:10px 20px;
+        font-size:18px;
+      }
+    }
+  }
+  ul.nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      flex:1;
+      margin-right: 2px;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      border-left: 1px solid #e7e7e7;
+      border-right: 1px solid #e7e7e7;
+      border-top: 1px solid #e7e7e7;
+      &.active {
+        background: #fff !important;
+        > a, a:hover {
+          border-left: none;
+          border-right: none;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background: #fff;
+      }
+      a {
+        width: 100%;
+        background: transparent!important;
+        text-align: center;
+        border-left: none;
+        border-right: none;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:hover {
+          background: transparent!important;
+        }
+      }
+    }
+  }
+  .radio-tabs {
+    margin-bottom: -1px;
+    background: $light-bg-color;
+    border-top: 3px solid $yellow-color;
+    border-left: 1px solid $light-border-color;
+    border-right: 1px solid $light-border-color;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    .radio {
+      flex:1;
+      border-right: 1px solid $light-border-color;
+      &:last-child {
+        border: none;
+      }
+      label {
+        padding: 15px;
+      }
+    }
+    .ico {
+      &:before {
+        background: $yellow-color;
+      }
+    }
+  }
+  .credit-cards-payment {
+    .security {
+      text-align: right;
+      img {
+        margin-left: 10px;
+        width: 80px;
+      }
+    }
+    h4 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #1dbd45;
+    }
+    .cards {
+      margin-bottom: 20px;
+      .radio-group {
+        padding: 0;
+      }
+      .radio {
+        label {
+          line-height: normal;
+          margin-right: 5px;
+          .checked {
+            display: none;
+          }
+        }
+      }
+      .ico {
+        margin-top: 10px;
+        &:before {
+          background: $yellow-color;
+        }
+      }
+      .bank-sprite {
+        $scale: 6;
+        @include bank-sprite($scale);
+        margin-top: 5px;
+      }
+      .bank-logo {
+        display: inline-block;
+        background-color: $light-bg-color;
+        border: 1px solid $light-border-color;
+        border-radius: 4px;
+        padding: 0;
+      }
+    }
+    .verification {
+      margin: 10px 0;
+      width: 150px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+    }
+    .payment-options {
+      .title {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+    }
+    .notification {
+      display: none;
+      &.error {
+        display: inline-block;
+        margin-bottom: 15px;
+        color: #fd575c;
+      }
+    }
+  }
+  .order-widget {
+    .contacts {
+      .phone {
+        margin-bottom:5px;
+      }
+    }
+    .order-summary {
+      .offer-price {
+        .price-value {
+          color:#e40021;
+        }
+      }
+    }
+    .panel-heading:not(.contacts) {
+      padding:10px 0px 0px;
+      h4 {
+        padding:10px 15px 15px;
+      }
+    }
+    .panel-body {
+      padding:0px;
+    }
+    .sidebar-block {
+      padding:0px 15px;
+      float:left;
+      width:100%;
+    }
+    .toggler {
+      padding:15px 0px;
+      span, a {
+        display:block;
+      }
+      .small {
+        font-weight:normal;
+        line-height:12px;
+        padding-top:3px;
+      }
+      .t-label {
+        line-height:20px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .fa {
+        line-height:20px;
+        color:#888888;
+        font-size:13px;
+      }
+      .fa-angle-down {
+        font-size:16px;
+      }
+      .bs-tooltip, .bs-tooltip-price-breakdown {
+        margin-right:5px;
+        padding-left:5px;
+        float: right;
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+    .summary-transaction-fee {
+      .property {
+        width:70%;
+      }
+      .price {
+        width:30%;
+        min-width:auto;
+      }
+    }
+    .toggler-container {
+      padding-left:0;
+      padding-right:0;
+      font-size:12px;
+      float:left;
+      width:100%;
+      display:block;
+      .fa {
+        padding:0px 5px;
+        vertical-align:middle;
+        font-size:9px;
+      }
+      .direction {
+        display:inline-block;
+        vertical-align:middle;
+      }
+      .grey {
+        font-weight:normal;
+      }
+      .type {
+        font-size:12px;
+        text-align:right;
+      }
+      .direct {
+        color:#9aca27;
+      }
+      .price {
+        padding-left:5px;
+      }
+      .light {
+        color:darken(#ccc,15%);
+        padding-right:5px;
+      }
+
+      .dark-green {
+        td {
+          color:#7fba00;
+          &:last-child {
+            font-weight:bold;
+          }
+        }
+      }
+      table {
+        width:100%;
+        table-layout: fixed;
+      }
+      thead {
+        border:none;
+      }
+      th {
+        color:#1c1c1c;
+        padding-bottom:10px;
+      }
+      .hotel-name {
+        width:100%;
+        color:#1c1c1c;
+        font-size:13px;
+        font-weight:600;
+        .title {
+          padding-right:5px;
+        }
+      }
+      .block-image.banner-hotel-order {
+        height:120px;
+        width:auto;
+        margin-bottom:10px;
+      }
+      td {
+        color:#1c1c1c;
+        font-size:13px;
+        padding:0;
+        &:last-child:not([colspan='2']) {
+          text-align:right;
+        }
+        &:first-child {
+          width:60%;
+        }
+        &:last-child {
+          width:40%;
+        }
+      }
+      &.summary-services {
+        td {
+          padding:2px 0;
+        }
+      }
+    }
+    .flight-price-block {
+      .toggler-container {
+        td {
+          padding-bottom: 5px;
+        }
+      }
+    }
+    #administration {
+      td.property {
+        width:60%;
+      }
+    }
+    .panel-footer {
+      padding:15px;
+      .total-title, .offer-price {
+        text-align: right;
+      }
+    }
+  }
+}
+.payment-method, .order-details {
+  .order-status {
+    margin:15px 0px;
+    background:#f8f8f8;
+    border:1px solid #298ed4;
+    padding:20px 15px 20px 40px;
+    overflow:hidden;
+    @include radius(2px);
+    line-height:22px;
+    & > .row > div:first-child {
+      padding-right:0;
+    }
+    & > .row > div:last-child {
+      padding-left:0;
+    }
+    .title {
+      position:relative;
+      color:#298ed4;
+
+      &:before {
+        position:absolute;
+        color:#298ed4;
+        left:-25px;
+        display: inline-block;
+        font-size:18px;
+        font-weight:normal;
+        font-family: FontAwesome;
+      }
+    }
+    p {
+      font-weight:600;
+      font-size:18px;
+      line-height:18px;
+      margin:0;
+    }
+    &.approved {
+      border:1px solid #9aca27;
+      p {
+        color: #9aca27;
+        &:before {
+          color: #9aca27;
+          content: "\f058";
+        }
+      }
+    }
+    &.cancelled {
+      border:1px solid #fc363b;
+      p {
+        color:#fc363b;
+        &:before {
+          color:#fc363b;
+        }
+      }
+    }
+    &.waiting-registration, &.waiting-payment, &.cancelled, &.processing {
+        p:before {
+          content: "\f017";
+        }
+    }
+    &.processing-registration {
+        p:before {
+          content: "\f021";
+        }
+    }
+  }
+  .sep {
+    margin:25px 0px;
+  }
+  .documents-block {
+    padding: 20px 20px 0!important;
+    min-height: 141px;
+  }
+  .panel-body {
+    padding:15px 20px;
+  }
+  .number {
+    border:none;
+    display:inline-block;
+    margin:0px 10px 0px 0px;
+    padding:0;
+  }
+  .order-info {
+    color:#000;
+    font-weight:500;
+    font-size:24px;
+    padding-top:14px;
+  }
+  .fix {
+    padding:0;
+    display:block;
+    color:#a9a9a9;
+  }
+  .content {
+    .panel {
+      margin-bottom:30px;
+    }
+  }
+  .attention {
+    margin:0px;
+    float:left;
+    width:100%;
+    font-size:14px;
+    padding:0px 15px;
+    .fa {
+      color: #ffba00;
+    }
+    p {
+      display:inline-block;
+      float:left;
+      color:#666666;
+      width: 90%;
+      width: -moz-calc(100% - 30px);
+      width: calc(100% - 30px);
+      margin:0;
+    }
+    i {
+      margin:2px 10px 0px 0px;
+      float:left;
+      font-size:16px;
+    }
+    .remark {
+      &.color-red {
+        color: $red-color;
+        .fa {
+          color: $red-color;
+        }
+      }
+    }
+  }
+  .payment-method-block {
+    float:left;
+    width:100%;
+    font-size:14px;
+//    padding:0px 15px;
+  }
+  .order-details, .passengers {
+    .documents-block {
+      min-height:auto;
+      padding:10px 20px 20px 20px!important;
+      &.hotels {
+        padding:30px 10px 0px 10px!important;
+        .title {
+          font-weight:600;
+          font-size:16px;
+        }
+      }
+      .documents {
+        .doc {
+          margin-bottom:8px;
+        }
+        a {
+          font-size: 16px;
+          text-decoration: none;
+          span {
+            border-bottom:1px solid #d6e6f5;
+          }
+          i {
+            font-size: 16px;
+            margin-right: 10px;
+          }
+        }
+        .invoice-title {
+          color:#666666;
+          i {
+            vertical-align:middle;
+          }
+          span {
+            border-bottom:1px solid #e7e7e7;
+          }
+        }
+      }
+
+    }
+    .invoice {
+      padding:10px 20px 20px 20px!important;
+      border-bottom:1px solid #eaeaea;
+      margin-bottom: 20px;
+      .title {
+        font-weight:600;
+      }
+      .invoice-info {
+        padding-top:15px;
+        label {
+          color: #333333;
+          font-weight: 600;
+          margin: 0;
+          font-size:14px;
+        }
+        p {
+          font-size:14px;
+          padding-bottom:15px;
+        }
+      }
+    }
+    .modal-content {
+      .modal-header {
+        font-weight:600;
+        font-size:20px;
+      }
+      .modal-footer {
+        .btn-primary, .btn-default {
+          width:100%;
+          font-size:18px;
+          text-transform:none;
+        }
+      }
+    }
+  }
+  .order-details {
+    .header, .footer, .content {
+      font-size:15px!important;
+      color:#666666!important;
+    }
+    .header {
+      padding-bottom:10px;
+      margin:10px 0px;
+      .btn {
+        margin-top:10px;
+      }
+    }
+    .content {
+      border-top:3px solid #eaeaea;
+      padding:10px;
+      & > .row {
+        border-bottom:1px solid #eaeaea;
+        padding:10px!important;
+      }
+      .row {
+        padding:3px 0px;
+      }
+
+    }
+    .footer {
+      background:none;
+      padding:10px;
+      margin:0;
+      & > .row {
+        padding:0px 10px!important;
+      }
+      .row {
+        padding:3px 0px;
+      }
+    }
+    strong {
+      font-weight:600;
+      color:#000000;
+    }
+    .guest-title {
+      font-size:28px;
+
+    }
+    .count {
+      font-size:15px;
+      color:#999999;
+    }
+    .guest-title, .count {
+      padding-left:20px;
+    }
+    .title {
+      color:#000000;
+      font-size:20px;
+      font-weight:600;
+    }
+  }
+  .invoice-info {
+    label {
+      line-height:26px;
+      font-weight:400;
+      font-size:16px;
+      color:#888888;
+      margin-bottom:0;
+    }
+    p {
+      font-size:18px;
+      margin-bottom:15px;
+    }
+  }
+  .info-block {
+    .title {
+      font-size:16px;
+      font-weight:600;
+      padding-bottom:15px;
+    }
+    .content {
+      padding-bottom:5px;
+      font-size:14px;
+      word-break:break-all;
+    }
+    .documents {
+      a {
+        display:inline-block;
+        text-decoration:none;
+        padding:5px;
+        font-size: 14px;
+        span {
+          border-bottom:1px solid #d6e6f5;
+        }
+      }
+      i {
+        margin-right:10px;
+        font-size:14px;
+      }
+    }
+    .invoice-check-row {
+//      border-top:1px solid #e7e7e7;
+      padding-top: 5px;
+      margin-bottom: 20px;
+    }
+    .checkbox {
+      margin:0;
+      &.styled {
+        .ico {
+          border-color:darken(#e7e7e7,5%);
+          vertical-align:middle;
+        }
+        span {
+          font-weight:normal;
+        }
+      }
+    }
+    .invoice-form {
+      margin:0;
+    }
+    .invoice-details-block {
+      background:#f4f4f4;
+      padding:20px 20px 35px 20px;
+      color:#666666;
+      margin:0 -20px;
+
+      .invoice-title {
+        font-size:15px;
+        float:left;
+        width:100%;
+        padding-bottom:10px;
+        i {
+          color:#666666;
+          padding-right:10px;
+        }
+      }
+      label {
+        color:#666666;
+        font-size:13px;
+      }
+      .form-group {
+        margin-bottom:10px;
+      }
+      .btn {
+        font-size:15px;
+        font-weight:600;
+        padding:10px 15px;
+        width:100%;
+      }
+      .btn-primary {
+        background-color:#99cc00;
+      }
+    }
+  }
+  .invoice-details-block {
+    p.error {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .passengers {
+    .header {
+      padding:0px 10px;
+      .title {
+        font-size: 24px;
+        padding-top:2px;
+        padding-left: 10px;
+        .count {
+          font-size:15px;
+          padding-left:10px;
+          color:inherit;
+        }
+      }
+      .row {
+        border-bottom:3px solid #eaeaea;
+        padding:0px 10px 10px 0;
+      }
+      .count, .direction {
+        color:#999999;
+      }
+      .direction {
+        text-transform:uppercase;
+        font-size:12px;
+      }
+      .code {
+        display:inline-block;
+        font-weight:600;
+      }
+      i {
+        padding:0px 5px;
+        font-size:10px;
+        line-height:14px;
+      }
+    }
+    .content {
+      margin-top: 10px;
+      p {
+        margin:0;
+      }
+      .passenger-custom {
+        border-bottom:1px solid #eaeaea;
+        margin-bottom: 20px;
+        padding: 0px 20px 10px 20px;
+        margin-top: 10px;
+      }
+
+    }
+    .registration {
+      .info {
+        font-size:13px;
+        padding-top:3px;
+        line-height:17px;
+        p {
+          text-align:center;
+        }
+        a {
+          display:inline-block;
+          text-decoration:none;
+          padding:0;
+          span {
+            border-bottom:1px solid #d6e6f5;
+            font-size:14px;
+          }
+        }
+        span {
+          display:inline;
+          vertical-align:middle;
+        }
+        i {
+          margin-right:3px;
+          font-size:22px;
+          float:left;
+        }
+      }
+      .btn-primary {
+        font-size:14px;
+        font-weight:bold;
+        padding:12px 0px;
+        width:200px;
+      }
+      span {
+        display:inline-block;
+      }
+      i {
+        font-size:19px;
+        vertical-align:middle;
+        padding-right:7px;
+      }
+      .title {
+        color:#999999;
+        display:none;
+        visibility:hidden;
+      }
+    }
+    .data-delivered {
+      color:#666666;
+      i {
+        font-size:16px;
+      }
+      .fa-check-circle {
+        color:#9aca27;
+      }
+      .fa-info-circle {
+        color:#ffa605;
+      }
+      span {
+        display: inline-block;
+        font-size:16px;
+        vertical-align:middle;
+        line-height: 18px;
+        padding: 10px 0 10px 30px;
+      }
+    }
+    .name {
+      color:#000000;
+      font-size:18px;
+      font-weight:600;
+    }
+    .role {
+      text-transform:uppercase;
+      color:#999999;
+      font-size:12px;
+    }
+    .baggage {
+      color:#99cc00;
+      font-size:13px;
+      padding-top:5px;
+    }
+    .open {
+      background:#f4f4f4;
+      padding-bottom:10px!important;
+      .title, .passenger-info {
+        display:block!important;
+        visibility:visible!important;
+      }
+      .data-delivered, .registration .btn {
+        display:none;
+      }
+    }
+    .passenger-info {
+      padding-bottom: 20px;
+      .info-fields {
+        border-top:1px solid #cccccc;
+        border-bottom:1px solid #cccccc;
+        margin-top:25px;
+        padding-bottom:35px;
+      }
+      .radio-btns {
+        margin-bottom:5px;
+      }
+      .action-btns {
+        margin:20px 0px 0px 0px;
+        .checkbox.styled {
+          .ico {
+            border-color:#cccccc;
+
+            vertical-align:middle;
+          }
+        }
+        .btn {
+          font-size:15px;
+          font-weight:bold;
+          padding-top:10px;
+          padding-bottom:10px;
+          &.btn-primary {
+            background:#99cc00;
+          }
+          &.btn-default {
+            color:#666666;
+          }
+        }
+        span {
+          font-weight:normal;
+        }
+      }
+      .segment-title {
+        padding:25px 0px 15px 0px;
+        font-weight:600;
+        font-size:16px;
+        float:left;
+        width:100%;
+      }
+      .control-label {
+        color:#666666;
+        font-size:14px;
+        font-weight:normal;
+      }
+      input, .select2-chosen {
+        color:#7e7e7e;
+      }
+      .select2-arrow {
+        font-size:18px;
+        border-left:none;
+      }
+      .input-with-ico {
+        input {
+          padding-left:15px;
+        }
+        i {
+          right:10px;
+          color:#afcbde;
+          left:auto;
+        }
+      }
+    }
+    .footer {
+      background:none;
+      font-size:15px;
+      margin:15px 0px;
+      .contact-info {
+        padding:20px 20px 0px 20px;
+        margin-top:20px;
+        border-top:1px solid #eaeaea;
+        color:#353535;
+        font-size:14px;
+        label {
+          font-size:14px;
+        }
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          padding-bottom:15px;
+          display:block;
+          color:#353535;
+        }
+      }
+      .strong {
+        font-weight:600;
+        color:#666666;
+        padding:0px 5px;
+      }
+      ul {
+        padding-left:33px;
+        margin:0;
+      }
+      .print-baggage {
+        margin-top:5px;
+        margin-left: 20px;
+        p {
+          font-size:12px;
+          margin:2px 0px;
+        }
+      }
+    }
+  }
+}
+.order-details {
+  .flight-dep-time, .flight-arr-time {
+    strong {
+      font-weight:400;
+    }
+    &.dp-first, &.arr-last {
+      strong {
+        font-size: 22px;
+        font-weight:600;
+      }
+    }
+  }
+}
+
+.in-self-service {
+  .alert {
+    background-color: rgba(#1dbd45,0.1);
+    padding: 10px 20px;
+    border: 1px solid #1dbd45;
+    span,i {
+      color: #1dbd45;
+      vertical-align: middle;
+    }
+    i {
+      font-size: 26px;
+      padding-right: 10px;
+    }
+  }
+}
+.self-service-item {
+  .wrapper {
+    padding: 20px 0;
+    .col-xs-2 {
+      width: 12%;
+    }
+    .col-xs-6 {
+      width: 60%;
+    }
+    .col-xs-4 {
+      width: 27%;
+    }
+  }
+  .special {
+    .icon-block {
+      margin-top: -55px;
+      i {
+        color: #1dbd45;
+      }
+    }
+  }
+  .icon-block {
+    padding: 10px 0 0 15px;
+    text-align: center;
+    i {
+      font-size: 45px;
+      color: #999999;
+    }
+  }
+  .icon-line {
+    background-color: rgba(#1dbd45,0.1);
+    position: relative;
+    height: 25px;
+    margin-bottom: 15px;
+    i {
+      color: #1dbd45;
+      font-size: 45px;
+      margin-top: -10px;
+    }
+    .text {
+      color: #1dbd45;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+  }
+  .info {
+    h3 {
+      margin-top: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    ul {
+      padding-left: 20px;
+      li {
+        font-size: 14px;
+      }
+      &.list-unstyled {
+        padding-left: 0;
+      }
+    }
+    .text {
+      line-height: 18px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .more {
+      text-decoration: none;
+      font-size: 14px;
+      span, i {
+        vertical-align: middle;
+      }
+    }
+  }
+  .price-block {
+    .price {
+      text-align: right;
+      margin-right: 10px;
+      font-size: 14px;
+      .amount {
+        color: #f2780c;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .buttons {
+      position: absolute;
+      bottom: 0;
+      right: 25px;
+      a.radio {
+        color: #666666;
+        text-decoration: none;
+      }
+      .radio {
+        border: 1px solid $light-border-color;
+        background: $light-bg-color-2;
+        i,span {
+          vertical-align: middle;
+        }
+        &:first-child {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        &:nth-child(2) {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        &.checked {
+          &:first-child {
+            background-color: #ccffcc;
+          }
+          &:nth-child(2) {
+            background-color: rgba($red-color,0.3);
+          }
+        }
+      }
+    }
+    .radio-group {
+      &.error {
+        bottom: 30px;
+      }
+      &.check-marks {
+        .radio.checked {
+          &:nth-child(2) {
+            i {
+              background: $red-color;
+            }
+          }
+        }
+      }
+    }
+    p.error {
+      position: absolute;
+      bottom: 0;
+      right: 25px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .radio-group .radio label {
+    padding: 8px 10px;
+  }
+  ul.with-icons {
+    li {
+      &:before {
+        content: "\f00c";
+        color: #ffab00;
+        font-size: 14px;
+        left: 0;
+      }
+    }
+  }
+  .passengers-list {
+    label {
+      span {
+        &.title {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,447 @@
+@import "../main_scss/variables";
+@import "../main_scss/mixin";
+
+.modal {
+  background-color: transparent;
+  border: none;
+  width: auto;
+  margin-left: 0;
+  overflow: auto;
+  &.fade.in {
+    top: 0;
+    opacity: 1;
+  }
+  .modal-backdrop.fade.in {
+    opacity: 0.5;
+    background-color: #000;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+  }
+  button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    line-height: 1;
+    color: #888;
+    text-shadow: 0 1px 0 white;
+    opacity: 1;
+    outline: none;
+    filter: alpha(opacity=100);
+    &:hover {
+      color: $blue-color;
+      i {
+        color: $blue-color;
+      }
+    }
+  }
+  &.price-expired {
+    h2 {
+      margin:10px 0 20px;
+      font-size:24px;
+      text-align:left;
+    }
+    .modal-body {
+      text-align:center;
+    }
+    .new-price, .price-diff {
+      font-weight:600;
+    }
+    .price-diff {
+      &:empty {
+        display:none;
+      }
+    }
+    .description {
+      text-align:left;
+    }
+    .modal-header {
+      border-bottom:1px solid #e5e5e5;
+      text-align:center;
+      color:$blue-color;
+      font-size:24px;
+    }
+    .modal-footer {
+      .btn {
+        display:block;
+        margin:0;
+        &:not(:last-child) {
+          margin-bottom:7px;
+        }
+      }
+      .btn_primary {
+        text-transform:none;
+        &.continue_reservation {
+          background-color:$green-dark-color;
+          &:hover {
+            background:darken($green-dark-color, 5%)!important;
+          }
+        }
+
+      }
+    }
+  }
+  &.coupon {
+    .modal-dialog {
+      width:500px;
+      margin-top:60px;
+    }
+    .modal-header {
+      padding:10px 20px;
+      background:#f6f6f6;
+      h3 {
+        margin:0;
+        font-size:20px;
+        color:#323131;
+      }
+      button.close {
+        width:20px;
+        height:20px;
+      }
+      .close {
+        color:#4a4a4a;
+        font-size:24px;
+      }
+    }
+    .modal-content {
+      border-radius:5px;
+      label {
+        font-weight:400;
+        color:#323131;
+      }
+      .form-control {
+        box-shadow:none;
+      }
+      .btn-primary {
+        font-weight:600;
+        font-size:16px;
+      }
+    }
+    .modal-body {
+      padding-bottom:40px;
+    }
+    .ladda-button[data-style="expand-left"] {
+      &[data-loading] {
+        padding-left:40px;
+      }
+      .ladda-spinner {
+        left:5px;
+      }
+    }
+    .success-content {
+      .discount {
+        font-size:36px;
+        color:#dd605a;
+        font-weight:800;
+        text-align:center;
+        margin-bottom:15px;
+      }
+      .btn {
+        margin-top:15px;
+        min-width:120px;
+      }
+      p {
+        color:#7FBA00;
+        text-align:center;
+      }
+    }
+  }
+  &.expired {
+    .modal-dialog {
+      width:400px;
+      p {
+        margin-bottom:0;
+      }
+    }
+  }
+  &.price-alert-modal {
+    .form-control:not(textarea) {
+      height: 45px;
+    }
+    .modal-header {
+      border-bottom: none;
+    }
+    .date-range-choice {
+      margin-bottom: 15px;
+    }
+    .direction {
+      background-color: #eee;
+      padding: 8px 10px;
+      margin-bottom: 15px;
+      border: 1px solid #E2E2E2;
+      line-height: 20px;
+    }
+  }
+  .modal-md {
+    &.w500 {
+      &.modal-dialog {
+        width: 500px;
+      }
+    }
+  }
+  &.money-back {
+    .modal-content {
+      border-radius:0;
+    }
+    .modal-header {
+      padding-bottom:0;
+      .h1 {
+        color: $primary-color;
+        padding: 5px 0 15px;
+        margin: 0;
+        border-bottom: 1px solid #e7e7e7;
+        font-size: 22px;
+      }
+    }
+    .modal-body {
+      padding: 30px 20px 20px 20px;
+      color: #37474f;
+    }
+    .modal-footer {
+      padding: 25px 20px 25px 20px;
+    }
+    .darken-bg {
+      border-radius: 4px;
+      background:#f5f5f5;
+      padding:15px;
+      border: 1px solid #e5e5e5;
+    }
+    ul.mb-conditions {
+      margin:15px 0;
+      padding-left:15px;
+      li {
+        list-style:none;
+        line-height: 22px;
+        .fa {
+          color:$green-color;
+          font-size:18px;
+          margin-right:8px;
+        }
+      }
+    }
+    .info {
+      font-size:12px;
+      color:#999;
+    }
+    .price {
+      color:$red-color;
+      font-size: 26px;
+      font-weight: 600;
+      .currency {
+        font-size: 18px;
+      }
+    }
+    .price-line {
+      text-align: center;
+      margin: 20px 0 10px;
+      font-weight: 600;
+    }
+    .btn {
+      font-size: 18px;
+      padding: 12px 20px;
+      font-weight: 600;
+    }
+    .cancel {
+      padding-left: 15px;
+      font-size: 18px;
+      color: $dark-color;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+  &.image-modal {
+    .modal-body {
+      padding: 0;
+    }
+    .modal-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .btn.btn-success {
+    background: $primary-color;
+    border-color: transparent;
+  }
+  .modal-load-data {
+    min-height: 100px;
+  }
+
+}
+
+.modal-dialog {
+  z-index: 1050;
+}
+.modal-content {
+  border-radius: 0;
+  border-color: transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: auto;
+}
+.modal-footer {
+  background-color: #f8f8f8;
+  padding: 15px 20px;
+}
+.modal-header {
+  padding-left: 20px;
+}
+.modal-body {
+  padding: 20px;
+}
+.expired, .padding-50 {
+  .modal-body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.modal-backdrop.fade.advice.in {
+  opacity: 0.3;
+}
+.detailed-order {
+  .modal-header{
+    background-color: #f8f8f8;
+  }
+  .panel-order {
+    border: none;
+    .panel-heading {
+      &.inside {
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+    }
+    .panel-body {
+      padding: 5px 10px;
+    }
+    .panel-footer {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.modal-rooms {
+  color:#666666;
+  font-size:16px;
+  .form-control.select2-container.error {
+    border:1px solid #ff4444!important;
+    box-shadow:none;
+  }
+  .skeleton {
+    display:none;
+  }
+  .modal-dialog {
+    width:800px;
+    margin-top:120px;
+  }
+  .room {
+    margin-bottom:10px;
+  }
+  .action-btn {
+    cursor:pointer;
+    .fa {
+      display:inline-block!important;
+    }
+  }
+  .modal-body {
+    padding:20px 25px;
+    .reduced {
+      padding:0px 5px;
+      .m-label {
+        font-size:14px;
+        padding-bottom:5px;
+        display:inline-block;
+        margin:0;
+      }
+      & > div {
+        padding-left:5px;
+        padding-right:5px;
+      }
+    }
+  }
+  .modal-footer {
+    text-align:left;
+    padding:15px 25px;
+    .btn, .btn-primary {
+      float:right!important;
+    }
+  }
+  .remove {
+    float:right;
+    display:none;
+    margin-top:10px;
+    margin-right:-10px;
+    &:hover {
+      .fa {
+        color:$primary-color;
+      }
+    }
+  }
+  .select2-container-active {
+    box-shadow:none;
+    border:1px solid #ccc;
+  }
+  .select2-dropdown-open {
+    box-shadow:none;
+    border:1px solid $primary-color;
+  }
+  .title {
+    margin-top:10px;
+    margin-bottom:0!important;
+    display:inline-block;
+  }
+  .btn {
+    float:right;
+    margin-left:10px;
+    width:auto!important;
+    padding:7px 15px;
+    font-size:16px!important;
+    text-transform:none;
+    margin-top:0!important;
+    i {
+      padding-right:7px;
+    }
+    span {
+      font-weight:normal!important;
+    }
+  }
+  .add {
+    margin-top:6px;
+    display:inline-block;
+    i {
+      padding-right:7px;
+    }
+    &:hover {
+      .fa {
+        color:$green-dark-color;
+      }
+    }
+  }
+  .select2-search {
+    display:none;
+    visibility:hidden;
+  }
+  .select2-container-disabled .select2-choice, .select2-choice {
+    .select2-arrow {
+      background:none!important;
+    }
+  }
+}
+
+//.modal-header {
+//  button.close {
+//    margin-top: -15px;
+//    margin-right: -15px;
+//  }
+//}
+
+@media (min-width: 768px) {
+
+  .modal-sm.w400 {
+    width: 400px; }
+
+}

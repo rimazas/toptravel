@@ -1,0 +1,178 @@
+@import "variables";
+
+@media print {
+
+    .btn-grey {
+      display: none;
+    }
+    .no-print {
+      display: none;
+    }
+    .container-fluid.invoice {
+      font-size: 13px;
+      img {
+        max-height: 30px;
+      }
+      h2 {
+        font-size: 18px;
+        border: 0;
+        margin-top: 20px;
+        padding-bottom: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      .more {
+        margin-top: 25px;
+        font-size: 14px;
+      }
+      .order {
+        font-size:16px;
+        margin-top: 20px;
+      }
+      .top {
+        margin-top: 0;
+      }
+      .small {
+        font-size: 11px !important ;
+      }
+      .logo img {
+        max-height: 60px !important;
+        max-width: 200px !important;
+        margin: 0 0 15px 0 !important;
+      }
+
+    }
+
+    .print-grey {
+      color: #888888!important;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:link:after, a:visited:after {
+      content: "";
+    }
+    * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .print-hide {
+      display: none;
+    }
+    .page.bordered {
+      margin: 0!important;
+      border: none!important;
+      padding: 0!important;
+    }
+    .print-show {
+      display: block !important;
+      &.text-right {
+        text-align: right !important;
+      }
+    }
+    .print-l {
+      float:left;
+      width: 49%;
+    }
+    .print-r {
+      float: right;
+      width: 49%;
+    }
+    .page-break {
+      display: block;
+      page-break-after: always;
+      + div {
+        margin-top: 50px;
+      }
+    }
+
+    $dark-blue: #324d5b;
+    $skrendu-blue: #1D449A;
+    $skrendu-yellow: #F5B801;
+    $page-width: 1030px;
+
+    .flight-tickets-heading, .doc-heading {
+      width: $page-width;
+      margin-top: 20px;
+      .logo img {
+        max-height: 60px;
+        max-width: 260px;
+      }
+      .contacts {
+        p, a, i:before, span {
+          color: $grey-color!important;
+        }
+      }
+      .title-block {
+        h4 {
+          margin-bottom: 5px!important;
+        }
+        background-color: $light-bg-color!important;
+        padding: 20px 20px 15px!important;
+        .route-date {
+          margin-bottom: 0;
+          font-size: 16px;
+        }
+      }
+    }
+    .flight-tickets-wrapper {
+      &.adc {
+        width:$page-width;
+        max-width:100%;
+        padding:0!important;
+        margin:0 auto!important;
+        .flight-tickets-heading {
+          .title-block {
+            margin:0 -10px;
+            padding:20px 0 15px!important;
+          }
+        }
+        .row {
+          margin:0 -10px;
+        }
+        .print-l, .print-r {
+          width:50%;
+          float:left;
+          padding:0 10px;
+        }
+        .adc-document-body {
+          font-size:14px;
+          width:$page-width;
+          p, span, div {
+            color: $grey-color!important;
+          }
+          b, h4, span[style*='bold;'] {
+            color:#000!important;
+          }
+        }
+      }
+    }
+
+    .flight-tickets-body, .doc-body {
+      width: $page-width;
+    }
+    .flight-tickets-footer, .doc-footer {
+      width: $page-width;
+      p,
+      p strong,
+      p span {
+        font-size: 14px;
+        color: $grey-color!important;
+      }
+      ul {
+        li {
+          font-size: 14px;
+          color: $grey-color!important;
+          i:before,
+          span,
+          a
+          {
+            color: $grey-color!important;
+          }
+        }
+      }
+    }
+
+}

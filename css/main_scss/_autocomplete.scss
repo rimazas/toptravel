@@ -1,0 +1,415 @@
+.with-clear-btn{
+  position: relative;
+  a.clear{
+    line-height: 100%;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    color: $input-border;
+    bottom: 0;
+    width: 30px;
+    height: 100%;
+    text-align: center;
+    display: none;
+    .fa {
+      line-height: 40px;
+    }
+  }
+  a.clear:hover{
+    color: $grey-color;
+  }
+}
+
+.form-field {
+  .placeholder {
+    font-size: 12px;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    opacity: 0;
+    z-index: 10;
+    transform: translateY(5px);
+    transition: all .25s ease;
+    color: #b1b1b1;
+  }
+  &.input-with-ico {
+    .placeholder {
+      display: none;
+    }
+    input {
+      padding-top: 8px;
+    }
+    &.show-placeholder {
+      input {
+        padding-top: 8px;
+      }
+    }
+  }
+  &.show-placeholder {
+    .placeholder {
+      pointer-events: none;
+      transform: translate(0);
+      opacity: 1;
+    }
+    input {
+      padding-top: 25px;
+    }
+  }
+}
+
+.autocomplete-container {
+  display: block;
+  position: relative;
+  .autocomplete-search-results {
+    ul > li > a.item:hover,
+    ul > li > a.item.hover,
+    ul > li > a.my-location.hover,
+    ul > li > a.nearby.hover
+    {
+      &.selected {
+        background:transparent!important;
+        .flag {
+          margin-left:0;
+        }
+      }
+    }
+  }
+  &.focus {
+    input{
+      position: relative;
+      z-index: 9;
+    }
+    i.fa,
+    .clear,
+    .preloader {
+      z-index: 10;
+    }
+  }
+  &.input-with-preloader {
+    &.with-clear-btn input.padding-right{
+      padding-right: 60px;
+    }
+    &:not(.with-clear-btn) {
+      .input-loader {
+        right: 15px;
+      }
+    }
+  }
+  .iata{
+    position: absolute;
+    top: 11px;
+    right: 27px;
+    color: $light-grey-color;
+    font-size: $font-size-medium;
+    z-index: 10;
+  }
+  .autocomplete-search {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 38px;
+    position: relative;
+    z-index: 9;
+    margin-bottom: 0;
+    vertical-align: top;
+  }
+  &.v2 {
+    .autocomplete-search-results {
+      ul > li > a.subitem {
+        padding-left: 25px;
+      }
+    }
+    .input-loader {
+      right: 15px;
+    }
+    .iata {
+      display: none;
+    }
+  }
+}
+.autocomplete-search-results {
+  position: absolute;
+  z-index: 20;
+  background: #fff;
+  border: 1px solid $light-border-color;
+  border-radius: $border-radius-base;
+  max-width: 350px;
+  @include box-shadow(5px 5px 10px rgba(0,0,0,0.2));
+  .flag {
+    position: absolute;
+    top: 11px;
+  }
+  .item {
+    position: relative;
+    .title {
+      font-weight: 600;
+      margin-right: 5px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-bottom: 0;
+      font-size: 14px;
+      .details {
+        font-weight: 400;
+      }
+    }
+    &.country {
+      background-color: #eee;
+      padding: 8px 10px;
+      .flag {
+        top: 9px;
+      }
+      .title {
+        color: #aaa;
+      }
+    }
+    &.city {
+      padding-left: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      .flag {
+        top: 8px;
+      }
+      &:hover {
+        padding-left: 20px;
+        background-color: $travels-primary-color;
+      }
+    }
+  }
+  ul{
+    margin: 0;
+  }
+  .contains-subitems {
+    & > a {
+      padding:5px 12px;
+      .flag {
+        top:6px;
+      }
+    }
+    .ac-airport {
+      margin:0;
+      padding:0 0 9px 0;
+      li {
+        list-style:none;
+        a {
+          padding:3px 12px 3px 30px!important;
+          &:hover {
+            padding-left:30px!important;
+          }
+          .flag {
+            top:6px;
+          }
+        }
+      }
+    }
+  }
+  ul > li:not(:last-child){
+    border-bottom: 1px solid $light-border-color;
+  }
+  ul > li > a{
+    font-size: $font-size-medium;
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    .row{
+      padding: 10px 0;
+      margin: 0 0 0 2px;
+    }
+  }
+  ul > li.with-childs > a{
+    padding-bottom: 5px;
+  }
+  ul > li > a.item{
+    color: $dark-color;
+    &.grey{
+      color: $grey-color;
+    }
+    .block {
+      float: left;
+      width: 80%;
+    }
+  }
+
+  ul > li > a.item:hover,
+  ul > li > a.item.hover,
+  ul > li > a.my-location.hover,
+  ul > li > a.nearby.hover,
+  ul > li > a.link:hover
+  {
+    background: $blue-color;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-left: 13px;
+    padding-right: 13px;
+    &.selected {
+      background:transparent!important;
+    }
+    span, .title {
+      color: #fff;
+    }
+//    .flag {
+//      margin-left: 1px;
+//    }
+    &.selected {
+      background:transparent;
+      .flag {
+        margin-left:0;
+      }
+      .fa {
+        color:$green-color;
+        margin-left:0;
+      }
+      .title {
+        color:#252525;
+        span.details, span.grey {
+          color:#888;
+        }
+      }
+      &:hover {
+        background:$blue-color;
+        .fa {
+          color:#fff;
+        }
+        .title {
+          color:#fff;
+          span.details, span.grey {
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+  ul > li > a.row.item:hover,
+  ul > li > a.row.link:hover
+  {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  ul > li > a.item:hover,
+  ul > li > a.my-location.hover,
+  ul > li > a.nearby.hover,
+  ul > li > a.link:hover
+  {
+    color: #fff;
+    i {
+//      margin-left: 1px;
+      color: #fff;
+    }
+  }
+  i.fa{
+    margin-right: 12px;
+    float: left;
+    margin-top: 2px;
+    width: 14px;
+  }
+  a > i.geolocation{
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+
+  ul > li > a .pull-right{
+    font-size: $font-size-medium - 1;
+    margin-top: 1px;
+  }
+  ul > li > a.item .ico{
+    display: inline-block;
+    padding-top: 1px;
+    vertical-align: top;
+    margin-left: -2px;
+    margin-right: 4px;
+  }
+  ul > li > ul > li > a{
+    padding-left: 55px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  ul > li > ul > li > a:hover{
+    padding-left: 56px!important;
+  }
+  ul > li > ul > li{
+    border-bottom: none!important;
+  }
+  .alert{
+    font-size: $font-size-medium;
+    margin-bottom: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px 15px;
+  }
+  .alert p{
+    margin: 0;
+  }
+  ul > li > .checkbox.styled{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    &:hover{
+      background: $light-bg-color;
+    }
+    label{
+      color: $grey-color;
+      font-size: $font-size-medium;
+      line-height: 100%;
+      width: 100%;
+      strong{
+        color: $dark-color;
+      }
+    }
+    .ico{
+      margin-top: 0;
+    }
+    .flag{
+      display: block;
+      margin-right: 10px;
+      margin-top: 4px;
+      float: right;
+    }
+  }
+  .item-wrapper {
+    padding-left: 20px;
+  }
+  &.lowest-prices {
+    p {
+      text-align: right;
+      padding: 5px;
+      font-size: 12px;
+      margin: 0;
+      color: #888888;
+      border-bottom: 1px solid #e7e7e7;
+      background: #eee;
+    }
+    .any {
+      .item {
+        padding-top: 12px;
+        padding-bottom: 8px;
+        &:hover {
+          padding-left: 14px;
+        }
+      }
+      .item-wrapper {
+        padding-left: 12px;
+      }
+    }
+    .pull-right.grey {
+      display: none;
+    }
+    .details {
+      display: inline-block !important;
+    }
+  }
+  .jspContainer {
+    .jspVerticalBar {
+      width: 7px;
+    }
+    .jspTrack {
+      background: #eee;
+    }
+    .jspDrag {
+      background: #ccc;
+      border-radius: 4px;
+    }
+  }
+}

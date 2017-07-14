@@ -1,0 +1,38 @@
+
+  .testimonials{
+    margin-bottom: $grid-gutter-width;
+  }
+  .testimonials .popover{
+    position: relative;
+    display: block;
+    max-width: none;
+    margin-top: 0;
+    margin-bottom: $grid-gutter-width;
+    box-shadow: none;
+    background: $light-bg-color;
+  }
+  .testimonials .popover.top > .arrow{
+    left: $grid-gutter-width;
+    margin-left: 0;
+  }
+  .testimonials .popover.top > .arrow{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 11px 12px 0 0;
+    border-color: $light-border-color transparent transparent transparent;
+  }
+  .testimonials .popover.top > .arrow:after{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 9px 10px 0 0;
+    border-color: $light-bg-color transparent transparent transparent;
+    margin-left: 1px;
+    bottom: 2px;
+  }
+  .testimonials .author{
+    font-size: $font-size-medium;
+    padding-left: $grid-gutter-width;
+    color: $dark-color;
+  }

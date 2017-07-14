@@ -1,0 +1,148 @@
+
+  $tripad-sprite-location: url('http://c1.tacdn.com/sprites/global_pack.png');
+  .sprite-ratings {
+    background-image: $tripad-sprite-location;
+    background-position: left -2594px;
+    width: 505px;
+    height: 260px;
+    background-repeat: no-repeat;
+  }
+  .rating {
+    height: 100%;
+    overflow: hidden;
+  }
+  .rating .rate, .rating em {
+    font-style: normal;
+    float: left;
+  }
+  .rate {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    img {
+      position:absolute;
+    }
+  }
+  .rate_ss {
+    width: 51px;
+    height: 11px;
+  }
+  .rate_s{width:69px;height:14px;}
+  .rate.s00 img{left:-220px;top:-140px;}
+  .rate.s05 img{left:-220px;top:-126px;}
+  .rate.s10 img{left:-220px;top:-112px;}
+  .rate.s15 img{left:-220px;top:-98px;}
+  .rate.s20 img{left:-220px;top:-84px;}
+  .rate.s25 img{left:-220px;top:-70px;}
+  .rate.s30 img{left:-220px;top:-56px;}
+  .rate.s35 img{left:-220px;top:-42px;}
+  .rate.s40 img{left:-220px;top:-28px;}
+  .rate.s45 img{left:-220px;top:-14px;}
+  .rate.s50 img{left:-220px;top:0;}
+  .rate.gs00 img{left:-220px;top:-154px;}
+  .rate.s00{width:0;height:0;}
+  .rate.s00 img{right:0;bottom:0;}
+  .rate_ss{width:51px;height:11px;}
+  .rate.ss00 img{left:-358px;top:-110px;}
+  .rate.ss05 img{left:-358px;top:-99px;}
+  .rate.ss10 img{left:-358px;top:-88px;}
+  .rate.ss15 img{left:-358px;top:-77px;}
+  .rate.ss20 img{left:-358px;top:-66px;}
+  .rate.ss25 img{left:-358px;top:-55px;}
+  .rate.ss30 img{left:-358px;top:-44px;}
+  .rate.ss35 img{left:-358px;top:-33px;}
+  .rate.ss40 img{left:-358px;top:-22px;}
+  .rate.ss45 img{left:-358px;top:-11px;}
+  .rate.ss50 img{left:-358px;top:0;}
+  .rate_no{width:82px;height:17px;}
+  .rate.no00 img{left:-36px;top:-202px;}
+  .rate.no05 img{left:-36px;top:-182px;}
+  .rate.no10 img{left:-36px;top:-162px;}
+  .rate.no15 img{left:-36px;top:-142px;}
+  .rate.no20 img{left:-36px;top:-122px;}
+  .rate.no25 img{left:-36px;top:-102px;}
+  .rate.no30 img{left:-36px;top:-82px;}
+  .rate.no35 img{left:-36px;top:-62px;}
+  .rate.no40 img{left:-36px;top:-42px;}
+  .rate.no45 img{left:-36px;top:-22px;}
+  .rate.no50 img{left:-36px;top:-2px;}
+  .rate_xl{width:130px;height:26px;}
+  .rate.xl00 img{left:-130px;top:0;}
+  .rate.xl05 img{left:-364px;top:0;}
+  .rate.xl10 img{left:-104px;top:0;}
+  .rate.xl15 img{left:-338px;top:0;}
+  .rate.xl20 img{left:-78px;top:0;}
+  .rate.xl25 img{left:-312px;top:0;}
+  .rate.xl30 img{left:-52px;top:0;}
+  .rate.xl35 img{left:-286px;top:0;}
+  .rate.xl40 img{left:-26px;top:0;}
+  .rate.xl45 img{left:-260px;top:0;}
+  .rate.xl50 img{left:0;top:0;}
+  .rtl .rate.xl00 img{left:-260px;top:0;}
+  .rtl .rate.xl05 img{left:-26px;top:0;}
+  .rtl .rate.xl10 img{left:-286px;top:0;}
+  .rtl .rate.xl15 img{left:-52px;top:0;}
+  .rtl .rate.xl20 img{left:-312px;top:0;}
+  .rtl .rate.xl25 img{left:-78px;top:0;}
+  .rtl .rate.xl30 img{left:-338px;top:0;}
+  .rtl .rate.xl35 img{left:-104px;top:0;}
+  .rtl .rate.xl40 img{left:-364px;top:0;}
+  .rtl .rate.xl45 img{left:-130px;top:0;}
+  .rtl .rate.xl50 img{left:-390px;top:0;}
+
+
+  .tripad-logo {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-right: 4px !important;
+    img {
+      position:absolute;
+    }
+    .sprite-tripad-logo {
+      background-image: $tripad-sprite-location;
+      background-position: left -2594px;
+      width: 505px;
+      height: 260px;
+      background-repeat: no-repeat;
+    }
+    &.logo-s {width: 29px; height: 18px;}
+    &.logo-no {width: 34px; height: 19px;}
+    &.logo-s img{left:-118px;top:0}
+    &.logo-no img{left:0;top:0}
+  }
+  .rate-block {
+    margin-bottom: 5px;
+  }
+  .rate-block .tripad-logo.logo-s{margin-top: -3px !important;}
+  .rate-block .tripad-logo.logo-no{margin-top: -2px !important;}
+  .tripad-rating-filter {
+    .checkbox,
+    .radio {
+      padding-top: 4px;
+      padding-bottom: 2px;
+    }
+    .fa,
+    .rating {
+      float: left;
+    }
+    .rating, .tripad-rating {
+      margin-left: 4px;
+      .rate {
+        margin-top: 5px;
+      }
+    }
+    .rate-text {
+      padding-top: 1px!important;
+      &.title {
+        padding-left: 8px;
+        line-height: 24px!important;
+      }
+    }
+  }
+
+
+@include tripadRating;
+@include tripadLogo;
+
+//.rate-block .tripad-logo-local.logo-s{margin-top: -2px !important;}
