@@ -1401,9 +1401,9 @@
     .results-filter .btn-reset:hover {
       background: #de1219; }
   .results-filter .rate .filter .stars {
-    height: 150px;
+    height: 160px;
     position: relative;
-    margin: 20px 0 0; }
+    margin: 30px 20px 0; }
     .results-filter .rate .filter .stars .rate-star {
       font: normal normal normal 18px/1 FontAwesome;
       color: #fff;
@@ -1491,6 +1491,69 @@
           background: #7ec619; }
         .results-filter .catering .filter .pie .piece:nth-child(5):before {
           background: none; }
+  .results-filter .temperature .filter {
+    position: relative; }
+  .results-filter .temperature .temp-number {
+    top: 20px;
+    position: absolute; }
+    .results-filter .temperature .temp-number .sign {
+      font-size: 30px; }
+    .results-filter .temperature .temp-number .amount {
+      font-size: 30px;
+      font-weight: 600;
+      color: #404040; }
+    .results-filter .temperature .temp-number .deg {
+      vertical-align: super; }
+  .results-filter .temperature .termometer {
+    position: absolute;
+    background: url("../images/toptravel/termometer.png") 0 0 no-repeat;
+    width: 70px;
+    height: 165px;
+    margin-left: -35px;
+    left: 50%;
+    top: 20px; }
+  .results-filter .temperature .bulb {
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    bottom: 19px;
+    width: 29px;
+    height: 29px;
+    background: #a6ce39;
+    border-radius: 50%; }
+  .results-filter .temperature .temp-slider {
+    height: 109px;
+    margin-top: 20px;
+    margin-left: 32px; }
+    .results-filter .temperature .temp-slider.ui-slider-vertical {
+      width: 7px;
+      border: none;
+      background: transparent; }
+      .results-filter .temperature .temp-slider.ui-slider-vertical .ui-slider-handle {
+        width: 7px;
+        height: 7px;
+        left: 0;
+        margin-bottom: -7px; }
+      .results-filter .temperature .temp-slider.ui-slider-vertical .ui-widget-header {
+        border: none;
+        background: #a6ce39; }
+  .results-filter .best-offers .filter {
+    margin-top: 20px; }
+  .results-filter .budget .filter {
+    margin-top: 20px; }
+  .results-filter .budget .rs-range-color {
+    background-color: #7ec619; }
+  .results-filter .budget .rs-bg-color {
+    background-color: #dff3f8; }
+  .results-filter .budget .rs-border {
+    border: 1px solid #dedede; }
+  .results-filter .budget .rs-tooltip-text {
+    font-family: "ProximaNova", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+  .results-filter .budget .rs-handle-dot {
+    padding: 8px; }
+    .results-filter .budget .rs-handle-dot:after {
+      background-color: #222; }
 
 .block-image {
   display: block;
