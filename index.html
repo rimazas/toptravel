@@ -19,7 +19,7 @@
         <![endif]-->
         <div id="tripcloud">
             <div id="tripcloud-setts">
-                <section class="results-page">
+                <section class="travel results-page">
                     <div class="container">
                         <header>
                             <div class="logo-wrapper">
@@ -172,14 +172,17 @@
                                         <label>Temperature</label>
                                         <div class="filter">
                                             <div class="temp-number">
-                                                <span class="sign">+</span>
-                                                <span id="temperature" class="amount"></span>
-                                                <span class="deg">&deg;C</span>
+                                                <div class="relative">
+                                                    <span class="sign">+</span>
+                                                    <span id="temperature" class="amount"></span>
+                                                    <span class="deg">&deg;C</span>
+                                                </div>
                                             </div>
                                             <div class="termometer">
                                                 <div class="temp-slider" style="height:109px;"></div>
                                                 <div class="bulb"></div>
                                             </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -194,21 +197,29 @@
                                     <div class="setting best-offers">
                                         <label>Geriausi pasiulymai</label>
                                         <div class="filter">
-                                            <div>
-                                                <input id="solo" type="checkbox">
-                                                <label for="solo">For solo travelers</label>
+                                            <div class="checkbox">
+                                                <label for="solo">
+                                                    <input id="solo" type="checkbox" checked>
+                                                    <span>For solo travelers</span>
+                                                </label>
                                             </div>
-                                            <div>
-                                                <input id="season" type="checkbox">
-                                                <label for="season">Top season offers</label>
+                                            <div class="checkbox">
+                                                <label for="season">
+                                                    <input id="season" type="checkbox">
+                                                    <span>Top season offers</span>
+                                                </label>
                                             </div>
-                                            <div>
-                                                <input id="children" type="checkbox">
-                                                <label for="children">Traveling with children</label>
+                                            <div class="checkbox">
+                                                <label for="children">
+                                                    <input id="children" type="checkbox">
+                                                    <span>Traveling with children</span>
+                                                </label>
                                             </div>
-                                            <div>
-                                                <input id="couples" type="checkbox">
-                                                <label for="couples">For couples</label>
+                                            <div class="checkbox">
+                                                <label for="couples">
+                                                    <input id="couples" type="checkbox">
+                                                    <span>For couples</span>
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -264,15 +275,15 @@
                                     </div>
                                     <div class="hotel-info">
                                         <div class="block">
-                                            <label for="">Breakfast and Dinner</label>
+                                            <label>Breakfast and Dinner</label>
                                             <div class="type">Double or Twin promo</div>
                                         </div>
                                         <div class="block">
-                                            <label for="">7 nights</label>
+                                            <label>7 nights</label>
                                             <div class="type">2017.10.15 - 10.20</div>
                                         </div>
                                         <div class="block">
-                                            <label for="">VLN</label>
+                                            <label>VLN</label>
                                             <div class="type">Isvykimas</div>
                                         </div>
                                         <div class="clearfix"></div>
@@ -334,15 +345,15 @@
                                     </div>
                                     <div class="hotel-info">
                                         <div class="block">
-                                            <label for="">Breakfast and Dinner</label>
+                                            <label>Breakfast and Dinner</label>
                                             <div class="type">Double or Twin promo</div>
                                         </div>
                                         <div class="block">
-                                            <label for="">7 nights</label>
+                                            <label>7 nights</label>
                                             <div class="type">2017.10.15 - 10.20</div>
                                         </div>
                                         <div class="block">
-                                            <label for="">VLN</label>
+                                            <label>VLN</label>
                                             <div class="type">Isvykimas</div>
                                         </div>
                                         <div class="clearfix"></div>

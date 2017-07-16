@@ -33,5 +33,41 @@ $(document).ready(function(){
         }
     });
 
+    //scripts.js
+
+    $(".checkbox:not(.styled)").each(function(){
+        var $that = $(this);
+        $that.addClass("styled").find("label").prepend('<i class="ico fa fa-check"></i>');
+        if($that.find('input[type="checkbox"]').prop("checked")){
+            $that.addClass("checked");
+        }
+    });
+
+    $( document).on( "click", '.checkbox.selectable:not(.disabled)', function(e){
+        e.preventDefault();
+        var $that = $(this).find('input[type="checkbox"]');
+        if($that.prop("checked")){
+            $that.prop('checked', false).change();
+        }else{
+            $that.prop('checked', true).change();
+        }
+    });
+    $( document).on( "change", 'input[type="checkbox"]', function(e){
+        var $that = $(this);
+        var $div = $that.parents(".checkbox");
+        var target = $div.data("target");
+        if($that.prop("checked")){
+            $div.addClass("checked");
+            if ($div.hasClass("toggle")) {
+                doFadeIn(target);
+            }
+        }else{
+            $div.removeClass("checked");
+            if ($div.hasClass("toggle")) {
+                doFadeOut(target);
+            }
+        }
+    });
+
 
 });
