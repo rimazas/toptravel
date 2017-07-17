@@ -24,6 +24,9 @@
       width: 1150px;
     }
 
+    .tripad-logo-local .sprite-tripad-logo {
+      background-image: url('../images/tripad-stars.png');
+    }
     .va-middle {
       vertical-align: middle;
     }
@@ -228,7 +231,7 @@
           padding: 0 15px;
           label {
             color: #6f777a;
-            font-weight: 400;
+            font-weight: 600;
             display: block;
           }
           .setting {
@@ -238,6 +241,7 @@
               color: #6f777a;
               border-bottom: 1px solid #c1c1c1;
               padding-bottom: 5px;
+              font-weight: 600;
             }
             label {
               display: inline-block;
@@ -312,6 +316,21 @@
         }
       }
       .catering {
+        .tooltip {
+          $tooltipColor: #343434;
+          &.in {
+            opacity:1;
+          }
+          .tooltip-inner {
+            padding: 8px;
+            min-width: 160px;
+            border-radius: 1px;
+            background-color: $tooltipColor;
+          }
+          .tooltip-arrow {
+            border-top-color: $tooltipColor;
+          }
+        }
         .filter {
           min-width: 190px;
           .pie {
@@ -324,9 +343,11 @@
               position: relative;
               span {
                 z-index: 1;
+                display: block;
                 position: absolute;
                 top: 30px;
                 left: 30px;
+                font-weight: 600;
               }
               &:hover, &.active {
                 cursor: pointer;
@@ -373,9 +394,9 @@
                 span {
                   display: inline-block;
                   width:100%;
-                  line-height: 63px;
+                  line-height: 20px;
                   text-align:center;
-                  top: 0;
+                  top: 20px;
                   left: 0;
                 }
                 &:hover, &.active {
@@ -457,6 +478,12 @@
       .best-offers {
         .filter {
           margin-top: 20px;
+          .checkbox {
+            label {
+              color: #404040;
+              font-size: 14px;
+            }
+          }
         }
       }
 
@@ -477,6 +504,7 @@
           .rs-tooltip-text {
             font-family: $tripcloud-font-family;
             font-size: 30px;
+            font-weight: 600;
           }
           .rs-handle-dot {
             padding: 8px;
@@ -501,7 +529,7 @@
       margin-bottom: 40px;
       .item {
         background: #fff;
-        border: 1px solid #ccc;
+        border: 1px solid #eaeaea;
         margin-bottom: 5px;
         .picture {
           float:left;
@@ -543,6 +571,7 @@
             line-height: 14px;
             a {
               text-decoration: none;
+              font-weight: 600;
               color:#000;
             }
           }
@@ -605,7 +634,7 @@
         .price-block {
           position: relative;
           float: right;
-          width: 290px;
+          width: 270px;
           height: 170px;
           padding: $padding;
           .tripad {
@@ -616,6 +645,7 @@
               vertical-align: top;
               color: #35851c;
               font-size: 18px;
+              font-weight: 600;
             }
           }
           .prices {
@@ -630,7 +660,7 @@
                 width: 80px;
               }
               &:nth-child(2) {
-                width: 158px;
+                width: 140px;
                 padding-right: 20px;
               }
               &:nth-child(3) {
@@ -642,7 +672,6 @@
               text-decoration: line-through;
               color: #6b6b6b;
               font-size: 18px;
-              margin-bottom: 5px;
               text-align: center;
             }
             .price {
@@ -651,11 +680,12 @@
               color: #000;
               text-align: right;
               font-weight: 600;
-              margin-bottom: 8px;
             }
             .person {
               color: #6b6b6b;
               font-size: 15px;
+              line-height: 15px;
+              margin-top: 6px;
               text-align: right;
             }
             .label-discount {
@@ -684,7 +714,7 @@
             }
             .btn-select {
               background: #7ec619;
-              padding: 8px 12px 11px;
+              padding: 6px 12px 7px;
               border-radius: 2px;
               i {
                 color: #fff;

@@ -35,6 +35,8 @@ $(document).ready(function(){
 
     //scripts.js
 
+    $('[data-toggle="tooltip"]').tooltip();
+
     $(".checkbox:not(.styled)").each(function(){
         var $that = $(this);
         $that.addClass("styled").find("label").prepend('<i class="ico fa fa-check"></i>');

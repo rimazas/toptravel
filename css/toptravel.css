@@ -1507,6 +1507,8 @@
   background: url("../images/toptravel/results-bg.jpg") 50% 0 repeat-x #f5f5f5; }
   .travel.results-page .container {
     width: 1150px; }
+  .travel.results-page .tripad-logo-local .sprite-tripad-logo {
+    background-image: url("../images/tripad-stars.png"); }
   .travel.results-page .va-middle {
     vertical-align: middle; }
   .travel.results-page .relative {
@@ -1658,14 +1660,15 @@
         padding: 0 15px; }
         .travel.results-page .results-filter .wrapper .col label {
           color: #6f777a;
-          font-weight: 400;
+          font-weight: 600;
           display: block; }
         .travel.results-page .results-filter .wrapper .col .setting > label {
           width: 100%;
           display: inline-block;
           color: #6f777a;
           border-bottom: 1px solid #c1c1c1;
-          padding-bottom: 5px; }
+          padding-bottom: 5px;
+          font-weight: 600; }
         .travel.results-page .results-filter .wrapper .col .setting label {
           display: inline-block; }
     .travel.results-page .results-filter .btn-reset {
@@ -1717,6 +1720,15 @@
           color: #7ec619; }
           .travel.results-page .results-filter .rate .filter .stars .rate-star:hover .tower, .travel.results-page .results-filter .rate .filter .stars .rate-star.active .tower {
             background: #7ec619; }
+    .travel.results-page .results-filter .catering .tooltip.in {
+      opacity: 1; }
+    .travel.results-page .results-filter .catering .tooltip .tooltip-inner {
+      padding: 8px;
+      min-width: 160px;
+      border-radius: 1px;
+      background-color: #343434; }
+    .travel.results-page .results-filter .catering .tooltip .tooltip-arrow {
+      border-top-color: #343434; }
     .travel.results-page .results-filter .catering .filter {
       min-width: 190px; }
       .travel.results-page .results-filter .catering .filter .pie {
@@ -1729,9 +1741,11 @@
           position: relative; }
           .travel.results-page .results-filter .catering .filter .pie .piece span {
             z-index: 1;
+            display: block;
             position: absolute;
             top: 30px;
-            left: 30px; }
+            left: 30px;
+            font-weight: 600; }
           .travel.results-page .results-filter .catering .filter .pie .piece:hover, .travel.results-page .results-filter .catering .filter .pie .piece.active {
             cursor: pointer; }
             .travel.results-page .results-filter .catering .filter .pie .piece:hover:before, .travel.results-page .results-filter .catering .filter .pie .piece.active:before {
@@ -1762,9 +1776,9 @@
             .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(5) span {
               display: inline-block;
               width: 100%;
-              line-height: 63px;
+              line-height: 20px;
               text-align: center;
-              top: 0;
+              top: 20px;
               left: 0; }
             .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(5):hover, .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(5).active {
               background: #7ec619; }
@@ -1820,6 +1834,9 @@
           background: #a6ce39; }
     .travel.results-page .results-filter .best-offers .filter {
       margin-top: 20px; }
+      .travel.results-page .results-filter .best-offers .filter .checkbox label {
+        color: #404040;
+        font-size: 14px; }
     .travel.results-page .results-filter .budget .filter {
       margin-top: 20px; }
     .travel.results-page .results-filter .budget .rs-control .rs-range-color {
@@ -1830,7 +1847,8 @@
       border: 1px solid #dedede; }
     .travel.results-page .results-filter .budget .rs-control .rs-tooltip-text {
       font-family: "ProximaNova", Helvetica, Arial, sans-serif;
-      font-size: 30px; }
+      font-size: 30px;
+      font-weight: 600; }
     .travel.results-page .results-filter .budget .rs-control .rs-handle-dot {
       padding: 8px; }
       .travel.results-page .results-filter .budget .rs-control .rs-handle-dot:after {
@@ -1846,7 +1864,7 @@
     margin-bottom: 40px; }
     .travel.results-page .special-offers .item {
       background: #fff;
-      border: 1px solid #ccc;
+      border: 1px solid #eaeaea;
       margin-bottom: 5px; }
       .travel.results-page .special-offers .item .picture {
         float: left;
@@ -1883,6 +1901,7 @@
           line-height: 14px; }
           .travel.results-page .special-offers .item .info h3 a {
             text-decoration: none;
+            font-weight: 600;
             color: #000; }
       .travel.results-page .special-offers .item .destination .country {
         color: #585858;
@@ -1927,7 +1946,7 @@
       .travel.results-page .special-offers .item .price-block {
         position: relative;
         float: right;
-        width: 290px;
+        width: 270px;
         height: 170px;
         padding: 20px; }
         .travel.results-page .special-offers .item .price-block .tripad {
@@ -1937,7 +1956,8 @@
             padding-right: 10px;
             vertical-align: top;
             color: #35851c;
-            font-size: 18px; }
+            font-size: 18px;
+            font-weight: 600; }
         .travel.results-page .special-offers .item .price-block .prices {
           position: absolute;
           bottom: 20px;
@@ -1949,7 +1969,7 @@
             .travel.results-page .special-offers .item .price-block .prices .block:nth-child(1) {
               width: 80px; }
             .travel.results-page .special-offers .item .price-block .prices .block:nth-child(2) {
-              width: 158px;
+              width: 140px;
               padding-right: 20px; }
             .travel.results-page .special-offers .item .price-block .prices .block:nth-child(3) {
               width: 45px;
@@ -1958,18 +1978,18 @@
             text-decoration: line-through;
             color: #6b6b6b;
             font-size: 18px;
-            margin-bottom: 5px;
             text-align: center; }
           .travel.results-page .special-offers .item .price-block .prices .price {
             font-size: 30px;
             line-height: 30px;
             color: #000;
             text-align: right;
-            font-weight: 600;
-            margin-bottom: 8px; }
+            font-weight: 600; }
           .travel.results-page .special-offers .item .price-block .prices .person {
             color: #6b6b6b;
             font-size: 15px;
+            line-height: 15px;
+            margin-top: 6px;
             text-align: right; }
           .travel.results-page .special-offers .item .price-block .prices .label-discount {
             position: relative;
@@ -1995,7 +2015,7 @@
               margin-top: -13px; }
           .travel.results-page .special-offers .item .price-block .prices .btn-select {
             background: #7ec619;
-            padding: 8px 12px 11px;
+            padding: 6px 12px 7px;
             border-radius: 2px; }
             .travel.results-page .special-offers .item .price-block .prices .btn-select i {
               color: #fff;
