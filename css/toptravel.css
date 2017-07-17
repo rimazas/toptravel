@@ -1,4 +1,4 @@
-@charset "UTF-8";
+.css{}
 @font-face {
   font-family: 'flights';
   src: url("../fonts/skrydziai/fonts/flights.ttf?h9da1p") format("truetype"), url("../fonts/skrydziai/fonts/flights.woff?h9da1p") format("woff"), url("../fonts/skrydziai/fonts/flights.svg?h9da1p#flights") format("svg");
