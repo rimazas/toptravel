@@ -1,14 +1,14 @@
+@import 'main_scss/fonts';
 @import 'main_scss/variables';
 @import 'main_scss/mixin';
 @import 'main_scss/tripadvisor';
 @import 'main_scss/checkboxes';
-@import 'main_scss/fonts';
 
 #tripcloud-setts {
   @-ms-viewport {
     width: device-width;
   }
-  min-width: 961px;
+  min-width: 960px;
   font-family: $tripcloud-font-family;
   background: #fff;
   font-size: $font-size-base;
