@@ -1,658 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'flights';
-  src: url("../fonts/skrydziai/fonts/flights.ttf?h9da1p") format("truetype"), url("../fonts/skrydziai/fonts/flights.woff?h9da1p") format("woff"), url("../fonts/skrydziai/fonts/flights.svg?h9da1p#flights") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="sk-"], [class*=" sk-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'flights' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.sk-luggage:before {
-  content: ""; }
-
-.sk-briefcase:before {
-  content: ""; }
-
-.sk-traveler-baggage:before {
-  content: ""; }
-
-.sk-shopping-bag:before {
-  content: ""; }
-
-.sk-golf:before {
-  content: ""; }
-
-.sk-flight-destination:before {
-  content: ""; }
-
-.sk-right-arrow:before {
-  content: ""; }
-
-.sk-left-arrow:before {
-  content: ""; }
-
-.sk-big-gift-box:before {
-  content: ""; }
-
-.sk-users_two_switch:before {
-  content: ""; }
-
-.sk-users_two_switch_2:before {
-  content: ""; }
-
-.sk-path-a-to-b:before {
-  content: ""; }
-
-.sk-lounge:before {
-  content: ""; }
-
-.sk-magazines:before {
-  content: ""; }
-
-.sk-miles:before {
-  content: ""; }
-
-.sk-miles_25p:before {
-  content: ""; }
-
-.sk-miles_50p:before {
-  content: ""; }
-
-.sk-miles_100p:before {
-  content: ""; }
-
-.sk-miles_125:before {
-  content: ""; }
-
-.sk-miles_200p:before {
-  content: ""; }
-
-.sk-miles_250:before {
-  content: ""; }
-
-.sk-miles_300p:before {
-  content: ""; }
-
-.sk-miles_500:before {
-  content: ""; }
-
-.sk-miles_750:before {
-  content: ""; }
-
-.sk-miles_1000:before {
-  content: ""; }
-
-.sk-miles_1250:before {
-  content: ""; }
-
-.sk-miles_1500:before {
-  content: ""; }
-
-.sk-miles_2000:before {
-  content: ""; }
-
-.sk-sameday-standby:before {
-  content: ""; }
-
-.sk-priority_checkin:before {
-  content: ""; }
-
-.sk-priority_boarding:before {
-  content: ""; }
-
-.sk-premium_food:before {
-  content: ""; }
-
-.sk-more_space_recline:before {
-  content: ""; }
-
-.sk-lounge_charge:before {
-  content: ""; }
-
-.sk-seat_charge:before {
-  content: ""; }
-
-.sk-seat_no:before {
-  content: ""; }
-
-.sk-miles_upgrade_no:before {
-  content: ""; }
-
-.sk-miles_upgrade:before {
-  content: ""; }
-
-.sk-miles_150p:before {
-  content: ""; }
-
-.sk-alacarte_dining:before {
-  content: ""; }
-
-.sk-miles_absolute:before {
-  content: ""; }
-
-.sk-miles_percent:before {
-  content: ""; }
-
-.sk-seatmap_galley:before {
-  content: ""; }
-
-.sk-seatmap_seat_legroom:before {
-  content: ""; }
-
-.sk-one_way:before {
-  content: ""; }
-
-.sk-round_trip:before {
-  content: ""; }
-
-.sk-multi_connection:before {
-  content: ""; }
-
-.sk-calendar:before {
-  content: ""; }
-
-.sk-cancel:before {
-  content: ""; }
-
-.sk-close:before {
-  content: ""; }
-
-.sk-dropdown:before {
-  content: ""; }
-
-.sk-facebook:before {
-  content: ""; }
-
-.sk-google_plus:before {
-  content: ""; }
-
-.sk-icon_19:before {
-  content: ""; }
-
-.sk-icon_32:before {
-  content: ""; }
-
-.sk-icon_38:before {
-  content: ""; }
-
-.sk-icon_42:before {
-  content: ""; }
-
-.sk-icon_48:before {
-  content: ""; }
-
-.sk-icon_50:before {
-  content: ""; }
-
-.sk-icon_58:before {
-  content: ""; }
-
-.sk-icon_84:before {
-  content: ""; }
-
-.sk-instagram:before {
-  content: ""; }
-
-.sk-palme:before {
-  content: ""; }
-
-.sk-pin:before {
-  content: ""; }
-
-.sk-plane:before {
-  content: ""; }
-
-.sk-profile:before {
-  content: ""; }
-
-.sk-profile-4:before {
-  content: ""; }
-
-.sk-profile-2:before {
-  content: ""; }
-
-.sk-switch:before {
-  content: ""; }
-
-.sk-switch2:before {
-  content: ""; }
-
-.sk-tag:before {
-  content: ""; }
-
-.sk-tag2:before {
-  content: ""; }
-
-.sk-tikrinti_uzsakyma:before {
-  content: ""; }
-
-.sk-uzsakymai_grupems:before {
-  content: ""; }
-
-.sk-uzsakymai_internetu:before {
-  content: ""; }
-
-.sk-viezbutis:before {
-  content: ""; }
-
-.sk-switch-3:before {
-  content: ""; }
-
-.sk-icon_40:before {
-  content: ""; }
-
-.sk-icon_70:before {
-  content: ""; }
-
-.sk-animal2:before {
-  content: ""; }
-
-.sk-bread2:before {
-  content: ""; }
-
-.sk-camp1:before {
-  content: ""; }
-
-.sk-favorite21:before {
-  content: ""; }
-
-.sk-icecreams9:before {
-  content: ""; }
-
-.sk-mountain40:before {
-  content: ""; }
-
-.sk-snow42:before {
-  content: ""; }
-
-.sk-bell84:before {
-  content: ""; }
-
-.sk-plane2:before {
-  content: ""; }
-
-.sk-new_bell:before {
-  content: ""; }
-
-.sk-bell-2:before {
-  content: ""; }
-
-.sk-new_clock:before {
-  content: ""; }
-
-.sk-new_left:before {
-  content: ""; }
-
-.sk-new_profile:before {
-  content: ""; }
-
-.sk-new_right:before {
-  content: ""; }
-
-.sk-new_Security:before {
-  content: ""; }
-
-.sk-error_button:before {
-  content: ""; }
-
-.sk-info_button:before {
-  content: ""; }
-
-.sk-linkedin:before {
-  content: ""; }
-
-.sk-rightarrow59:before {
-  content: ""; }
-
-.sk-rss:before {
-  content: ""; }
-
-.sk-skype_messenger_voip_call:before {
-  content: ""; }
-
-.sk-thumbs_up:before {
-  content: ""; }
-
-.sk-tick_success:before {
-  content: ""; }
-
-.sk-twitter:before {
-  content: ""; }
-
-.sk-x_button:before {
-  content: ""; }
-
-.sk-youtube_you_tube_google:before {
-  content: ""; }
-
-.sk-close-2:before {
-  content: ""; }
-
-.sk-close-3:before {
-  content: ""; }
-
-.sk-add139:before {
-  content: ""; }
-
-.sk-delete96:before {
-  content: ""; }
-
-.sk-DOWNLOAD:before {
-  content: ""; }
-
-.sk-EDIT:before {
-  content: ""; }
-
-.sk-newspaper:before {
-  content: ""; }
-
-.sk-social:before {
-  content: ""; }
-
-.sk-VIEW:before {
-  content: ""; }
-
-.sk-arrow-left:before {
-  content: ""; }
-
-.sk-arrow-right:before {
-  content: ""; }
-
-.sk-piggy_bank_coin:before {
-  content: ""; }
-
-.sk-pinwheel:before {
-  content: ""; }
-
-.sk-rocket:before {
-  content: ""; }
-
-.sk-tag-1:before {
-  content: ""; }
-
-.sk-ui_www:before {
-  content: ""; }
-
-.sk-users_three:before {
-  content: ""; }
-
-.sk-baggage:before {
-  content: ""; }
-
-.sk-plane-3:before {
-  content: ""; }
-
-.sk-car:before {
-  content: ""; }
-
-.sk-seat:before {
-  content: ""; }
-
-.sk-plane-4:before {
-  content: ""; }
-
-.sk-plane-bed:before {
-  content: ""; }
-
-.sk-bed-2:before {
-  content: ""; }
-
-.sk-plane-5:before {
-  content: ""; }
-
-.sk-multi_connection-2:before {
-  content: ""; }
-
-.sk-handbag:before {
-  content: ""; }
-
-.sk-food:before {
-  content: ""; }
-
-.sk-priority:before {
-  content: ""; }
-
-.sk-seats:before {
-  content: ""; }
-
-.sk-seat-3:before {
-  content: ""; }
-
-.sk-cards:before {
-  content: ""; }
-
-.sk-table-tools:before {
-  content: ""; }
-
-.sk-clock-2:before {
-  content: ""; }
-
-.sk-plane-8:before {
-  content: ""; }
-
-.sk-plane3:before {
-  content: ""; }
-
-.sk-seat-2:before {
-  content: ""; }
-
-.sk-seat-check:before {
-  content: ""; }
-
-.sk-check-1:before {
-  content: ""; }
-
-.sk-check-2:before {
-  content: ""; }
-
-.sk-seat-4:before {
-  content: ""; }
-
-.sk-uniE661:before {
-  content: ""; }
-
-.sk-attention-triangle:before {
-  content: ""; }
-
-.sk-attention-filled:before {
-  content: ""; }
-
-.sk-cancel-2:before {
-  content: ""; }
-
-.sk-attention:before {
-  content: ""; }
-
-.sk-plane-7:before {
-  content: ""; }
-
-.sk-emotion:before {
-  content: ""; }
-
-.sk-performance:before {
-  content: ""; }
-
-.sk-Untitled-2-34:before {
-  content: ""; }
-
-.sk-coffee_cup:before {
-  content: ""; }
-
-.sk-compass:before {
-  content: ""; }
-
-.sk-globe:before {
-  content: ""; }
-
-.sk-envelope:before {
-  content: ""; }
-
-.sk-right-arrows:before {
-  content: ""; }
-
-.sk-email-send:before {
-  content: ""; }
-
-.sk-horizontal_arrows:before {
-  content: ""; }
-
-.sk-list-view:before {
-  content: ""; }
-
-.sk-thumbs-view:before {
-  content: ""; }
-
-.sk-grid-view:before {
-  content: ""; }
-
-.sk-dollar:before {
-  content: ""; }
-
-.sk-euro:before {
-  content: ""; }
-
-.sk-favorites:before {
-  content: ""; }
-
-.sk-map_pin:before {
-  content: ""; }
-
-.sk-left-arrow5:before {
-  content: ""; }
-
-.sk-wallet:before {
-  content: ""; }
-
-.sk-piggy_bank:before {
-  content: ""; }
-
-.sk-search2:before {
-  content: ""; }
-
-.sk-email:before {
-  content: ""; }
-
-.sk-double_bed:before {
-  content: ""; }
-
-.sk-bed:before {
-  content: ""; }
-
-.sk-user-tick:before {
-  content: ""; }
-
-.sk-credit-card:before {
-  content: ""; }
-
-.sk-wallet_coins:before {
-  content: ""; }
-
-.sk-sale_percentage:before {
-  content: ""; }
-
-.sk-caller_female:before {
-  content: ""; }
-
-.sk-cogs:before {
-  content: ""; }
-
-.sk-happy_face:before {
-  content: ""; }
-
-.sk-smile:before {
-  content: ""; }
-
-.sk-travelling:before {
-  content: ""; }
-
-.sk-transport:before {
-  content: ""; }
-
-.sk-plane-9:before {
-  content: ""; }
-
-.sk-alarm:before {
-  content: ""; }
-
-.sk-crossed-alarm:before {
-  content: ""; }
-
-.sk {
-  font-family: 'flights';
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-@font-face {
-  font-family: 'ProximaNova';
-  src: url("../fonts/proximanova/proximanova-light-webfont.eot");
-  src: local("☺"), url("../fonts/proximanova/proximanova-light-webfont.eot") format("embedded-opentype"), url("../fonts/proximanova/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-light-webfont.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url("../fonts/proximanova/proximanova-reg-webfont.eot");
-  src: local("☺"), url("../fonts/proximanova/proximanova-reg-webfont.eot") format("embedded-opentype"), url("../fonts/proximanova/proximanova-reg-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-reg-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-regular.svg#ProximaNovaRegular") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url("../fonts/proximanova/proximanova-semibold-webfont.eot");
-  src: local("☺"), url("../fonts/proximanova/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-semibold-webfont.svg#proxima_nova_rgsemibold") format("svg");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url("../fonts/proximanova/proximanova-bold-webfont.eot");
-  src: local("☺"), url("../fonts/proximanova/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
-  font-weight: 800;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova Black';
-  src: url("../fonts/proximanova/proximanova-black-webfont.eot");
-  src: url("../fonts/proximanova/proximanova-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-black-webfont.woff2") format("woff2"), url("../fonts/proximanova/proximanova-black-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-black-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-black-webfont.svg#proxima_novablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: Sari;
-  src: url("../fonts/sari/SariWebPro-Light.woff") format("woff");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: Sari;
-  src: url("../fonts/sari/SariWebPro.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/AvenirNextLTPro-UltLtCn.woff") format("woff");
-  font-style: normal;
-  font-weight: 100; }
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/AvenirNextLTPro-Regular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400; }
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/AvenirNextLTPro-Demi.woff") format("woff");
-  font-style: normal;
-  font-weight: 600; }
 .sprite-ratings {
   background-image: url("http://c1.tacdn.com/sprites/global_pack.png");
   background-position: left -2594px;
@@ -1493,6 +839,660 @@
 .checkbox-group-selectors > a:not(:last-child) {
   padding-right: 4px; }
 
+@font-face {
+  font-family: 'flights';
+  src: url("../fonts/skrydziai/fonts/flights.ttf?h9da1p") format("truetype"), url("../fonts/skrydziai/fonts/flights.woff?h9da1p") format("woff"), url("../fonts/skrydziai/fonts/flights.svg?h9da1p#flights") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="sk-"], [class*=" sk-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'flights' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.sk-luggage:before {
+  content: ""; }
+
+.sk-briefcase:before {
+  content: ""; }
+
+.sk-traveler-baggage:before {
+  content: ""; }
+
+.sk-shopping-bag:before {
+  content: ""; }
+
+.sk-golf:before {
+  content: ""; }
+
+.sk-flight-destination:before {
+  content: ""; }
+
+.sk-right-arrow:before {
+  content: ""; }
+
+.sk-left-arrow:before {
+  content: ""; }
+
+.sk-big-gift-box:before {
+  content: ""; }
+
+.sk-users_two_switch:before {
+  content: ""; }
+
+.sk-users_two_switch_2:before {
+  content: ""; }
+
+.sk-path-a-to-b:before {
+  content: ""; }
+
+.sk-lounge:before {
+  content: ""; }
+
+.sk-magazines:before {
+  content: ""; }
+
+.sk-miles:before {
+  content: ""; }
+
+.sk-miles_25p:before {
+  content: ""; }
+
+.sk-miles_50p:before {
+  content: ""; }
+
+.sk-miles_100p:before {
+  content: ""; }
+
+.sk-miles_125:before {
+  content: ""; }
+
+.sk-miles_200p:before {
+  content: ""; }
+
+.sk-miles_250:before {
+  content: ""; }
+
+.sk-miles_300p:before {
+  content: ""; }
+
+.sk-miles_500:before {
+  content: ""; }
+
+.sk-miles_750:before {
+  content: ""; }
+
+.sk-miles_1000:before {
+  content: ""; }
+
+.sk-miles_1250:before {
+  content: ""; }
+
+.sk-miles_1500:before {
+  content: ""; }
+
+.sk-miles_2000:before {
+  content: ""; }
+
+.sk-sameday-standby:before {
+  content: ""; }
+
+.sk-priority_checkin:before {
+  content: ""; }
+
+.sk-priority_boarding:before {
+  content: ""; }
+
+.sk-premium_food:before {
+  content: ""; }
+
+.sk-more_space_recline:before {
+  content: ""; }
+
+.sk-lounge_charge:before {
+  content: ""; }
+
+.sk-seat_charge:before {
+  content: ""; }
+
+.sk-seat_no:before {
+  content: ""; }
+
+.sk-miles_upgrade_no:before {
+  content: ""; }
+
+.sk-miles_upgrade:before {
+  content: ""; }
+
+.sk-miles_150p:before {
+  content: ""; }
+
+.sk-alacarte_dining:before {
+  content: ""; }
+
+.sk-miles_absolute:before {
+  content: ""; }
+
+.sk-miles_percent:before {
+  content: ""; }
+
+.sk-seatmap_galley:before {
+  content: ""; }
+
+.sk-seatmap_seat_legroom:before {
+  content: ""; }
+
+.sk-one_way:before {
+  content: ""; }
+
+.sk-round_trip:before {
+  content: ""; }
+
+.sk-multi_connection:before {
+  content: ""; }
+
+.sk-calendar:before {
+  content: ""; }
+
+.sk-cancel:before {
+  content: ""; }
+
+.sk-close:before {
+  content: ""; }
+
+.sk-dropdown:before {
+  content: ""; }
+
+.sk-facebook:before {
+  content: ""; }
+
+.sk-google_plus:before {
+  content: ""; }
+
+.sk-icon_19:before {
+  content: ""; }
+
+.sk-icon_32:before {
+  content: ""; }
+
+.sk-icon_38:before {
+  content: ""; }
+
+.sk-icon_42:before {
+  content: ""; }
+
+.sk-icon_48:before {
+  content: ""; }
+
+.sk-icon_50:before {
+  content: ""; }
+
+.sk-icon_58:before {
+  content: ""; }
+
+.sk-icon_84:before {
+  content: ""; }
+
+.sk-instagram:before {
+  content: ""; }
+
+.sk-palme:before {
+  content: ""; }
+
+.sk-pin:before {
+  content: ""; }
+
+.sk-plane:before {
+  content: ""; }
+
+.sk-profile:before {
+  content: ""; }
+
+.sk-profile-4:before {
+  content: ""; }
+
+.sk-profile-2:before {
+  content: ""; }
+
+.sk-switch:before {
+  content: ""; }
+
+.sk-switch2:before {
+  content: ""; }
+
+.sk-tag:before {
+  content: ""; }
+
+.sk-tag2:before {
+  content: ""; }
+
+.sk-tikrinti_uzsakyma:before {
+  content: ""; }
+
+.sk-uzsakymai_grupems:before {
+  content: ""; }
+
+.sk-uzsakymai_internetu:before {
+  content: ""; }
+
+.sk-viezbutis:before {
+  content: ""; }
+
+.sk-switch-3:before {
+  content: ""; }
+
+.sk-icon_40:before {
+  content: ""; }
+
+.sk-icon_70:before {
+  content: ""; }
+
+.sk-animal2:before {
+  content: ""; }
+
+.sk-bread2:before {
+  content: ""; }
+
+.sk-camp1:before {
+  content: ""; }
+
+.sk-favorite21:before {
+  content: ""; }
+
+.sk-icecreams9:before {
+  content: ""; }
+
+.sk-mountain40:before {
+  content: ""; }
+
+.sk-snow42:before {
+  content: ""; }
+
+.sk-bell84:before {
+  content: ""; }
+
+.sk-plane2:before {
+  content: ""; }
+
+.sk-new_bell:before {
+  content: ""; }
+
+.sk-bell-2:before {
+  content: ""; }
+
+.sk-new_clock:before {
+  content: ""; }
+
+.sk-new_left:before {
+  content: ""; }
+
+.sk-new_profile:before {
+  content: ""; }
+
+.sk-new_right:before {
+  content: ""; }
+
+.sk-new_Security:before {
+  content: ""; }
+
+.sk-error_button:before {
+  content: ""; }
+
+.sk-info_button:before {
+  content: ""; }
+
+.sk-linkedin:before {
+  content: ""; }
+
+.sk-rightarrow59:before {
+  content: ""; }
+
+.sk-rss:before {
+  content: ""; }
+
+.sk-skype_messenger_voip_call:before {
+  content: ""; }
+
+.sk-thumbs_up:before {
+  content: ""; }
+
+.sk-tick_success:before {
+  content: ""; }
+
+.sk-twitter:before {
+  content: ""; }
+
+.sk-x_button:before {
+  content: ""; }
+
+.sk-youtube_you_tube_google:before {
+  content: ""; }
+
+.sk-close-2:before {
+  content: ""; }
+
+.sk-close-3:before {
+  content: ""; }
+
+.sk-add139:before {
+  content: ""; }
+
+.sk-delete96:before {
+  content: ""; }
+
+.sk-DOWNLOAD:before {
+  content: ""; }
+
+.sk-EDIT:before {
+  content: ""; }
+
+.sk-newspaper:before {
+  content: ""; }
+
+.sk-social:before {
+  content: ""; }
+
+.sk-VIEW:before {
+  content: ""; }
+
+.sk-arrow-left:before {
+  content: ""; }
+
+.sk-arrow-right:before {
+  content: ""; }
+
+.sk-piggy_bank_coin:before {
+  content: ""; }
+
+.sk-pinwheel:before {
+  content: ""; }
+
+.sk-rocket:before {
+  content: ""; }
+
+.sk-tag-1:before {
+  content: ""; }
+
+.sk-ui_www:before {
+  content: ""; }
+
+.sk-users_three:before {
+  content: ""; }
+
+.sk-baggage:before {
+  content: ""; }
+
+.sk-plane-3:before {
+  content: ""; }
+
+.sk-car:before {
+  content: ""; }
+
+.sk-seat:before {
+  content: ""; }
+
+.sk-plane-4:before {
+  content: ""; }
+
+.sk-plane-bed:before {
+  content: ""; }
+
+.sk-bed-2:before {
+  content: ""; }
+
+.sk-plane-5:before {
+  content: ""; }
+
+.sk-multi_connection-2:before {
+  content: ""; }
+
+.sk-handbag:before {
+  content: ""; }
+
+.sk-food:before {
+  content: ""; }
+
+.sk-priority:before {
+  content: ""; }
+
+.sk-seats:before {
+  content: ""; }
+
+.sk-seat-3:before {
+  content: ""; }
+
+.sk-cards:before {
+  content: ""; }
+
+.sk-table-tools:before {
+  content: ""; }
+
+.sk-clock-2:before {
+  content: ""; }
+
+.sk-plane-8:before {
+  content: ""; }
+
+.sk-plane3:before {
+  content: ""; }
+
+.sk-seat-2:before {
+  content: ""; }
+
+.sk-seat-check:before {
+  content: ""; }
+
+.sk-check-1:before {
+  content: ""; }
+
+.sk-check-2:before {
+  content: ""; }
+
+.sk-seat-4:before {
+  content: ""; }
+
+.sk-uniE661:before {
+  content: ""; }
+
+.sk-attention-triangle:before {
+  content: ""; }
+
+.sk-attention-filled:before {
+  content: ""; }
+
+.sk-cancel-2:before {
+  content: ""; }
+
+.sk-attention:before {
+  content: ""; }
+
+.sk-plane-7:before {
+  content: ""; }
+
+.sk-emotion:before {
+  content: ""; }
+
+.sk-performance:before {
+  content: ""; }
+
+.sk-Untitled-2-34:before {
+  content: ""; }
+
+.sk-coffee_cup:before {
+  content: ""; }
+
+.sk-compass:before {
+  content: ""; }
+
+.sk-globe:before {
+  content: ""; }
+
+.sk-envelope:before {
+  content: ""; }
+
+.sk-right-arrows:before {
+  content: ""; }
+
+.sk-email-send:before {
+  content: ""; }
+
+.sk-horizontal_arrows:before {
+  content: ""; }
+
+.sk-list-view:before {
+  content: ""; }
+
+.sk-thumbs-view:before {
+  content: ""; }
+
+.sk-grid-view:before {
+  content: ""; }
+
+.sk-dollar:before {
+  content: ""; }
+
+.sk-euro:before {
+  content: ""; }
+
+.sk-favorites:before {
+  content: ""; }
+
+.sk-map_pin:before {
+  content: ""; }
+
+.sk-left-arrow5:before {
+  content: ""; }
+
+.sk-wallet:before {
+  content: ""; }
+
+.sk-piggy_bank:before {
+  content: ""; }
+
+.sk-search2:before {
+  content: ""; }
+
+.sk-email:before {
+  content: ""; }
+
+.sk-double_bed:before {
+  content: ""; }
+
+.sk-bed:before {
+  content: ""; }
+
+.sk-user-tick:before {
+  content: ""; }
+
+.sk-credit-card:before {
+  content: ""; }
+
+.sk-wallet_coins:before {
+  content: ""; }
+
+.sk-sale_percentage:before {
+  content: ""; }
+
+.sk-caller_female:before {
+  content: ""; }
+
+.sk-cogs:before {
+  content: ""; }
+
+.sk-happy_face:before {
+  content: ""; }
+
+.sk-smile:before {
+  content: ""; }
+
+.sk-travelling:before {
+  content: ""; }
+
+.sk-transport:before {
+  content: ""; }
+
+.sk-plane-9:before {
+  content: ""; }
+
+.sk-alarm:before {
+  content: ""; }
+
+.sk-crossed-alarm:before {
+  content: ""; }
+
+.sk {
+  font-family: 'flights';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-light-webfont.eot");
+  src: local("☺"), url("../fonts/proximanova/proximanova-light-webfont.eot") format("embedded-opentype"), url("../fonts/proximanova/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-light-webfont.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-reg-webfont.eot");
+  src: local("☺"), url("../fonts/proximanova/proximanova-reg-webfont.eot") format("embedded-opentype"), url("../fonts/proximanova/proximanova-reg-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-reg-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-regular.svg#ProximaNovaRegular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-semibold-webfont.eot");
+  src: local("☺"), url("../fonts/proximanova/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-semibold-webfont.svg#proxima_nova_rgsemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-bold-webfont.eot");
+  src: local("☺"), url("../fonts/proximanova/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova Black';
+  src: url("../fonts/proximanova/proximanova-black-webfont.eot");
+  src: url("../fonts/proximanova/proximanova-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-black-webfont.woff2") format("woff2"), url("../fonts/proximanova/proximanova-black-webfont.woff") format("woff"), url("../fonts/proximanova/proximanova-black-webfont.ttf") format("truetype"), url("../fonts/proximanova/proximanova-black-webfont.svg#proxima_novablack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Sari;
+  src: url("../fonts/sari/SariWebPro-Light.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: Sari;
+  src: url("../fonts/sari/SariWebPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/avenir/AvenirNextLTPro-UltLtCn.woff") format("woff");
+  font-style: normal;
+  font-weight: 100; }
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/avenir/AvenirNextLTPro-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/avenir/AvenirNextLTPro-Demi.woff") format("woff");
+  font-style: normal;
+  font-weight: 600; }
 #tripcloud-setts {
   min-width: 960px;
   font-family: "ProximaNova", Helvetica, Arial, sans-serif;
