@@ -16,7 +16,61 @@
   //  transition: all 1s ease;
 }
 
-.travel {
+.toptravel {
+  footer {
+    background: #fff;
+    padding: 30px 0;
+    .input-group {
+      .btn-primary {
+        background-color: #1485cb;
+        border: 1px solid #1485cb;
+        color: #fff;
+      }
+    }
+    ul.with-icons {
+      margin-top:20px;
+      li {
+        &:before {
+          content: "\f00c";
+          font: normal normal normal 14px/1 FontAwesome;
+          color: #1485cb;
+        }
+      }
+      a {
+        padding-left: 5px;
+      }
+    }
+    ul {
+      li {
+        a {
+          font-size: 13px;
+          color: #7b7b7b;
+          &:hover {
+            text-decoration: none;
+            color: #1485cb;
+          }
+        }
+      }
+    }
+    .footer-img {
+      margin-top:30px;
+    }
+    .quick-links {
+      margin: 30px 0;
+      a {
+        display: inline-block;
+        text-transform: uppercase;
+        color: #1485cb;
+        margin-right: 15px;
+        font-size: 13px;
+      }
+    }
+    .copyright {
+      font-size: 12px;
+      color: #7b7b7b;
+    }
+  }
+
   &.results-page {
     background-size: cover;
     background: url("../images/toptravel/results-bg.jpg") 50% 0 repeat-x #f5f5f5;
@@ -734,59 +788,95 @@
         }
       }
     }
+  }
 
-    footer {
-      background: #fff;
-      padding: 30px 0;
-      .input-group {
-        .btn-primary {
-          background-color: #1485cb;
-          border: 1px solid #1485cb;
-          color: #fff;
-        }
+  &.search-results {
+    background-color: #f5f5f5;
+    .container {
+      //width: 1150px;
+    }
+    .logo-wrapper {
+      position: relative;
+      width: 270px;
+      height: 190px;
+      float:left;
+      z-index: 1;
+      .logo {
+        position:absolute;
+        top: 0;
+        left: -60px;
       }
-      ul.with-icons {
-        margin-top:20px;
-        li {
-          &:before {
-            content: "\f00c";
-            font: normal normal normal 14px/1 FontAwesome;
-            color: #1485cb;
-          }
-        }
-        a {
-          padding-left: 5px;
-        }
-      }
+    }
+    header {
+      background-size: cover;
+      background: url("../images/toptravel/search-results-header.jpg") 50% 0 repeat-x #f5f5f5;
+    }
+    .top-menu {
+      float: left;
+      width: calc(100% - 270px);
+      padding-top: 20px;
+    }
+    .user-menu {
+      float: right;
       ul {
+        list-style: none;
+        font-size: 0;
         li {
+          display: inline-block;
+          margin-right: 10px;
+          &:before {
+            content: '';
+            display: inline-block;
+            height: 25px;
+            width: 12px;
+            border-radius: 15px 0 0 15px;
+            background: #fff;
+            vertical-align: middle;
+          }
+          &:after {
+            content: '';
+            display: inline-block;
+            height: 25px;
+            width: 12px;
+            border-radius: 0 15px 15px 0;
+            background: #fff;
+            vertical-align: middle;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
           a {
-            font-size: 13px;
-            color: #7b7b7b;
+            display: inline-block;
+            background: #fff;
+            color: #222;
+            font-size: 12px;
+            line-height: 25px;
+            vertical-align: middle;
+            text-decoration: none;
             &:hover {
-              text-decoration: none;
-              color: #1485cb;
+              color: lighten(#222,10%);
+              i {
+                color: darken(#a6ce39,10%);
+              }
             }
           }
+
+          i {
+            color: #a6ce39;
+            padding-right: 5px;
+            vertical-align: middle;
+          }
         }
       }
-      .footer-img {
-        margin-top:30px;
-      }
-      .quick-links {
-        margin: 30px 0;
-        a {
-          display: inline-block;
-          text-transform: uppercase;
-          color: #1485cb;
-          margin-right: 15px;
-          font-size: 13px;
-        }
-      }
-      .copyright {
-        font-size: 12px;
-        color: #7b7b7b;
-      }
+    }
+    .search-block {
+      background: #dadada;
+    }
+    .result-item{
+      border: 1px solid #b8b8b8;
+      background: #fff;
+      padding: 20px;
+      border-radius: 4px;
     }
   }
 }

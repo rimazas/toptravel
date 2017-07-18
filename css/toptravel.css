@@ -1502,48 +1502,82 @@
 @-ms-viewport {
   #tripcloud-setts {
     width: device-width; } }
-.travel.results-page {
+.toptravel footer {
+  background: #fff;
+  padding: 30px 0; }
+  .toptravel footer .input-group .btn-primary {
+    background-color: #1485cb;
+    border: 1px solid #1485cb;
+    color: #fff; }
+  .toptravel footer ul.with-icons {
+    margin-top: 20px; }
+    .toptravel footer ul.with-icons li:before {
+      content: "\f00c";
+      font: normal normal normal 14px/1 FontAwesome;
+      color: #1485cb; }
+    .toptravel footer ul.with-icons a {
+      padding-left: 5px; }
+  .toptravel footer ul li a {
+    font-size: 13px;
+    color: #7b7b7b; }
+    .toptravel footer ul li a:hover {
+      text-decoration: none;
+      color: #1485cb; }
+  .toptravel footer .footer-img {
+    margin-top: 30px; }
+  .toptravel footer .quick-links {
+    margin: 30px 0; }
+    .toptravel footer .quick-links a {
+      display: inline-block;
+      text-transform: uppercase;
+      color: #1485cb;
+      margin-right: 15px;
+      font-size: 13px; }
+  .toptravel footer .copyright {
+    font-size: 12px;
+    color: #7b7b7b; }
+.toptravel.results-page {
   background-size: cover;
   background: url("../images/toptravel/results-bg.jpg") 50% 0 repeat-x #f5f5f5; }
-  .travel.results-page .container {
+  .toptravel.results-page .container {
     width: 1150px; }
-  .travel.results-page .tripad-logo-local .sprite-tripad-logo {
+  .toptravel.results-page .tripad-logo-local .sprite-tripad-logo {
     background-image: url("../images/tripad-stars.png"); }
-  .travel.results-page .va-middle {
+  .toptravel.results-page .va-middle {
     vertical-align: middle; }
-  .travel.results-page .relative {
+  .toptravel.results-page .relative {
     position: relative; }
-  .travel.results-page .checkbox.styled.checked label .ico {
+  .toptravel.results-page .checkbox.styled.checked label .ico {
     color: #7ec619; }
-  .travel.results-page .logo-wrapper {
+  .toptravel.results-page .logo-wrapper {
     position: relative;
     width: 270px;
     height: 190px;
     float: left;
     z-index: 1; }
-    .travel.results-page .logo-wrapper .logo {
+    .toptravel.results-page .logo-wrapper .logo {
       position: absolute;
       top: 0;
       left: -60px; }
-  .travel.results-page .top-menu {
+  .toptravel.results-page .top-menu {
     float: left;
     width: calc(100% - 270px);
     padding-top: 20px; }
-    .travel.results-page .top-menu .main-menu {
+    .toptravel.results-page .top-menu .main-menu {
       margin-bottom: 15px; }
-    .travel.results-page .top-menu > ul {
+    .toptravel.results-page .top-menu > ul {
       font-size: 0;
       margin-left: -20px;
       display: flex;
       flex-direction: row;
       padding: 0; }
-      .travel.results-page .top-menu > ul > li {
+      .toptravel.results-page .top-menu > ul > li {
         position: relative;
         display: inline;
         list-style: none;
         flex-grow: 1;
         text-align: center; }
-        .travel.results-page .top-menu > ul > li a {
+        .toptravel.results-page .top-menu > ul > li a {
           display: block;
           padding: 12px 5px;
           font-size: 12px;
@@ -1552,65 +1586,65 @@
           text-transform: uppercase;
           color: #fff;
           border-right: 1px solid #65b31d; }
-        .travel.results-page .top-menu > ul > li:first-child a {
+        .toptravel.results-page .top-menu > ul > li:first-child a {
           padding-left: 30px; }
-        .travel.results-page .top-menu > ul > li:last-child a {
+        .toptravel.results-page .top-menu > ul > li:last-child a {
           border: none; }
-        .travel.results-page .top-menu > ul > li.active a {
+        .toptravel.results-page .top-menu > ul > li.active a {
           background: #ed1c24; }
-        .travel.results-page .top-menu > ul > li.active:hover a {
+        .toptravel.results-page .top-menu > ul > li.active:hover a {
           background: #de1219; }
-        .travel.results-page .top-menu > ul > li:hover a {
+        .toptravel.results-page .top-menu > ul > li:hover a {
           text-decoration: none;
           background: #6ead16; }
-        .travel.results-page .top-menu > ul > li:hover > ul {
+        .toptravel.results-page .top-menu > ul > li:hover > ul {
           display: block; }
-        .travel.results-page .top-menu > ul > li > ul {
+        .toptravel.results-page .top-menu > ul > li > ul {
           display: none;
           position: absolute;
           top: 100%;
           left: 0;
           padding: 0;
           border-top: 1px solid #4d981d; }
-          .travel.results-page .top-menu > ul > li > ul li {
+          .toptravel.results-page .top-menu > ul > li > ul li {
             width: 100%; }
-            .travel.results-page .top-menu > ul > li > ul li a {
+            .toptravel.results-page .top-menu > ul > li > ul li a {
               width: 100%;
               text-align: left;
               border-bottom: 1px solid #4d981d;
               padding-left: 15px;
               padding-right: 15px; }
-            .travel.results-page .top-menu > ul > li > ul li:hover a {
+            .toptravel.results-page .top-menu > ul > li > ul li:hover a {
               background: #4d971d; }
-  .travel.results-page .breadcrumbs {
+  .toptravel.results-page .breadcrumbs {
     padding: 0 20px;
     float: left; }
-    .travel.results-page .breadcrumbs ul {
+    .toptravel.results-page .breadcrumbs ul {
       list-style: none; }
-      .travel.results-page .breadcrumbs ul li {
+      .toptravel.results-page .breadcrumbs ul li {
         display: inline-block;
         padding-right: 10px; }
-        .travel.results-page .breadcrumbs ul li a {
+        .toptravel.results-page .breadcrumbs ul li a {
           font-size: 10px;
           color: #fff;
           padding-right: 10px; }
-        .travel.results-page .breadcrumbs ul li:after {
+        .toptravel.results-page .breadcrumbs ul li:after {
           font: normal normal normal 14px/1 FontAwesome;
           content: "\f105";
           vertical-align: middle;
           color: #fff;
           font-size: 10px; }
-        .travel.results-page .breadcrumbs ul li:last-child:after {
+        .toptravel.results-page .breadcrumbs ul li:last-child:after {
           content: ' '; }
-  .travel.results-page .user-menu {
+  .toptravel.results-page .user-menu {
     float: right; }
-    .travel.results-page .user-menu ul {
+    .toptravel.results-page .user-menu ul {
       list-style: none;
       font-size: 0; }
-      .travel.results-page .user-menu ul li {
+      .toptravel.results-page .user-menu ul li {
         display: inline-block;
         margin-right: 10px; }
-        .travel.results-page .user-menu ul li:before {
+        .toptravel.results-page .user-menu ul li:before {
           content: '';
           display: inline-block;
           height: 25px;
@@ -1618,7 +1652,7 @@
           border-radius: 15px 0 0 15px;
           background: #fff;
           vertical-align: middle; }
-        .travel.results-page .user-menu ul li:after {
+        .toptravel.results-page .user-menu ul li:after {
           content: '';
           display: inline-block;
           height: 25px;
@@ -1626,9 +1660,9 @@
           border-radius: 0 15px 15px 0;
           background: #fff;
           vertical-align: middle; }
-        .travel.results-page .user-menu ul li:last-child {
+        .toptravel.results-page .user-menu ul li:last-child {
           margin-right: 0; }
-        .travel.results-page .user-menu ul li a {
+        .toptravel.results-page .user-menu ul li a {
           display: inline-block;
           background: #fff;
           color: #222;
@@ -1636,55 +1670,55 @@
           line-height: 25px;
           vertical-align: middle;
           text-decoration: none; }
-          .travel.results-page .user-menu ul li a:hover {
+          .toptravel.results-page .user-menu ul li a:hover {
             color: #3c3c3c; }
-            .travel.results-page .user-menu ul li a:hover i {
+            .toptravel.results-page .user-menu ul li a:hover i {
               color: #88aa2a; }
-        .travel.results-page .user-menu ul li i {
+        .toptravel.results-page .user-menu ul li i {
           color: #a6ce39;
           padding-right: 5px;
           vertical-align: middle; }
-  .travel.results-page .results-filter {
+  .toptravel.results-page .results-filter {
     margin-bottom: 30px; }
-    .travel.results-page .results-filter h3 {
+    .toptravel.results-page .results-filter h3 {
       font-size: 30px;
       color: #fff;
       font-weight: 400; }
-    .travel.results-page .results-filter .wrapper {
+    .toptravel.results-page .results-filter .wrapper {
       background: rgba(255, 255, 255, 0.8);
       border-radius: 4px;
       padding: 15px; }
-      .travel.results-page .results-filter .wrapper .col {
+      .toptravel.results-page .results-filter .wrapper .col {
         width: 20%;
         float: left;
         padding: 0 15px; }
-        .travel.results-page .results-filter .wrapper .col label {
+        .toptravel.results-page .results-filter .wrapper .col label {
           color: #6f777a;
           font-weight: 600;
           display: block; }
-        .travel.results-page .results-filter .wrapper .col .setting > label {
+        .toptravel.results-page .results-filter .wrapper .col .setting > label {
           width: 100%;
           display: inline-block;
           color: #6f777a;
           border-bottom: 1px solid #c1c1c1;
           padding-bottom: 5px;
           font-weight: 600; }
-        .travel.results-page .results-filter .wrapper .col .setting label {
+        .toptravel.results-page .results-filter .wrapper .col .setting label {
           display: inline-block; }
-    .travel.results-page .results-filter .btn-reset {
+    .toptravel.results-page .results-filter .btn-reset {
       background: #ed1c24;
       color: #fff;
       width: 16%;
       padding-top: 12px;
       padding-bottom: 12px;
       border-radius: 2px; }
-      .travel.results-page .results-filter .btn-reset:hover {
+      .toptravel.results-page .results-filter .btn-reset:hover {
         background: #de1219; }
-    .travel.results-page .results-filter .rate .filter .stars {
+    .toptravel.results-page .results-filter .rate .filter .stars {
       height: 160px;
       position: relative;
       margin: 30px 20px 0; }
-      .travel.results-page .results-filter .rate .filter .stars .rate-star {
+      .toptravel.results-page .results-filter .rate .filter .stars .rate-star {
         font: normal normal normal 18px/1 FontAwesome;
         color: #fff;
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -1693,79 +1727,79 @@
         position: absolute;
         bottom: 0;
         width: 15%; }
-        .travel.results-page .results-filter .rate .filter .stars .rate-star:before {
+        .toptravel.results-page .results-filter .rate .filter .stars .rate-star:before {
           content: "\f005"; }
-        .travel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(1) {
+        .toptravel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(1) {
           height: 40%;
           left: 5%; }
-        .travel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(2) {
+        .toptravel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(2) {
           height: 55%;
           left: 25%; }
-        .travel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(3) {
+        .toptravel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(3) {
           height: 70%;
           left: 45%; }
-        .travel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(4) {
+        .toptravel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(4) {
           height: 85%;
           left: 65%; }
-        .travel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(5) {
+        .toptravel.results-page .results-filter .rate .filter .stars .rate-star:nth-child(5) {
           height: 100%;
           left: 85%; }
-        .travel.results-page .results-filter .rate .filter .stars .rate-star .tower {
+        .toptravel.results-page .results-filter .rate .filter .stars .rate-star .tower {
           height: calc(100% - 30px);
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
           background: #fff;
           margin: 5px 2px 0;
           border-radius: 2px; }
-        .travel.results-page .results-filter .rate .filter .stars .rate-star:hover, .travel.results-page .results-filter .rate .filter .stars .rate-star.active {
+        .toptravel.results-page .results-filter .rate .filter .stars .rate-star:hover, .toptravel.results-page .results-filter .rate .filter .stars .rate-star.active {
           color: #7ec619; }
-          .travel.results-page .results-filter .rate .filter .stars .rate-star:hover .tower, .travel.results-page .results-filter .rate .filter .stars .rate-star.active .tower {
+          .toptravel.results-page .results-filter .rate .filter .stars .rate-star:hover .tower, .toptravel.results-page .results-filter .rate .filter .stars .rate-star.active .tower {
             background: #7ec619; }
-    .travel.results-page .results-filter .catering .tooltip.in {
+    .toptravel.results-page .results-filter .catering .tooltip.in {
       opacity: 1; }
-    .travel.results-page .results-filter .catering .tooltip .tooltip-inner {
+    .toptravel.results-page .results-filter .catering .tooltip .tooltip-inner {
       padding: 8px;
       min-width: 160px;
       border-radius: 1px;
       background-color: #343434; }
-    .travel.results-page .results-filter .catering .tooltip .tooltip-arrow {
+    .toptravel.results-page .results-filter .catering .tooltip .tooltip-arrow {
       border-top-color: #343434; }
-    .travel.results-page .results-filter .catering .filter {
+    .toptravel.results-page .results-filter .catering .filter {
       min-width: 190px; }
-      .travel.results-page .results-filter .catering .filter .pie {
+      .toptravel.results-page .results-filter .catering .filter .pie {
         position: relative;
         margin: 20px 10px; }
-        .travel.results-page .results-filter .catering .filter .pie .piece {
+        .toptravel.results-page .results-filter .catering .filter .pie .piece {
           width: 84px;
           height: 84px;
           float: left;
           position: relative; }
-          .travel.results-page .results-filter .catering .filter .pie .piece span {
+          .toptravel.results-page .results-filter .catering .filter .pie .piece span {
             z-index: 1;
             display: block;
             position: absolute;
             top: 30px;
             left: 30px;
             font-weight: 600; }
-          .travel.results-page .results-filter .catering .filter .pie .piece:hover, .travel.results-page .results-filter .catering .filter .pie .piece.active {
+          .toptravel.results-page .results-filter .catering .filter .pie .piece:hover, .toptravel.results-page .results-filter .catering .filter .pie .piece.active {
             cursor: pointer; }
-            .travel.results-page .results-filter .catering .filter .pie .piece:hover:before, .travel.results-page .results-filter .catering .filter .pie .piece.active:before {
+            .toptravel.results-page .results-filter .catering .filter .pie .piece:hover:before, .toptravel.results-page .results-filter .catering .filter .pie .piece.active:before {
               background: url("../images/toptravel/pie-hover.png") 0 0 no-repeat; }
-          .travel.results-page .results-filter .catering .filter .pie .piece:before {
+          .toptravel.results-page .results-filter .catering .filter .pie .piece:before {
             content: ' ';
             position: absolute;
             width: 84px;
             height: 84px;
             background: url("../images/toptravel/pie.png") 0 0 no-repeat;
             background-size: 100% 100%; }
-          .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(1):before {
+          .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(1):before {
             transform: rotate(-90deg); }
-          .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(2):before {
+          .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(2):before {
             transform: rotate(0deg); }
-          .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(3):before {
+          .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(3):before {
             transform: rotate(180deg); }
-          .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(4):before {
+          .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(4):before {
             transform: rotate(90deg); }
-          .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(5) {
+          .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(5) {
             position: absolute;
             width: 63px;
             height: 63px;
@@ -1773,33 +1807,33 @@
             left: 53px;
             background: #fff;
             border-radius: 50%; }
-            .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(5) span {
+            .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(5) span {
               display: inline-block;
               width: 100%;
               line-height: 20px;
               text-align: center;
               top: 20px;
               left: 0; }
-            .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(5):hover, .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(5).active {
+            .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(5):hover, .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(5).active {
               background: #7ec619; }
-            .travel.results-page .results-filter .catering .filter .pie .piece:nth-child(5):before {
+            .toptravel.results-page .results-filter .catering .filter .pie .piece:nth-child(5):before {
               background: none; }
-    .travel.results-page .results-filter .temperature .filter {
+    .toptravel.results-page .results-filter .temperature .filter {
       position: relative; }
-    .travel.results-page .results-filter .temperature .temp-number {
+    .toptravel.results-page .results-filter .temperature .temp-number {
       top: 20px;
       position: absolute; }
-      .travel.results-page .results-filter .temperature .temp-number .sign {
+      .toptravel.results-page .results-filter .temperature .temp-number .sign {
         font-size: 30px; }
-      .travel.results-page .results-filter .temperature .temp-number .amount {
+      .toptravel.results-page .results-filter .temperature .temp-number .amount {
         font-size: 30px;
         font-weight: 600;
         color: #404040; }
-      .travel.results-page .results-filter .temperature .temp-number .deg {
+      .toptravel.results-page .results-filter .temperature .temp-number .deg {
         position: absolute;
         right: -15px;
         top: 5px; }
-    .travel.results-page .results-filter .temperature .termometer {
+    .toptravel.results-page .results-filter .temperature .termometer {
       position: absolute;
       background: url("../images/toptravel/termometer.png") 0 0 no-repeat;
       width: 70px;
@@ -1807,7 +1841,7 @@
       margin-left: -35px;
       left: 50%;
       top: 20px; }
-    .travel.results-page .results-filter .temperature .bulb {
+    .toptravel.results-page .results-filter .temperature .bulb {
       position: absolute;
       left: 50%;
       margin-left: -14px;
@@ -1816,70 +1850,70 @@
       height: 29px;
       background: #a6ce39;
       border-radius: 50%; }
-    .travel.results-page .results-filter .temperature .temp-slider {
+    .toptravel.results-page .results-filter .temperature .temp-slider {
       height: 109px;
       margin-top: 20px;
       margin-left: 32px; }
-      .travel.results-page .results-filter .temperature .temp-slider.ui-slider-vertical {
+      .toptravel.results-page .results-filter .temperature .temp-slider.ui-slider-vertical {
         width: 7px;
         border: none;
         background: transparent; }
-        .travel.results-page .results-filter .temperature .temp-slider.ui-slider-vertical .ui-slider-handle {
+        .toptravel.results-page .results-filter .temperature .temp-slider.ui-slider-vertical .ui-slider-handle {
           width: 7px;
           height: 7px;
           left: 0;
           margin-bottom: -7px; }
-        .travel.results-page .results-filter .temperature .temp-slider.ui-slider-vertical .ui-widget-header {
+        .toptravel.results-page .results-filter .temperature .temp-slider.ui-slider-vertical .ui-widget-header {
           border: none;
           background: #a6ce39; }
-    .travel.results-page .results-filter .best-offers .filter {
+    .toptravel.results-page .results-filter .best-offers .filter {
       margin-top: 20px; }
-      .travel.results-page .results-filter .best-offers .filter .checkbox label {
+      .toptravel.results-page .results-filter .best-offers .filter .checkbox label {
         color: #404040;
         font-size: 14px; }
-    .travel.results-page .results-filter .budget .filter {
+    .toptravel.results-page .results-filter .budget .filter {
       margin-top: 20px; }
-    .travel.results-page .results-filter .budget .rs-control .rs-range-color {
+    .toptravel.results-page .results-filter .budget .rs-control .rs-range-color {
       background-color: #7ec619; }
-    .travel.results-page .results-filter .budget .rs-control .rs-bg-color {
+    .toptravel.results-page .results-filter .budget .rs-control .rs-bg-color {
       background-color: #dff3f8; }
-    .travel.results-page .results-filter .budget .rs-control .rs-border {
+    .toptravel.results-page .results-filter .budget .rs-control .rs-border {
       border: 1px solid #dedede; }
-    .travel.results-page .results-filter .budget .rs-control .rs-tooltip-text {
+    .toptravel.results-page .results-filter .budget .rs-control .rs-tooltip-text {
       font-family: "ProximaNova", Helvetica, Arial, sans-serif;
       font-size: 30px;
       font-weight: 600; }
-    .travel.results-page .results-filter .budget .rs-control .rs-handle-dot {
+    .toptravel.results-page .results-filter .budget .rs-control .rs-handle-dot {
       padding: 8px; }
-      .travel.results-page .results-filter .budget .rs-control .rs-handle-dot:after {
+      .toptravel.results-page .results-filter .budget .rs-control .rs-handle-dot:after {
         background-color: #222; }
-  .travel.results-page .block-image {
+  .toptravel.results-page .block-image {
     display: block;
     border-radius: 2px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; }
-  .travel.results-page .special-offers {
+  .toptravel.results-page .special-offers {
     margin-bottom: 40px; }
-    .travel.results-page .special-offers .item {
+    .toptravel.results-page .special-offers .item {
       background: #fff;
       border: 1px solid #eaeaea;
       margin-bottom: 5px; }
-      .travel.results-page .special-offers .item .picture {
+      .toptravel.results-page .special-offers .item .picture {
         float: left;
         height: 170px;
         width: 250px; }
-      .travel.results-page .special-offers .item .top-offer {
+      .toptravel.results-page .special-offers .item .top-offer {
         position: absolute;
         top: 25px;
         left: -3px; }
-        .travel.results-page .special-offers .item .top-offer .label {
+        .toptravel.results-page .special-offers .item .top-offer .label {
           position: relative;
           background: #ed1c24;
           border-radius: 0 4px 4px 0;
           padding: 9px 12px; }
-          .travel.results-page .special-offers .item .top-offer .label:after {
+          .toptravel.results-page .special-offers .item .top-offer .label:after {
             position: absolute;
             content: ' ';
             width: 0;
@@ -1889,109 +1923,109 @@
             border-color: transparent #970c11 transparent transparent;
             left: 0;
             bottom: -3px; }
-      .travel.results-page .special-offers .item .info {
+      .toptravel.results-page .special-offers .item .info {
         position: relative;
         float: left;
         padding: 20px;
         width: 50%;
         height: 170px; }
-        .travel.results-page .special-offers .item .info h3 {
+        .toptravel.results-page .special-offers .item .info h3 {
           margin: 0 0 10px;
           font-size: 21px;
           line-height: 14px; }
-          .travel.results-page .special-offers .item .info h3 a {
+          .toptravel.results-page .special-offers .item .info h3 a {
             text-decoration: none;
             font-weight: 600;
             color: #000; }
-      .travel.results-page .special-offers .item .destination .country {
+      .toptravel.results-page .special-offers .item .destination .country {
         color: #585858;
         font-size: 18px;
         font-weight: 400;
         margin-right: 15px;
         vertical-align: middle; }
-      .travel.results-page .special-offers .item .destination .sun {
+      .toptravel.results-page .special-offers .item .destination .sun {
         color: #6b6b6b;
         margin-right: 15px; }
-        .travel.results-page .special-offers .item .destination .sun i {
+        .toptravel.results-page .special-offers .item .destination .sun i {
           color: #f8c80a; }
-      .travel.results-page .special-offers .item .destination .water {
+      .toptravel.results-page .special-offers .item .destination .water {
         color: #6b6b6b; }
-        .travel.results-page .special-offers .item .destination .water i {
+        .toptravel.results-page .special-offers .item .destination .water i {
           color: #1c89cd; }
-      .travel.results-page .special-offers .item .hotel-info {
+      .toptravel.results-page .special-offers .item .hotel-info {
         position: absolute;
         bottom: 10px;
         left: 20px;
         width: 100%; }
-        .travel.results-page .special-offers .item .hotel-info .block {
+        .toptravel.results-page .special-offers .item .hotel-info .block {
           float: left;
           margin-right: 20px;
           border-right: 1px solid #f2f2f2;
           padding: 5px 20px 10px 0; }
-          .travel.results-page .special-offers .item .hotel-info .block:nth-child(1) {
+          .toptravel.results-page .special-offers .item .hotel-info .block:nth-child(1) {
             width: 35%; }
-          .travel.results-page .special-offers .item .hotel-info .block:nth-child(2) {
+          .toptravel.results-page .special-offers .item .hotel-info .block:nth-child(2) {
             width: 30%; }
-          .travel.results-page .special-offers .item .hotel-info .block:nth-child(3) {
+          .toptravel.results-page .special-offers .item .hotel-info .block:nth-child(3) {
             width: auto;
             border: none; }
-          .travel.results-page .special-offers .item .hotel-info .block label {
+          .toptravel.results-page .special-offers .item .hotel-info .block label {
             color: #fe7a00;
             font-size: 17px;
             margin-bottom: 0; }
-          .travel.results-page .special-offers .item .hotel-info .block .type {
+          .toptravel.results-page .special-offers .item .hotel-info .block .type {
             color: #6b6b6b;
             font-size: 15px;
             line-height: 15px; }
-      .travel.results-page .special-offers .item .price-block {
+      .toptravel.results-page .special-offers .item .price-block {
         position: relative;
         float: right;
         width: 270px;
         height: 170px;
         padding: 20px; }
-        .travel.results-page .special-offers .item .price-block .tripad {
+        .toptravel.results-page .special-offers .item .price-block .tripad {
           text-align: right;
           line-height: 18px; }
-          .travel.results-page .special-offers .item .price-block .tripad span {
+          .toptravel.results-page .special-offers .item .price-block .tripad span {
             padding-right: 10px;
             vertical-align: top;
             color: #35851c;
             font-size: 18px;
             font-weight: 600; }
-        .travel.results-page .special-offers .item .price-block .prices {
+        .toptravel.results-page .special-offers .item .price-block .prices {
           position: absolute;
           bottom: 20px;
           right: 20px;
           width: 100%; }
-          .travel.results-page .special-offers .item .price-block .prices .block {
+          .toptravel.results-page .special-offers .item .price-block .prices .block {
             float: left;
             padding: 0 5px; }
-            .travel.results-page .special-offers .item .price-block .prices .block:nth-child(1) {
+            .toptravel.results-page .special-offers .item .price-block .prices .block:nth-child(1) {
               width: 80px; }
-            .travel.results-page .special-offers .item .price-block .prices .block:nth-child(2) {
+            .toptravel.results-page .special-offers .item .price-block .prices .block:nth-child(2) {
               width: 140px;
               padding-right: 20px; }
-            .travel.results-page .special-offers .item .price-block .prices .block:nth-child(3) {
+            .toptravel.results-page .special-offers .item .price-block .prices .block:nth-child(3) {
               width: 45px;
               padding-right: 0; }
-          .travel.results-page .special-offers .item .price-block .prices .old-price {
+          .toptravel.results-page .special-offers .item .price-block .prices .old-price {
             text-decoration: line-through;
             color: #6b6b6b;
             font-size: 18px;
             text-align: center; }
-          .travel.results-page .special-offers .item .price-block .prices .price {
+          .toptravel.results-page .special-offers .item .price-block .prices .price {
             font-size: 30px;
             line-height: 30px;
             color: #000;
             text-align: right;
             font-weight: 600; }
-          .travel.results-page .special-offers .item .price-block .prices .person {
+          .toptravel.results-page .special-offers .item .price-block .prices .person {
             color: #6b6b6b;
             font-size: 15px;
             line-height: 15px;
             margin-top: 6px;
             text-align: right; }
-          .travel.results-page .special-offers .item .price-block .prices .label-discount {
+          .toptravel.results-page .special-offers .item .price-block .prices .label-discount {
             position: relative;
             background: #ff0004;
             border-radius: 0;
@@ -2001,7 +2035,7 @@
             font-weight: 400;
             color: #fff;
             display: inline-block; }
-            .travel.results-page .special-offers .item .price-block .prices .label-discount:after {
+            .toptravel.results-page .special-offers .item .price-block .prices .label-discount:after {
               right: 100%;
               top: 50%;
               border: solid transparent;
@@ -2013,51 +2047,85 @@
               border-right-color: #ff0000;
               border-width: 13px;
               margin-top: -13px; }
-          .travel.results-page .special-offers .item .price-block .prices .btn-select {
+          .toptravel.results-page .special-offers .item .price-block .prices .btn-select {
             background: #7ec619;
             padding: 6px 12px 7px;
             border-radius: 2px; }
-            .travel.results-page .special-offers .item .price-block .prices .btn-select i {
+            .toptravel.results-page .special-offers .item .price-block .prices .btn-select i {
               color: #fff;
               font-size: 35px; }
-      .travel.results-page .special-offers .item .rate-stars {
+      .toptravel.results-page .special-offers .item .rate-stars {
         padding-left: 10px; }
-        .travel.results-page .special-offers .item .rate-stars i {
+        .toptravel.results-page .special-offers .item .rate-stars i {
           font-size: 14px;
           color: #f8c80a; }
-  .travel.results-page footer {
-    background: #fff;
-    padding: 30px 0; }
-    .travel.results-page footer .input-group .btn-primary {
-      background-color: #1485cb;
-      border: 1px solid #1485cb;
-      color: #fff; }
-    .travel.results-page footer ul.with-icons {
-      margin-top: 20px; }
-      .travel.results-page footer ul.with-icons li:before {
-        content: "\f00c";
-        font: normal normal normal 14px/1 FontAwesome;
-        color: #1485cb; }
-      .travel.results-page footer ul.with-icons a {
-        padding-left: 5px; }
-    .travel.results-page footer ul li a {
-      font-size: 13px;
-      color: #7b7b7b; }
-      .travel.results-page footer ul li a:hover {
-        text-decoration: none;
-        color: #1485cb; }
-    .travel.results-page footer .footer-img {
-      margin-top: 30px; }
-    .travel.results-page footer .quick-links {
-      margin: 30px 0; }
-      .travel.results-page footer .quick-links a {
+.toptravel.search-results {
+  background-color: #f5f5f5; }
+  .toptravel.search-results .logo-wrapper {
+    position: relative;
+    width: 270px;
+    height: 190px;
+    float: left;
+    z-index: 1; }
+    .toptravel.search-results .logo-wrapper .logo {
+      position: absolute;
+      top: 0;
+      left: -60px; }
+  .toptravel.search-results header {
+    background-size: cover;
+    background: url("../images/toptravel/search-results-header.jpg") 50% 0 repeat-x #f5f5f5; }
+  .toptravel.search-results .top-menu {
+    float: left;
+    width: calc(100% - 270px);
+    padding-top: 20px; }
+  .toptravel.search-results .user-menu {
+    float: right; }
+    .toptravel.search-results .user-menu ul {
+      list-style: none;
+      font-size: 0; }
+      .toptravel.search-results .user-menu ul li {
         display: inline-block;
-        text-transform: uppercase;
-        color: #1485cb;
-        margin-right: 15px;
-        font-size: 13px; }
-    .travel.results-page footer .copyright {
-      font-size: 12px;
-      color: #7b7b7b; }
+        margin-right: 10px; }
+        .toptravel.search-results .user-menu ul li:before {
+          content: '';
+          display: inline-block;
+          height: 25px;
+          width: 12px;
+          border-radius: 15px 0 0 15px;
+          background: #fff;
+          vertical-align: middle; }
+        .toptravel.search-results .user-menu ul li:after {
+          content: '';
+          display: inline-block;
+          height: 25px;
+          width: 12px;
+          border-radius: 0 15px 15px 0;
+          background: #fff;
+          vertical-align: middle; }
+        .toptravel.search-results .user-menu ul li:last-child {
+          margin-right: 0; }
+        .toptravel.search-results .user-menu ul li a {
+          display: inline-block;
+          background: #fff;
+          color: #222;
+          font-size: 12px;
+          line-height: 25px;
+          vertical-align: middle;
+          text-decoration: none; }
+          .toptravel.search-results .user-menu ul li a:hover {
+            color: #3c3c3c; }
+            .toptravel.search-results .user-menu ul li a:hover i {
+              color: #88aa2a; }
+        .toptravel.search-results .user-menu ul li i {
+          color: #a6ce39;
+          padding-right: 5px;
+          vertical-align: middle; }
+  .toptravel.search-results .search-block {
+    background: #dadada; }
+  .toptravel.search-results .result-item {
+    border: 1px solid #b8b8b8;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px; }
 
 /*# sourceMappingURL=toptravel.css.map */
