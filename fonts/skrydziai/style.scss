@@ -3,9 +3,9 @@
 @font-face {
   font-family: 'flights';
   src:
-    url('#{$icomoon-font-path}/flights.ttf?h9da1p') format('truetype'),
-    url('#{$icomoon-font-path}/flights.woff?h9da1p') format('woff'),
-    url('#{$icomoon-font-path}/flights.svg?h9da1p#flights') format('svg');
+    url('#{$icomoon-font-path}/flights.ttf?oupetx') format('truetype'),
+    url('#{$icomoon-font-path}/flights.woff?oupetx') format('woff'),
+    url('#{$icomoon-font-path}/flights.svg?oupetx#flights') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,6 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.sk-sea-waves {
+  &:before {
+    content: $sk-sea-waves;
+  }
+}
 .sk-luggage {
   &:before {
     content: $sk-luggage;
