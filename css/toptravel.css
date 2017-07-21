@@ -2398,13 +2398,16 @@
       .toptravel.search-results .search-block .form-field:nth-child(1) {
         width: 40%; }
       .toptravel.search-results .search-block .form-field:nth-child(2) {
-        width: 16%; }
+        width: 16%;
+        margin-left: -1px; }
       .toptravel.search-results .search-block .form-field:nth-child(3) {
-        width: 16%; }
+        width: 16%;
+        margin-left: -1px; }
       .toptravel.search-results .search-block .form-field:nth-child(4) {
-        width: 16%; }
+        width: 16%;
+        margin-left: -1px; }
       .toptravel.search-results .search-block .form-field:nth-child(5) {
-        width: 12%; }
+        width: calc(12% + 3px); }
     .toptravel.search-results .search-block .autocomplete-container i {
       position: absolute;
       color: #222;
@@ -2465,7 +2468,8 @@
     .toptravel.search-results .search-block .btn-search {
       background: #E6001D;
       color: #fff;
-      height: 54px;
+      height: 52px;
+      margin-top: 1px;
       border-radius: 0 2px 2px 0;
       font-size: 18px; }
       .toptravel.search-results .search-block .btn-search:hover {

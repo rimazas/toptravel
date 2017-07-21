@@ -952,15 +952,18 @@
         }
         &:nth-child(2) {
           width:16%;
+          margin-left: -1px;
         }
         &:nth-child(3) {
           width:16%;
+          margin-left: -1px;
         }
         &:nth-child(4) {
           width:16%;
+          margin-left: -1px;
         }
         &:nth-child(5) {
-          width:12%;
+          width: calc(12% + 3px);
         }
       }
       .autocomplete-container {
@@ -1038,7 +1041,8 @@
       .btn-search {
         background: #E6001D;
         color: #fff;
-        height: 54px;
+        height: 52px;
+        margin-top: 1px;
         border-radius: 0 2px 2px 0;
         font-size:18px;
         &:hover {
