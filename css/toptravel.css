@@ -1728,6 +1728,8 @@
 .select2-drop.select2-green .select2-results .select2-highlighted {
   background-color: #9c0; }
 
+.toptravel .tripad-logo-local .sprite-tripad-logo {
+  background-image: url("../images/tripad-stars.png"); }
 .toptravel .rate-stars i.star {
   font-size: 14px;
   color: #dbdbdb; }
