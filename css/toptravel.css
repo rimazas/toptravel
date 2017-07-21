@@ -1724,9 +1724,30 @@
   background: #fff;
   font-size: 16px;
   line-height: 1.42857; }
-@-ms-viewport {
-  #tripcloud-setts {
-    width: device-width; } }
+
+.select2-drop.select2-green .select2-results .select2-highlighted {
+  background-color: #9c0; }
+
+.toptravel .rate-stars i.star {
+  font-size: 14px;
+  color: #dbdbdb; }
+.toptravel .rate-stars .star:not(.fa-star-o) {
+  font-size: 14px;
+  color: #fb3; }
+.toptravel .rate-stars .thumb {
+  display: inline-block;
+  background-color: #9c0;
+  border-radius: 2px;
+  padding: 0 5px 3px;
+  margin-left: 5px;
+  line-height: 22px;
+  width: 15px;
+  height: 16px; }
+  .toptravel .rate-stars .thumb .fa {
+    color: #fff;
+    font-size: 16px; }
+.toptravel .rate-stars a:hover.thumb {
+  background-color: #8ebd00; }
 .toptravel footer {
   background: #fff;
   padding: 30px 0; }
@@ -2288,6 +2309,8 @@
           color: #f8c80a; }
 .toptravel.search-results {
   background-color: #f5f5f5; }
+  .toptravel.search-results .container {
+    width: 1150px; }
   .toptravel.search-results .logo-wrapper {
     position: relative;
     width: 270px;
@@ -2301,6 +2324,21 @@
   .toptravel.search-results header {
     background-size: cover;
     background: url("../images/toptravel/search-results-header.jpg") 50% 0 repeat-x #d1d1d1; }
+  .toptravel.search-results .main-heading {
+    margin: 30px 0 20px; }
+    .toptravel.search-results .main-heading h2 {
+      font-size: 24px;
+      margin: 5px 0 0; }
+    .toptravel.search-results .main-heading .form-control:focus {
+      box-shadow: none; }
+    .toptravel.search-results .main-heading .form-control.select2 {
+      border: none; }
+      .toptravel.search-results .main-heading .form-control.select2.select2-container .select2-choice {
+        border: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+        font-size: 14px; }
+      .toptravel.search-results .main-heading .form-control.select2.select2-container.select2-container-active {
+        box-shadow: none; }
   .toptravel.search-results .top-menu {
     float: left;
     width: calc(100% - 270px);
@@ -2349,7 +2387,7 @@
           vertical-align: middle; }
   .toptravel.search-results .search-block {
     background: repeating-linear-gradient(-45deg, #D1D1D1, #D1D1D1 10px, #D9D9D9 10px, #D9D9D9 20px);
-    padding: 20px 0; }
+    padding: 15px 0; }
     .toptravel.search-results .search-block .form-control[readonly] {
       cursor: pointer;
       background: transparent; }
@@ -2394,27 +2432,266 @@
         color: #959fa7;
         width: 17px;
         text-align: center;
-        top: 12px;
+        top: 18px;
         font-size: 16px; }
       .toptravel.search-results .search-block .input-with-ico input {
-        padding-left: 28px;
+        padding-left: 35px;
         position: relative;
         background-color: transparent;
         cursor: pointer;
         margin-bottom: 0;
         height: 100%;
         border-radius: 0; }
+    .toptravel.search-results .search-block .form-control {
+      height: 54px;
+      border-radius: 0;
+      box-shadow: none; }
+      .toptravel.search-results .search-block .form-control:focus, .toptravel.search-results .search-block .form-control:active {
+        border-color: #9c0; }
+      .toptravel.search-results .search-block .form-control.select2-container {
+        height: 54px;
+        border-radius: 0; }
+        .toptravel.search-results .search-block .form-control.select2-container.select2-container-active {
+          border-color: #9c0; }
+        .toptravel.search-results .search-block .form-control.select2-container .select2-choice {
+          padding: 18px 10px 15px;
+          border-radius: 0;
+          border: none;
+          box-shadow: none;
+          font-size: 14px; }
+          .toptravel.search-results .search-block .form-control.select2-container .select2-choice .select2-arrow {
+            line-height: 54px;
+            padding-top: 0; }
     .toptravel.search-results .search-block .btn-search {
       background: #E6001D;
       color: #fff;
       height: 54px;
-      border-radius: 0 2px 2px 0; }
+      border-radius: 0 2px 2px 0;
+      font-size: 18px; }
+      .toptravel.search-results .search-block .btn-search:hover {
+        background: #cd001a; }
   .toptravel.search-results .result-item {
     border: 1px solid #b8b8b8;
     background: #fff;
     padding: 20px;
-    border-radius: 4px; }
-    .toptravel.search-results .result-item .name {
-      font-size: 28px; }
+    border-radius: 4px;
+    margin-bottom: 20px; }
+    .toptravel.search-results .result-item .hotel-title .icon {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      margin-right: 10px; }
+      .toptravel.search-results .result-item .hotel-title .icon:last-child {
+        margin-right: 0; }
+      .toptravel.search-results .result-item .hotel-title .icon.location {
+        border-color: #9c0;
+        color: #9c0;
+        font-size: 22px; }
+      .toptravel.search-results .result-item .hotel-title .icon.favorite {
+        border-color: #ff4444;
+        color: #ff4444;
+        font-size: 20px; }
+    .toptravel.search-results .result-item .hotel-title .rate-stars {
+      font-size: 10px;
+      margin-left: 10px;
+      display: inline-block;
+      line-height: 5px; }
+      .toptravel.search-results .result-item .hotel-title .rate-stars .star {
+        font-size: 18px; }
+    .toptravel.search-results .result-item .hotel-title .name {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 600; }
+      .toptravel.search-results .result-item .hotel-title .name span {
+        vertical-align: middle; }
+    .toptravel.search-results .result-item .hotel-title .country {
+      font-size: 16px;
+      color: #3B3B3B;
+      font-weight: 100; }
+    .toptravel.search-results .result-item .gallery {
+      margin: 20px 0 0;
+      position: relative; }
+      .toptravel.search-results .result-item .gallery .ad-label {
+        position: absolute;
+        top: 20px;
+        left: -5px;
+        background: #ff4444;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 0 4px 4px 0; }
+        .toptravel.search-results .result-item .gallery .ad-label .wrap {
+          position: relative;
+          padding: 8px 20px; }
+          .toptravel.search-results .result-item .gallery .ad-label .wrap:before {
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 5px 5px 0;
+            border-color: transparent #dd0000 transparent transparent; }
+      .toptravel.search-results .result-item .gallery .category {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        color: #222;
+        background: #F2F2F2;
+        border-radius: 0 4px 4px 0;
+        font-size: 12px;
+        padding: 10px 20px; }
+      .toptravel.search-results .result-item .gallery .block-image {
+        height: 420px;
+        -webkit-background-size: cover;
+        background-size: cover; }
+    .toptravel.search-results .result-item .advantages {
+      border-bottom: 1px dashed #ccc;
+      padding: 10px 0; }
+    .toptravel.search-results .result-item .benefits .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 2px;
+      color: #fff;
+      display: inline-block;
+      line-height: 50px;
+      text-align: center;
+      vertical-align: top; }
+      .toptravel.search-results .result-item .benefits .icon.beach {
+        background: #F5B801;
+        font-size: 24px; }
+      .toptravel.search-results .result-item .benefits .icon.discount {
+        background: #ff4444;
+        line-height: 12px;
+        padding-top: 13px;
+        font-style: normal; }
+      .toptravel.search-results .result-item .benefits .icon .percent {
+        font-size: 14px;
+        font-weight: 600; }
+      .toptravel.search-results .result-item .benefits .icon .title {
+        font-size: 10px; }
+    .toptravel.search-results .result-item .tripad {
+      line-height: 50px;
+      text-align: right; }
+      .toptravel.search-results .result-item .tripad .tripad-logo-local {
+        margin-top: 15px;
+        margin-left: 10px; }
+    .toptravel.search-results .result-item .description {
+      font-size: 16px; }
+      .toptravel.search-results .result-item .description h3 {
+        font-size: 16px;
+        font-weight: 600; }
+      .toptravel.search-results .result-item .description .btn-more {
+        border: 1px solid #FA861F;
+        color: #FA861F;
+        margin-top: 10px; }
+        .toptravel.search-results .result-item .description .btn-more span {
+          padding: 0 10px; }
+        .toptravel.search-results .result-item .description .btn-more:hover {
+          color: #e16c05;
+          border-color: #e16c05; }
+    .toptravel.search-results .result-item .hotel-selection {
+      margin: 30px 0; }
+      .toptravel.search-results .result-item .hotel-selection .item {
+        width: 100%;
+        border: 1px solid #ccc;
+        margin-bottom: 5px; }
+        .toptravel.search-results .result-item .hotel-selection .item td {
+          padding: 5px 10px; }
+          .toptravel.search-results .result-item .hotel-selection .item td:nth-child(1) {
+            background: #F5BE0F;
+            width: 25%; }
+          .toptravel.search-results .result-item .hotel-selection .item td:nth-child(2) {
+            background-color: #F2F2F2;
+            width: 20%; }
+          .toptravel.search-results .result-item .hotel-selection .item td:nth-child(3) {
+            width: 30%; }
+          .toptravel.search-results .result-item .hotel-selection .item td:nth-child(4) {
+            width: 25%;
+            background-color: #67B314; }
+            .toptravel.search-results .result-item .hotel-selection .item td:nth-child(4):hover {
+              background-color: #5a9c11; }
+        .toptravel.search-results .result-item .hotel-selection .item .name,
+        .toptravel.search-results .result-item .hotel-selection .item .duration {
+          font-weight: 600;
+          font-size: 16px; }
+        .toptravel.search-results .result-item .hotel-selection .item .desc {
+          color: #4F4F4F;
+          font-size: 14px; }
+        .toptravel.search-results .result-item .hotel-selection .item .date {
+          color: #4F4F4F;
+          font-size: 14px;
+          font-weight: 100; }
+        .toptravel.search-results .result-item .hotel-selection .item .discount {
+          float: left;
+          width: 40%;
+          padding: 0 10px; }
+          .toptravel.search-results .result-item .hotel-selection .item .discount .old-price {
+            color: #4F4F4F;
+            font-weight: 100;
+            font-size: 12px;
+            text-decoration: line-through; }
+          .toptravel.search-results .result-item .hotel-selection .item .discount .label-discount {
+            background-color: #ff4444; }
+        .toptravel.search-results .result-item .hotel-selection .item .price-block {
+          float: left;
+          width: 60%; }
+          .toptravel.search-results .result-item .hotel-selection .item .price-block .price {
+            font-size: 20px;
+            font-weight: 800; }
+          .toptravel.search-results .result-item .hotel-selection .item .price-block .person {
+            font-size: 10px;
+            color: #848484; }
+        .toptravel.search-results .result-item .hotel-selection .item .btn-select {
+          color: #fff;
+          font-size: 18px; }
+      .toptravel.search-results .result-item .hotel-selection .more-options {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #F5BE0F; }
+  .toptravel.search-results ul.paging {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0; }
+    .toptravel.search-results ul.paging li {
+      display: inline-block;
+      margin-right: 5px;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #F5BE0F;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 4px;
+      vertical-align: top; }
+      .toptravel.search-results ul.paging li.gap {
+        border: none; }
+      .toptravel.search-results ul.paging li.active, .toptravel.search-results ul.paging li:hover {
+        border-color: #222; }
+        .toptravel.search-results ul.paging li.active a, .toptravel.search-results ul.paging li:hover a {
+          color: #222; }
+      .toptravel.search-results ul.paging li:first-child {
+        margin-right: 15px; }
+      .toptravel.search-results ul.paging li:last-child {
+        margin-left: 10px; }
+      .toptravel.search-results ul.paging li a {
+        display: block;
+        text-decoration: none;
+        color: #F5BE0F;
+        font-size: 14px; }
+      .toptravel.search-results ul.paging li span {
+        font-size: 20px;
+        display: block; }
+
+.pr-0 {
+  padding-right: 0; }
+
+.pl-5 {
+  padding-left: 5px; }
 
 /*# sourceMappingURL=toptravel.css.map */

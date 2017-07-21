@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link href="bower_components/select2/select2.css" rel="stylesheet" />
     <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/toptravel.css" rel="stylesheet" />
@@ -68,7 +68,7 @@
                             </span>
                         </div>
                         <div class="form-field">
-                            <select name="travellers" id="travellers" class="form-control select2">
+                            <select name="travellers" id="travellers" class="form-control select2" tabindex="2">
                                 <option value="">1 suaugęs</option>
                                 <option value="">2 suaugę</option>
                                 <option value="">3 suaugę</option>
@@ -81,7 +81,7 @@
                             </span>
                         </div>
                         <div class="form-field">
-                            <select name="duration" id="duration" class="form-control duration select2">
+                            <select name="duration" id="duration" class="form-control duration select2" tabindex="4">
                                 <option value="7">7 nakvynės</option>
                                 <option value="10">10 nakvynių</option>
                                 <option value="14">14 nakvynių</option>
@@ -101,63 +101,97 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-3">
-                                <img class="img-responsive" style="margin:30px 0;" src="images/tmp/filter.jpg" alt="">
+                                <img class="img-responsive" style="margin:20px 0;" src="images/tmp/filter.jpg" alt="">
                             </div>
                             <div class="col-xs-9">
                                 <div class="row">
-                                    <div class="col-xs-6">
-                                        <h2>Kelionių pasiūlymai</h2>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <select name="sorting-1" id="filter-sorting"
-                                                class="select2 filter-sorting">
-                                            <option value="1">Rekomenduojami</option>
-                                            <option value="2">Geriausi</option>
-                                            <option value="3">Gražiausi</option>
-                                        </select>
-                                        <select name="sorting-2" id="sorting" class="select2 sorting">
-                                            <option value="1">AZ viešbučiai</option>
-                                            <option value="2">ZA viešbučiai</option>
-                                            <option value="3">Pigiausi viršuje</option>
-                                        </select>
+                                    <div class="col-xs-12">
+                                        <div class="main-heading">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <h2>33 kelionių pasiūlymai</h2>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 pr-0">
+                                                            <select name="sorting-1" id="filter-sorting"
+                                                                    class="form-control select2 filter-sorting">
+                                                                <option value="1">Rekomenduojami</option>
+                                                                <option value="2">Geriausi</option>
+                                                                <option value="3">Gražiausi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-xs-6 pl-5">
+                                                            <select name="sorting-2" id="sorting" class="form-control select2 sorting">
+                                                                <option value="1">AZ viešbučiai</option>
+                                                                <option value="2">ZA viešbučiai</option>
+                                                                <option value="3">Pigiausi viršuje</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <div class="result-item">
-                                            <div class="row">
+                                            <div class="row hotel-title">
                                                 <div class="col-xs-8">
                                                     <div class="name">
                                                         <span>Side Crown Charm Hotel</span>
-                                                        <div class="rate-stars">
+                                                        <span class="rate-stars">
                                                             <i class="star fa fa-star"></i>
                                                             <i class="star fa fa-star"></i>
                                                             <i class="star fa fa-star"></i>
-                                                            <i class="star fa fa-star"></i>
-                                                            <i class="star fa fa-star"></i>
-                                                        </div>
+                                                            <i class="star fa fa-star-o"></i>
+                                                            <i class="star fa fa-star-o"></i>
+                                                        </span>
                                                     </div>
+                                                    <div class="country">Alanija, Turkija</div>
                                                 </div>
-                                                <div class="col-xs-4">
-                                                    <i class="fa fa-map-marker"></i>
-                                                    <i class="fa fa-heart"></i>
+                                                <div class="col-xs-4 text-right">
+                                                    <i class="icon fa fa-map-marker location"></i>
+                                                    <i class="icon fa fa-heart favorite"></i>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="gallery">
-                                                        Galerija
+                                                        <div class="img-responsive block-image" style="background-image:url('images/tmp/bali.jpg')">
+                                                            <div class="ad-label">
+                                                                <div class="wrap">
+                                                                    TOP sezono viešbutis
+                                                                </div>
+                                                            </div>
+                                                            <div class="category">LUX express</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12">
-                                                    <div class="benefits">
-                                                        <i class="icon palm"></i>
-                                                        <i class="icon discount">
-                                                            <div class="percent">25%</div>
-                                                            <div class="title">nuolaida</div>
-                                                        </i>
+                                                    <div class="advantages">
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <div class="benefits">
+                                                                    <i class="icon sk-palme beach"></i>
+                                                                    <i class="icon discount">
+                                                                        <div class="percent">25%</div>
+                                                                        <div class="title">nuolaida</div>
+                                                                    </i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <div class="tripad">
+                                                                    <span>Labai geras, 8</span>
+                                                                    <div class="tripad-logo-local logo-s pull-right">
+                                                                        <img class="sprite-tripad-logo" src="images/x.gif">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -168,51 +202,144 @@
                                                         <div class="text">
                                                             <p>Kompaktiška teritorija, jaukūs numeriai. Dienos metu daug renginių. Rekomenduojamas jaunimo ir šeimų poilsiui. Kuriant katalogą viešbutis dar buvo statomas. Kompaktiška teritorija, jaukūs numeriai. </p>
                                                         </div>
-                                                        
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-8 col-xs-offset-2">
-                                                    <a href="#" class="btn btn-block btn-more">
-                                                        <i class="fa fa-angle-down"></i>
-                                                        <span>Skaityti daugiau apie šį viešbutį</span>
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-10 col-xs-offset-1">
-                                                    <div class="hotel-selection">
-                                                        <div class="item">
-                                                            <div>
-                                                                <div class="name">All inclusive</div>
-                                                                <div class="desc">Double or twin</div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="duration">7n.</div>
-                                                                <div class="date">2017.07.18</div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="discount">
-                                                                    <div class="old-price">500</div>
-                                                                    <div class="label discoiunt">-15%</div>
-                                                                </div>
-                                                                <div class="price-block">
-                                                                    <div class="price">400 &euro;</div>
-                                                                    <div class="person">Per person</div>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <a href="#"
-                                                                   class="btn btn-block btn-select">
-                                                                    <span>Select hotel</span>
-                                                                    <i class="fa fa-angle-right"></i>
+                                                        <div class="row">
+                                                            <div class="col-xs-8 col-xs-offset-2">
+                                                                <a href="#" class="btn btn-block btn-more">
+                                                                    <i class="fa fa-angle-down"></i>
+                                                                    <span>Skaityti daugiau apie šį viešbutį</span>
+                                                                    <i class="fa fa-angle-down"></i>
                                                                 </a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-10 col-xs-offset-1">
+                                                    <div class="hotel-selection">
+                                                        <table class="item">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="name">All inclusive</div>
+                                                                    <div class="desc">Double or twin</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="duration">7n.</div>
+                                                                    <div class="date">2017.07.18</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="discount">
+                                                                        <div class="old-price">&euro; 500</div>
+                                                                        <div class="label label-discount">-15%</div>
+                                                                    </div>
+                                                                    <div class="price-block">
+                                                                        <div class="price">400 &euro;</div>
+                                                                        <div class="person">Price per person</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#"
+                                                                       class="btn btn-block btn-select">
+                                                                        <span>Select hotel</span>
+                                                                        <i class="fa fa-angle-right"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="item">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="name">All inclusive</div>
+                                                                    <div class="desc">Double or twin</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="duration">7n.</div>
+                                                                    <div class="date">2017.07.18</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="discount">
+                                                                        <div class="old-price">&euro; 500</div>
+                                                                        <div class="label label-discount">-15%</div>
+                                                                    </div>
+                                                                    <div class="price-block">
+                                                                        <div class="price">400 &euro;</div>
+                                                                        <div class="person">Price per person</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#"
+                                                                       class="btn btn-block btn-select">
+                                                                        <span>Select hotel</span>
+                                                                        <i class="fa fa-angle-right"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="item">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="name">All inclusive</div>
+                                                                    <div class="desc">Double or twin</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="duration">7n.</div>
+                                                                    <div class="date">2017.07.18</div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="discount">
+                                                                        <div class="old-price">&euro; 500</div>
+                                                                        <div class="label label-discount">-15%</div>
+                                                                    </div>
+                                                                    <div class="price-block">
+                                                                        <div class="price">400 &euro;</div>
+                                                                        <div class="person">Price per person</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#"
+                                                                       class="btn btn-block btn-select">
+                                                                        <span>Select hotel</span>
+                                                                        <i class="fa fa-angle-right"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <a href="#" class="more-options">
+                                                            <span>Daugiau šio viešbučio kelionių pasiūlymų</span>
+                                                            <i class="fa fa-caret-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul class="paging">
+                                            <li>
+                                                <a href="#"><i class="fa fa-angle-left"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#">1</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="#">2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">3</a>
+                                            </li>
+                                            <li class="gap">
+                                                <span>...</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">45</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-angle-right"></i></a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -297,7 +424,7 @@
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/a42da4b193.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script src="bower_components/select2/select2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>

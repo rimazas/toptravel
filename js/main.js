@@ -2,7 +2,10 @@
 $(document).ready(function(){
 
     if($('.select2').length > 0) {
-        $('.select2').select2();
+        $('.select2').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: "select2-green"
+        });
     }
 
     if($( ".temp-slider" ).length > 0) {
