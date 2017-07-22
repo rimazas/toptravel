@@ -125,6 +125,32 @@
     .checkbox.styled.checked label .ico {
       color: #7ec619;
     }
+    .form-control {
+      $height: 47px;
+      height: $height;
+      &:focus {
+        box-shadow: none;
+      }
+      &.select2 {
+        &.select2-container {
+          .select2-choice {
+            border: none;
+            box-shadow: none;
+            padding: 0 0 0 8px;
+            height: $height - 2;
+            line-height: $height - 2;
+            font-size: 14px;
+            .select2-arrow {
+              line-height: $height - 2;
+            }
+          }
+          &.select2-container-active {
+            border-color: #7ec619;
+            box-shadow: inset 0 1px 1px rgba(#7ec619, 0.2);
+          }
+        }
+      }
+    }
     .logo-wrapper {
       position: relative;
       width: 270px;
@@ -855,6 +881,8 @@
         margin: 5px 0 0;
       }
       .form-control {
+        $height: 38px;
+        height: $height;
         &:focus {
           box-shadow: none;
         }
@@ -863,6 +891,9 @@
           &.select2-container {
             .select2-choice {
               border: none;
+              padding: 0 0 0 8px;
+              height: $height;
+              line-height: $height;
               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
               font-size: 14px;
             }
