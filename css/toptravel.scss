@@ -1094,7 +1094,7 @@
       }
     }
     .result-item{
-      border: 1px solid #A9A9A9;
+      border: 1px solid #BEBEBE;
       background: #fff;
       padding: 20px;
       border-radius: 4px;
@@ -1242,15 +1242,16 @@
           font-weight: 600;
         }
         .btn-more {
-          border: 1px solid #EC7E00;
-          color: #EC7E00;
+          $color: #F19F3E;
+          border: 1px solid $color;
+          color: $color;
           margin-top: 10px;
           span {
             padding: 0 10px;
           }
           &:hover {
-            color: darken(#EC7E00,10%);
-            border-color: darken(#EC7E00,10%);
+            color: darken($color,5%);
+            border-color: darken($color,5%);
           }
         }
       }

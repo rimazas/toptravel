@@ -2512,7 +2512,7 @@
       .toptravel.search-results .search-block .btn-search:hover {
         background: #cd001a; }
   .toptravel.search-results .result-item {
-    border: 1px solid #A9A9A9;
+    border: 1px solid #BEBEBE;
     background: #fff;
     padding: 20px;
     border-radius: 4px;
@@ -2629,14 +2629,14 @@
         font-size: 16px;
         font-weight: 600; }
       .toptravel.search-results .result-item .description .btn-more {
-        border: 1px solid #EC7E00;
-        color: #EC7E00;
+        border: 1px solid #F19F3E;
+        color: #F19F3E;
         margin-top: 10px; }
         .toptravel.search-results .result-item .description .btn-more span {
           padding: 0 10px; }
         .toptravel.search-results .result-item .description .btn-more:hover {
-          color: #b96300;
-          border-color: #b96300; }
+          color: #ef9326;
+          border-color: #ef9326; }
     .toptravel.search-results .result-item .hotel-selection {
       margin: 30px 0; }
       .toptravel.search-results .result-item .hotel-selection .item {
