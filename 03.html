@@ -235,7 +235,10 @@
                             </div>
                             <div class="filter-group">
                                 <label for="departure">Išvykimo data</label>
-                                <input name="departure" id="departure" class="form-control" />
+                                <span class="input-with-ico datepicker-container input-with-preloader">
+                                    <i class="fa fa-calendar"></i>
+                                    <input id="departure" type="text" class="form-control tripcloud-dp" placeholder="Data" tabindex="2" readonly />
+                                </span>
                             </div>
                             <div class="filter-group">
                                 <label for="flexibility">Datos lankstumas</label>
@@ -247,12 +250,20 @@
                                 </select>
                             </div>
                             <div class="filter-group">
-                                <label for="price">Kaina asmeniui</label>
-                                <input name="price" id="price" class="form-control" />
+                                <label for="slider-price">Kaina asmeniui</label>
+                                <div class="slider-wrap">
+                                    <input id="price-from" class="slider-input price-from" readonly />
+                                    <div id="slider-price"></div>
+                                    <input id="price-to" class="slider-input price-to" readonly />
+                                </div>
                             </div>
                             <div class="filter-group">
-                                <label for="duration">Kelionės trukmė</label>
-                                <input name="duration" id="duration" class="form-control" />
+                                <label for="slider-duration">Kelionės trukmė</label>
+                                <div class="slider-wrap">
+                                    <input id="duration-from" class="slider-input duration-from" readonly />
+                                    <div id="slider-duration"></div>
+                                    <input id="duration-to" class="slider-input duration-to" readonly />
+                                </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -275,32 +286,59 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="offers">
-                            <div class="offer">
-                                <div class="col">
-                                    <div class="date">2017.07.13-07.28</div>
-                                    <div class="duration">Trukmė 7n.</div>
-                                </div>
-                                <div class="col">
-                                    <div class="tite">Deluxe kambarys su vaizdu į jūrą</div>
-                                    <label class="label-transparent">Breakfast and Dinner</label>
-                                </div>
-                                <div class="col">
-                                    <div class="rooms-left">10 +</div>
-                                </div>
-                                <div class="col">
-                                    <div class="price">522 &euro;</div>
-                                    <a href="#" class="btn btn-sm btn-book">
-                                        <span>Užsakyti</span>
-                                        <i class="fa fa-angle-right"></i>
-                                    </a>
-                                </div>
+                            <table class="offer">
+                                <tr>
+                                    <td>
+                                        <div class="date">2017.07.13 &mdash; 07.28</div>
+                                        <div class="duration">Trukmė 7n.</div>
+                                    </td>
+                                    <td>
+                                        <div class="title">Deluxe kambarys su vaizdu į jūrą</div>
+                                        <label class="label-transparent">Breakfast and Dinner</label>
+                                    </td>
+                                    <td>
+                                        <div class="rooms-left">10 +</div>
+                                    </td>
+                                    <td>
+                                        <div class="price">522 &euro;</div>
+                                        <a href="#" class="btn btn-sm btn-book">
+                                            <span>UŽSAKYTI</span>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="offer">
+                                <tr>
+                                    <td>
+                                        <div class="date">2017.07.13 &mdash; 07.28</div>
+                                        <div class="duration">Trukmė 7n.</div>
+                                    </td>
+                                    <td>
+                                        <div class="title">Deluxe kambarys su vaizdu į jūrą</div>
+                                        <label class="label-transparent">Breakfast and Dinner</label>
+                                    </td>
+                                    <td>
+                                        <div class="rooms-left">10 +</div>
+                                    </td>
+                                    <td>
+                                        <div class="price">522 &euro;</div>
+                                        <a href="#" class="btn btn-sm btn-book">
+                                            <span>UŽSAKYTI</span>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <a href="#" class="more-info">
+                                    <span>Noriu pasiteirauti</span>
+                                    <i class="fa fa-caret-right"></i>
+                                </a>
                             </div>
                         </div>
-
-                        <a href="#" class="more-info">
-                            <span>Noriu pasiteirauti</span>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -385,7 +423,7 @@
 <script src="https://use.fontawesome.com/a42da4b193.js"></script>
 <script src="bower_components/select2/select2.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

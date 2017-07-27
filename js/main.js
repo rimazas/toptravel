@@ -42,6 +42,44 @@ $(document).ready(function(){
         });
     }
 
+    $( "#slider-price" ).slider({
+        range: true,
+        step: 10,
+        min: 0,
+        max: 2000,
+        values: [ 200, 700 ],
+        classes: {
+            "ui-slider": "toptravel-slider",
+            "ui-slider-handle": "toptravel-slider-handle",
+            "ui-slider-range": "toptravel-slider-range"
+        },
+        slide: function( event, ui ) {
+            $('#price-from').val(ui.values[0]);
+            $('#price-to').val(ui.values[1]);
+        }
+    });
+
+    $( "#slider-duration" ).slider({
+        range: true,
+        min: 0,
+        max: 30,
+        values: [ 3, 14 ],
+        classes: {
+            "ui-slider": "toptravel-slider",
+            "ui-slider-handle": "toptravel-slider-handle",
+            "ui-slider-range": "toptravel-slider-range"
+        },
+        slide: function( event, ui ) {
+            $('#duration-from').val(ui.values[0]);
+            $('#duration-to').val(ui.values[1]);
+        }
+    });
+
+    $("#price-from").val($( "#slider-price" ).slider( "values", 0 ));
+    $("#price-to").val($( "#slider-price" ).slider( "values", 1 ));
+    $("#duration-from").val($( "#slider-duration" ).slider( "values", 0 ));
+    $("#duration-to").val($( "#slider-duration" ).slider( "values", 1 ));
+
     //scripts.js
 
     $('[data-toggle="tooltip"]').tooltip();

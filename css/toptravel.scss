@@ -1389,6 +1389,9 @@
 
   &.travel-deal {
     background-color: #F5F5F5;
+    .container {
+      width: 1150px;
+    }
     header {
       background-size: cover;
       background: url("../images/tmp/bali.jpg") 50% 0 repeat-x #f5f5f5;
@@ -1728,12 +1731,41 @@
       background-color: #8EC341;
       border-radius: 4px;
       padding: 35px;
-      margin: 40px 0;
+      margin: 40px 0 20px;
       .title {
         font-size: 30px;
         line-height: 26px;
         margin-bottom:30px;
         color: #fff;
+      }
+      .form-control[readonly] {
+        cursor: pointer;
+        background: transparent;
+      }
+      .input-with-ico {
+        display: block;
+        position: relative;
+        background-color: #fff;
+        border-radius: 2px;
+        height: 45px;
+        i {
+          position: absolute;
+          left: 8px;
+          color: #959fa7;
+          width: 17px;
+          text-align: center;
+          top: 13px;
+          font-size: 16px;
+        }
+        input {
+          padding-left: 35px;
+          position: relative;
+          background-color: transparent;
+          cursor: pointer;
+          margin-bottom: 0;
+          height:100%;
+          border-radius: 0;
+        }
       }
       .filter-group {
         float:left;
@@ -1743,14 +1775,106 @@
           color: #fff;
           font-weight: 400;
         }
+        &:nth-child(1){
+          width: 16%;
+        }
+        &:nth-child(2){
+          width: 17%;
+        }
+        &:nth-child(3){
+          width: 17%;
+        }
+        &:nth-child(4){
+          width: 25%;
+        }
+        &:nth-child(5){
+          width: 25%;
+        }
+      }
+      .form-control{
+        $height: 45px;
+        height: $height;
+        border-color: transparent;
+        border-radius: 2px;
+        box-shadow: none;
+        &.select2-container {
+          height: $height;
+          border-color: transparent;
+          .select2-choice {
+            padding: 0 0 0 8px;
+            line-height: $height - 2;
+          }
+          .select2-arrow {
+            line-height: $height - 5;
+          }
+        }
+      }
+      .slider-wrap {
+        background-color: #fff;
+        height: 45px;
+        border-radius: 2px;
+        padding: 20px 45px;
+        position: relative;
+        .slider-input {
+          border: none;
+          width: 35px;
+          font-size: 14px;
+          text-align:center;
+        }
+        .price-from, .duration-from{
+          position:absolute;
+          left: 1px;
+          top: 13px;
+        }
+        .price-to, .duration-to {
+          position: absolute;
+          top: 13px;
+          right: 1px;
+        }
+      }
+      .toptravel-slider{
+        border-radius: 0;
+        padding: 0;
+        height: 5px;
+      }
+      .toptravel-slider-range {
+        background: #8EC341;
+      }
+      .toptravel-slider-handle {
+        top: -10px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background: #fff;
+        outline: none;
+        box-shadow: inset 1px 1px 5px 2px rgba(0,0,0,0.1);
+        cursor: pointer;
       }
     }
     .deal-options {
+      margin-bottom: 50px;
       .sorting {
+        text-decoration: none;
         .param {
           float: left;
+          padding: 10px;
+          a {
+            color: #818181;
+            font-size: 16px;
+            text-decoration: none;
+            &:after {
+              font-family: FontAwesome;
+              content: "\f0d7";
+              padding-left:10px;
+            }
+            &:hover {
+              color: darken(#818181,10%);
+            }
+          }
           &:nth-child(1){
             width: 30%;
+            padding-left: 35px;
           }
           &:nth-child(2){
             width: 40%;
@@ -1760,13 +1884,97 @@
           }
           &:nth-child(4){
             width: 15%;
+            text-align: right;
+            padding-right: 35px;
           }
         }
       }
       .offers {
-        .offer {
+        table.offer {
+          width: 100%;
           background-color: #fff;
-          border: 1px solid #F3D150;
+          border: 1px solid #E6E6E6;
+          margin-bottom: 10px;
+          td {
+            padding: 15px 10px;
+            vertical-align: top;
+            &:nth-child(1) {
+              width: 28%;
+              padding-left: 35px;
+            }
+            &:nth-child(2) {
+              width: 42%;
+            }
+            &:nth-child(3) {
+              width: 15%;
+            }
+            &:nth-child(4) {
+              width: 20%;
+              text-align: right;
+              padding-right: 35px;
+            }
+          }
+          .title {
+            margin-bottom: 10px;
+          }
+          .title,
+          .date,
+          .rooms-left
+          {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          .duration {
+            font-size: 18px;
+            color: #818181;
+          }
+          .label-transparent {
+            padding: 5px 10px;
+            font-weight:600;
+            font-size: 17px;
+            border: 1px solid #F09B67;
+            color: #F09B67;
+            border-radius: 4px;
+          }
+          .price{
+            font-size: 30px;
+            line-height:38px;
+            font-weight: 800;
+          }
+          .btn-book {
+            background-color: #8EC341;
+            color: #fff;
+            font-size: 14px;
+            padding: 4px 15px;
+            letter-spacing: 1px;
+            i {
+              padding-left:5px;
+              font-size: 14px;
+            }
+            &:hover {
+              background-color: darken(#8EC341,5%);
+            }
+          }
+          &:first-child{
+            border: 2px solid #F3D150;
+            .btn-book {
+              background-color: #F3D150;
+              &:hover {
+                background-color: darken(#F3D150,5%);
+              }
+            }
+          }
+        }
+      }
+      .more-info {
+        font-size: 14px;
+        color: #F09B67;
+        text-decoration: none;
+        i{
+          padding-left: 5px;
+        }
+        &:hover {
+          color: darken(#F09B67, 10%);
         }
       }
     }

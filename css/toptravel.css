@@ -2736,6 +2736,8 @@
         color: #F5BE0F; }
 .toptravel.travel-deal {
   background-color: #F5F5F5; }
+  .toptravel.travel-deal .container {
+    width: 1150px; }
   .toptravel.travel-deal header {
     background-size: cover;
     background: url("../images/tmp/bali.jpg") 50% 0 repeat-x #f5f5f5;
@@ -2999,12 +3001,37 @@
     background-color: #8EC341;
     border-radius: 4px;
     padding: 35px;
-    margin: 40px 0; }
+    margin: 40px 0 20px; }
     .toptravel.travel-deal .deals-filter .title {
       font-size: 30px;
       line-height: 26px;
       margin-bottom: 30px;
       color: #fff; }
+    .toptravel.travel-deal .deals-filter .form-control[readonly] {
+      cursor: pointer;
+      background: transparent; }
+    .toptravel.travel-deal .deals-filter .input-with-ico {
+      display: block;
+      position: relative;
+      background-color: #fff;
+      border-radius: 2px;
+      height: 45px; }
+      .toptravel.travel-deal .deals-filter .input-with-ico i {
+        position: absolute;
+        left: 8px;
+        color: #959fa7;
+        width: 17px;
+        text-align: center;
+        top: 13px;
+        font-size: 16px; }
+      .toptravel.travel-deal .deals-filter .input-with-ico input {
+        padding-left: 35px;
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+        margin-bottom: 0;
+        height: 100%;
+        border-radius: 0; }
     .toptravel.travel-deal .deals-filter .filter-group {
       float: left;
       width: 20%;
@@ -3012,19 +3039,157 @@
       .toptravel.travel-deal .deals-filter .filter-group label {
         color: #fff;
         font-weight: 400; }
-  .toptravel.travel-deal .deal-options .sorting .param {
-    float: left; }
-    .toptravel.travel-deal .deal-options .sorting .param:nth-child(1) {
-      width: 30%; }
-    .toptravel.travel-deal .deal-options .sorting .param:nth-child(2) {
-      width: 40%; }
-    .toptravel.travel-deal .deal-options .sorting .param:nth-child(3) {
-      width: 15%; }
-    .toptravel.travel-deal .deal-options .sorting .param:nth-child(4) {
-      width: 15%; }
-  .toptravel.travel-deal .deal-options .offers .offer {
-    background-color: #fff;
-    border: 1px solid #F3D150; }
+      .toptravel.travel-deal .deals-filter .filter-group:nth-child(1) {
+        width: 16%; }
+      .toptravel.travel-deal .deals-filter .filter-group:nth-child(2) {
+        width: 17%; }
+      .toptravel.travel-deal .deals-filter .filter-group:nth-child(3) {
+        width: 17%; }
+      .toptravel.travel-deal .deals-filter .filter-group:nth-child(4) {
+        width: 25%; }
+      .toptravel.travel-deal .deals-filter .filter-group:nth-child(5) {
+        width: 25%; }
+    .toptravel.travel-deal .deals-filter .form-control {
+      height: 45px;
+      border-color: transparent;
+      border-radius: 2px;
+      box-shadow: none; }
+      .toptravel.travel-deal .deals-filter .form-control.select2-container {
+        height: 45px;
+        border-color: transparent; }
+        .toptravel.travel-deal .deals-filter .form-control.select2-container .select2-choice {
+          padding: 0 0 0 8px;
+          line-height: 43px; }
+        .toptravel.travel-deal .deals-filter .form-control.select2-container .select2-arrow {
+          line-height: 40px; }
+    .toptravel.travel-deal .deals-filter .slider-wrap {
+      background-color: #fff;
+      height: 45px;
+      border-radius: 2px;
+      padding: 20px 45px;
+      position: relative; }
+      .toptravel.travel-deal .deals-filter .slider-wrap .slider-input {
+        border: none;
+        width: 35px;
+        font-size: 14px;
+        text-align: center; }
+      .toptravel.travel-deal .deals-filter .slider-wrap .price-from, .toptravel.travel-deal .deals-filter .slider-wrap .duration-from {
+        position: absolute;
+        left: 1px;
+        top: 13px; }
+      .toptravel.travel-deal .deals-filter .slider-wrap .price-to, .toptravel.travel-deal .deals-filter .slider-wrap .duration-to {
+        position: absolute;
+        top: 13px;
+        right: 1px; }
+    .toptravel.travel-deal .deals-filter .toptravel-slider {
+      border-radius: 0;
+      padding: 0;
+      height: 5px; }
+    .toptravel.travel-deal .deals-filter .toptravel-slider-range {
+      background: #8EC341; }
+    .toptravel.travel-deal .deals-filter .toptravel-slider-handle {
+      top: -10px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      background: #fff;
+      outline: none;
+      box-shadow: inset 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+      cursor: pointer; }
+  .toptravel.travel-deal .deal-options {
+    margin-bottom: 50px; }
+    .toptravel.travel-deal .deal-options .sorting {
+      text-decoration: none; }
+      .toptravel.travel-deal .deal-options .sorting .param {
+        float: left;
+        padding: 10px; }
+        .toptravel.travel-deal .deal-options .sorting .param a {
+          color: #818181;
+          font-size: 16px;
+          text-decoration: none; }
+          .toptravel.travel-deal .deal-options .sorting .param a:after {
+            font-family: FontAwesome;
+            content: "\f0d7";
+            padding-left: 10px; }
+          .toptravel.travel-deal .deal-options .sorting .param a:hover {
+            color: #686868; }
+        .toptravel.travel-deal .deal-options .sorting .param:nth-child(1) {
+          width: 30%;
+          padding-left: 35px; }
+        .toptravel.travel-deal .deal-options .sorting .param:nth-child(2) {
+          width: 40%; }
+        .toptravel.travel-deal .deal-options .sorting .param:nth-child(3) {
+          width: 15%; }
+        .toptravel.travel-deal .deal-options .sorting .param:nth-child(4) {
+          width: 15%;
+          text-align: right;
+          padding-right: 35px; }
+    .toptravel.travel-deal .deal-options .offers table.offer {
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #E6E6E6;
+      margin-bottom: 10px; }
+      .toptravel.travel-deal .deal-options .offers table.offer td {
+        padding: 15px 10px;
+        vertical-align: top; }
+        .toptravel.travel-deal .deal-options .offers table.offer td:nth-child(1) {
+          width: 28%;
+          padding-left: 35px; }
+        .toptravel.travel-deal .deal-options .offers table.offer td:nth-child(2) {
+          width: 42%; }
+        .toptravel.travel-deal .deal-options .offers table.offer td:nth-child(3) {
+          width: 15%; }
+        .toptravel.travel-deal .deal-options .offers table.offer td:nth-child(4) {
+          width: 20%;
+          text-align: right;
+          padding-right: 35px; }
+      .toptravel.travel-deal .deal-options .offers table.offer .title {
+        margin-bottom: 10px; }
+      .toptravel.travel-deal .deal-options .offers table.offer .title,
+      .toptravel.travel-deal .deal-options .offers table.offer .date,
+      .toptravel.travel-deal .deal-options .offers table.offer .rooms-left {
+        font-size: 20px;
+        font-weight: 600; }
+      .toptravel.travel-deal .deal-options .offers table.offer .duration {
+        font-size: 18px;
+        color: #818181; }
+      .toptravel.travel-deal .deal-options .offers table.offer .label-transparent {
+        padding: 5px 10px;
+        font-weight: 600;
+        font-size: 17px;
+        border: 1px solid #F09B67;
+        color: #F09B67;
+        border-radius: 4px; }
+      .toptravel.travel-deal .deal-options .offers table.offer .price {
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 800; }
+      .toptravel.travel-deal .deal-options .offers table.offer .btn-book {
+        background-color: #8EC341;
+        color: #fff;
+        font-size: 14px;
+        padding: 4px 15px;
+        letter-spacing: 1px; }
+        .toptravel.travel-deal .deal-options .offers table.offer .btn-book i {
+          padding-left: 5px;
+          font-size: 14px; }
+        .toptravel.travel-deal .deal-options .offers table.offer .btn-book:hover {
+          background-color: #81b238; }
+      .toptravel.travel-deal .deal-options .offers table.offer:first-child {
+        border: 2px solid #F3D150; }
+        .toptravel.travel-deal .deal-options .offers table.offer:first-child .btn-book {
+          background-color: #F3D150; }
+          .toptravel.travel-deal .deal-options .offers table.offer:first-child .btn-book:hover {
+            background-color: #f1cb38; }
+    .toptravel.travel-deal .deal-options .more-info {
+      font-size: 14px;
+      color: #F09B67;
+      text-decoration: none; }
+      .toptravel.travel-deal .deal-options .more-info i {
+        padding-left: 5px; }
+      .toptravel.travel-deal .deal-options .more-info:hover {
+        color: #eb7c39; }
 
 .pr-0 {
   padding-right: 0; }
