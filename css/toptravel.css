@@ -2855,10 +2855,10 @@
           background-color: #6aa515; }
   .toptravel.travel-deal .item {
     background: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #D5D5D5;
     margin: 20px 0;
     padding: 25px 35px;
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
     border-radius: 2px; }
     .toptravel.travel-deal .item h2 {
       font-size: 30px;
@@ -2869,8 +2869,9 @@
       right: 0; }
       .toptravel.travel-deal .item .temperature .icon {
         color: #000;
-        border: 1px solid #ccc;
-        padding: 14px; }
+        border: 1px solid #E4E4E4;
+        padding: 14px;
+        font-weight: 600; }
         .toptravel.travel-deal .item .temperature .icon i {
           vertical-align: middle; }
         .toptravel.travel-deal .item .temperature .icon.sun {
